@@ -7,3 +7,13 @@
       margin-top: 1rem;
       margin-bottom: 1rem;
   }
+
+  .imagegallery{
+        height:300px;
+      overflow-y: scroll;
+  }
+
+  .image-card{
+      margin-bottom: .5rem;
+      margin-right: -1.5rem;
+  }

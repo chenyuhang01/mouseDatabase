@@ -192,98 +192,64 @@ export class tableview implements OnInit {
         //It will trigger donwload actions
         new Angular2Csv(jsonData, 'Reports', options);
     }
+    //CheckBox Related Method
 
+    //This will toggle the speicifc column based on pos
+    //Giving null to manulchecked, it will toggle based on current value
+    //Else it will force to the given values
+    ToggleColumns(manualchecked: boolean, pos: number): void {
+        let target = this.originalColumns[pos];
+        target.checked = manualchecked != null ? manualchecked : !target.checked;
+        //Clear to be display column id
+        this.displayedColumns = this.originalColumns.map((data) => {
+            if (data.checked) {
+                return data.id;
+            } else {
+                return '';
+            }
+        }).filter(data => data != '');
+    }
     
-    private editenabled: boolean = false;
-    private editbuttonEnabled: boolean = false;
+    private editButtonenabled: boolean = false;
+    private editConfirmbuttonEnabled: boolean = false;
     //Trigger when edit button is pressed
     editbuttonpressed(): void {
-        if (this.selection.selected.length > 11) {
 
-        } else {
-            let target = this.originalColumns[0];
-            target.checked = !target.checked;
-            //Clear to be display column id
-            this.displayedColumns = this.originalColumns.map((data) => {
-                if (data.checked) {
-                    return data.id;
-                } else {
-                    return '';
-                }
-            }).filter(data => data != '');
-            this.editenabled = !this.editenabled;
-            this.editbuttonEnabled = !this.editbuttonEnabled;
-            //When CancledEdit is pressed
-            if (!this.editenabled) {
-                this.selection.clear();
-                this.confirmButtonviewevent.emit(this.selection.selected);
-                this.editbuttonEnabled = false;
-                target.checked = false;
-                //Clear to be display column id
-                this.displayedColumns = this.originalColumns.map((data) => {
-                    if (data.checked) {
-                        return data.id;
-                    } else {
-                        return '';
-                    }
-                }).filter(data => data != '');
-            }
+        this.ToggleColumns(null, 0);
+        this.editButtonenabled = !this.editButtonenabled;
+        this.editConfirmbuttonEnabled = !this.editConfirmbuttonEnabled;
+        //When CancledEdit is pressed
+        if (!this.editButtonenabled) {
+            this.selection.clear();
+
+            //Calling editmouseview to add editmousesmallview
+            this.confirmButtonviewevent.emit(this.selection.selected);
+            this.editConfirmbuttonEnabled = false;
+
+            this.ToggleColumns(false, 0);
         }
     }
+
+
 
     //Triggered when confirm button is pressed
     editConfirmButton(): void {
         this.confirmButtonviewevent.emit(this.selection.selected);
-        this.editbuttonEnabled = !this.editbuttonEnabled;
-        let target = this.originalColumns[0];
-        target.checked = !target.checked;
-        //Clear to be display column id
-        this.displayedColumns = this.originalColumns.map((data) => {
-            if (data.checked) {
-                return data.id;
-            } else {
-                return '';
-            }
-        }).filter(data => data != '');
+        this.editConfirmbuttonEnabled = !this.editConfirmbuttonEnabled;
+        this.ToggleColumns(null, 0);
     }
 
     public closeEditEnabled() {
         this.selection.clear();
-        this.editbuttonEnabled = false;
-        this.editenabled = false;
-        this.editbuttonEnabled = false;
-        let target = this.originalColumns[0];
-        target.checked = false;
-        //Clear to be display column id
-        this.displayedColumns = this.originalColumns.map((data) => {
-            if (data.checked) {
-                return data.id;
-            } else {
-                return '';
-            }
-        }).filter(data => data != '');
+        this.editConfirmbuttonEnabled = false;
+        this.editButtonenabled = false;
+        this.ToggleColumns(false, 0);
     }
 
-    //CheckBox Related Method
 
     checkValue(event) {
-        let id: string = event.source.id;
-        let checked: boolean = event.checked;
-
-        let pos = this.columnsToDisplay.indexOf(id);
-        let target = this.originalColumns[pos];
-
-        //toggle the target checkbox struct
-        target.checked = !target.checked;
-
-        //Clear to be display column id
-        this.displayedColumns = this.originalColumns.map((data) => {
-            if (data.checked) {
-                return data.id;
-            } else {
-                return '';
-            }
-        }).filter(data => data != '');
+        let pos = this.columnsToDisplay.indexOf(event.source.id);
+        this.ToggleColumns(null, pos);
     }
 
 
@@ -311,7 +277,7 @@ export class tableview implements OnInit {
 
     openDialog(row): void {
         let dialogRef = this.dialog.open(DialogView, {
-            width: '700px',
+            width: '1000px',
             data: { row: row }
         });
 
