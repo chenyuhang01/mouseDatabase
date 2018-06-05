@@ -1,0 +1,31 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .inner-field{
+      width: 100%;
+  }
+
+
+  .formbutton{
+    margin: .5rem;
+}
+
+.button-row{
+    padding: 1rem;
+}
+
+.reason_expanarea{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.reason_textarea{
+    width: 100%;
+}
+
+.margin-con{
+    margin-top: 1rem;
+}

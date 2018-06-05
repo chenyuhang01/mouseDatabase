@@ -1,0 +1,107 @@
+<div class="mat-elevation-z15 round-corner">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
+            <h2>
+                Mouse Table
+            </h2>
+        </div>
+        <div class="col-4 text-right">
+            <mat-form-field class="search">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <button *ngIf="!editenabled" class="csvbutton" mat-raised-button color="accent" (click)="editbuttonpressed()"><span>Edit  <i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></button>
+            <button *ngIf="editenabled" class="csvbutton" mat-raised-button color="warn" (click)="editbuttonpressed()"><span>Cancel Edit  <i class="fa fa-times" aria-hidden="true"></i></span></button>
+            <button *ngIf="editbuttonEnabled" class="csvbutton" mat-raised-button style="background-color: #8BC34A;color: white;" (click)="editConfirmButton()"><span>Confirm <i class="fa fa-check" aria-hidden="true"></i></span></button>
+        </div>
+        <div class="col-6 text-right">
+            <div class="button-row">
+                <button class="csvbutton" mat-raised-button color="primary" (click)="export_csv()"><span>Export CSV  <i class="fa fa-download" aria-hidden="true"></i></span></button>
+                <button class="csvbutton" mat-raised-button color="accent"><span>Import CSV  <i class="fa fa-upload" aria-hidden="true"></i></span></button>
+                <button id="insertmousebutton" class="csvbutton" mat-raised-button color="warn" (click)="insertmouseview()"><span>{{ insertmousechecked? insertmousebuttondisplay_closed : insertmousebuttondisplay_opened}}  <i *ngIf="!insertmousechecked" class="fa fa-angle-down" aria-hidden="true"></i>
+                    <i *ngIf="insertmousechecked" class="fa fa-angle-up" aria-hidden="true"></i></span></button>
+            </div>
+        </div>
+    </div>
+    <div class="row checkbox_row">
+        <div class="col-12">
+            Filtered Columns:
+            <ng-template ngFor let-item [ngForOf]="columnsToDisplay">
+                <mat-checkbox *ngIf="item!='Selection'" class="checkbox" id="{{item}}" (change)="checkValue($event)" checked="true">{{item}}</mat-checkbox>
+            </ng-template>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+
+
+            <table mat-table matSort [dataSource]="dataSource">
+                <!--1. Defining the all columns that are possible to be rendered in the tableview.
+                           So By using matColumnDef to set the column id.
+                           Set the column header in mat-header-cell with what data to be put along the 
+                           column based on given datasource.
+                        2. Define the rows and given the string arrays to determine which column to be rendered
+                           in the tableview. Notes: It must matches the column id.-->
+
+                <!-- Selection columns-->
+                <ng-container matColumnDef="select">
+                    <th mat-header-cell *matHeaderCellDef>
+                        <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()">
+                        </mat-checkbox>
+                    </th>
+                    <td mat-cell *matCellDef="let row">
+                        <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)">
+                        </mat-checkbox>
+                    </td>
+                </ng-container>
+
+                <!-- Physical Column -->
+                <ng-container matColumnDef="physical_id">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Physical ID</th>
+                    <td mat-cell *matCellDef="let mouse"> {{mouse.physical_id}} </td>
+                </ng-container>
+
+                <!-- Project Title Column -->
+                <ng-container matColumnDef="project_title">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Project Title</th>
+                    <td mat-cell *matCellDef="let mouse"> {{mouse?.project_title}} </td>
+                </ng-container>
+
+                <!-- Gender Column -->
+                <ng-container matColumnDef="gender">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Gender</th>
+                    <td mat-cell *matCellDef="let mouse"> {{mouse?.gender}} </td>
+                </ng-container>
+
+                <!-- Mouse Line Column -->
+                <ng-container matColumnDef="mouseline">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Mouse Line</th>
+                    <td mat-cell *matCellDef="let mouse"> {{mouse?.mouseline}} </td>
+                </ng-container>
+
+                <!-- PFA Liver Column -->
+                <ng-container matColumnDef="pfa_liver">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>PFA Liver</th>
+                    <td mat-cell *matCellDef="let mouse"> <span><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                </ng-container>
+
+                <!-- Freeze Down Liver Column -->
+                <ng-container matColumnDef="freezedown_liver">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>FreezeDown Liver</th>
+                    <td mat-cell *matCellDef="let mouse"> {{mouse.freezedown.liver}} </td>
+                </ng-container>
+
+                <!-- Row Definition-->
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr class="row_style" matTooltip='Press To View All Details' [matTooltipPosition]="position.value" [matTooltipShowDelay]="showDelay.value"
+                    mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selectRow(row)"></tr>
+            </table>
+
+            <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+        </div>
+    </div>
+</div>

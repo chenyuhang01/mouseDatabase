@@ -1,0 +1,1914 @@
+[
+  {
+    "physical_id": "4118B07",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": "A",
+    "freezedown_liver": "A"
+  },
+  {
+    "physical_id": "4118B08",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": "A",
+    "freezedown_liver": "A"
+  },
+  {
+    "physical_id": "4118B09",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4118B10",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4118A10",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117B01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4118B11",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117B04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4118B05",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4121A11",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "KRT5/MCl-1",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4121A14",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "KRT5/MCl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4122A01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "KRT5/MCl-1",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4122A02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "KRT5/MCl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4122A04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "KRT5/MCl-1",
+    "pfa_liver": "2 (1 IMCB and 1 in-house)",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "2984B01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": 2
+  },
+  {
+    "physical_id": "2984B08",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "2984A06",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "2984A07",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "2984A08",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "4119D01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1/Kai/Tomato",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4119D02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1/Kai/Tomato",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5502A01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5502A02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5502A04",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5502A05",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4118B02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117B02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117B03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "2984A01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "2984A02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 2
+  },
+  {
+    "physical_id": "2984A04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": "1 (not sure whether there were tiny tumor)"
+  },
+  {
+    "physical_id": "2985A06",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "2985A14",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "2984B02",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "2984B13",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lrg5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "4118B03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117C05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117C06",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lrg5-rrta-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4681B02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "Naked",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4681B04",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "Parital Naked (butt)",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4681B05",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "Naked",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4681B06",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "Parital Naked (butt)",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4118B04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": 2,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117B05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": 2,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117C07",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": 2,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117D20",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4118C03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4118D05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "(DOX 4 Days)4882D08",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/Tomato",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "(DOX 4 Days)4882D09",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/Tomato",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "(DOX 4 Days)4882D10",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/Tomato",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117D02",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117D03",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4118D11",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4882A06",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/Tomato",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4520C07",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/Tomato",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4520C08",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/Tomato",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "3760C13",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "3760C17",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "-",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5213C01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/MCl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5213C06",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/MCl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5213C07",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/MCl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "-",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4120C12",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5213D08",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/MCl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117D13",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4117D14",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "2985A04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": 2,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "4885C01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5644A07",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5644B01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5644B02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5644B03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5644B04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5644B05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4885D07",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "5502D01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5502D02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4926D09",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4926D10",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4926D11",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5644A03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5644A04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5644A05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5644A06",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6142A17",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6142A18",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6142A19",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6142B05",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6142B06",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6142B07",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/Tomato",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4885A03",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "TOM",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "2985A05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "2984B01",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "4885A01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "4885B07",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "4885B10",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": 1,
+    "freezedown_liver": 1
+  },
+  {
+    "physical_id": "4882A01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4882A02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4882A03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4882A04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "2985A03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4885A05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4466B02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4466B04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4466B06",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4466B07",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6670A01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6670A02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6670A07",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6670A08",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604A01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604A02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604A03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604A04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604A05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604A06",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604B14",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604B17",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604B18",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604B19",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5604B20",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "5213A09",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6438A06",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6438A07",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7141A02",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7141A04",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4885B06",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4885C04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7126A01",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7126A03",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7126A05",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7126A06",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6442A04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4885D06",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4885D08",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103C01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103C02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103C20",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103B09",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103B10",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "8088B11",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Krt5/Mcl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "8088B12",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Krt5/Mcl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "8088B14",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Mcl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "8088B17",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Mcl-1",
+    "pfa_liver": "2 Front Skin cassette (1 should be for #18)",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "8088B18",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Mcl-1",
+    "pfa_liver": "No Front Skin cassette",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": 56040000000,
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": 560400000000,
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": 5604000000000,
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": 56040000000000,
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": 560400000000000,
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": 5604000000000000,
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": 56040000000000000,
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103A02",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103A19",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103A20",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103B03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103B04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103B05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103B06",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103B07",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103B08",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6573A03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6573A04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6573A05",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6573A06",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6573A07",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4883A13",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "3760A20",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "3760B05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "3760C01",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566A11",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566A12",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566A13",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7048A04",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7048B17",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7048B18",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7048B19",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4466D18",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4466D17",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6668B01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6668B02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6573A02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6573A19",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Krt5/Gli1/Gli2",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "3760B01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "3760B03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4885B12",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "8116A11",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Prr14",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "8116A12",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Prr14",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566C06",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566C07",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566C08",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566C09",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7048A02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7048A03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7048B12",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7048B13",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7048B14",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6670B09",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6670B10",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6670B11",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6670C07",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6670C08",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6670C10",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/Kai/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "8088B19",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Mcl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7590A02",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Krt5/Mcl-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4469I02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4469I03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4469I04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4469I07",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "6668B05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5-rttA-GFP",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103D01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103D02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103D03",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7501A08",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7501A09",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7501A10",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7501A11",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103G01",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103G02",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103G04",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103G05",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103G06",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103G07",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103G08",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103G09",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7103G10",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Hogan/Mc1-1",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566D09",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566D10",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566D11",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566D12",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "7566D13",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Gli1/Kai/MCl-1/TOMATO",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4123A05",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4123A07",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "4123A09",
+    "project_title": "A",
+    "gender": "Female",
+    "mouseline": "Lgr5/TetO-Neu",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "2984B09",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  },
+  {
+    "physical_id": "2984B10",
+    "project_title": "A",
+    "gender": "Male",
+    "mouseline": "Lgr5/TOM",
+    "pfa_liver": "",
+    "freezedown_liver": ""
+  }
+]

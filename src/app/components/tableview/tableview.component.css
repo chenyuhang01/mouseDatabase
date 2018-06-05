@@ -1,0 +1,29 @@
+table{
+    width: 100%;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}
+
+.csvbutton{
+    margin: .5rem;
+}
+
+.search{
+    width: 100%;
+}
+
+.checkbox{
+    margin: .5rem;
+}
+
+.checkbox_row{
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.row_style:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}

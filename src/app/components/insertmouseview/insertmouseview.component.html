@@ -1,0 +1,115 @@
+<div class="mat-elevation-z15 round-corner">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-6 text-center">
+            <h4>Insert New Mouse</h4>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="row">
+        <div class="col-4 text-right">
+            <button class="formbutton" mat-raised-button color="accent" (click)="openBottomSheet()"><span>Add Category <i class="fa fa-plus" aria-hidden="true"></i></span></button>
+        </div>
+        <div class="col-4 offset-4 text-right">
+            <button class="formbutton" mat-raised-button color="warn" (click)="closepanel()"><span>Close Panel <i class="fa fa-times" aria-hidden="true"></i></span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-container">
+                <mat-form-field>
+                    <input matInput required placeholder="Physical ID">
+                </mat-form-field>
+                <form [formGroup]="projectForm">
+                    <mat-form-field style="width:100%;">
+                        <input type="text" matInput placeholder="Project title" formControlName="projectGroup" required [matAutocomplete]="autoGroup"
+                        />
+                        <mat-autocomplete #autoGroup="matAutocomplete">
+                            <mat-optgroup *ngFor="let group of projectGroupOptions | async" [label]="group.person">
+                                <mat-option *ngFor="let name of group.ProjectTitle" [value]="name">
+                                    {{ name }}
+                                </mat-option>
+                            </mat-optgroup>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </form>
+                <mat-form-field>
+                    <mat-select required placeholder="Gender">
+                        <mat-option value="Female">Female</mat-option>
+                        <mat-option value="Male">Male</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-select required placeholder="Mouse Line">
+                        <mat-option value="Lrg5-rrta-GFP">Lrg5-rrta-GFP</mat-option>
+                        <mat-option value="Lrg5-rttA-GFP">Lrg5-rttA-GFP</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-expansion-panel class="reason_expanarea">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Reason Of Experiement
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-form-field class="reason_textarea">
+                        <textarea rows="5" matInput placeholder="Start Writing here"></textarea>
+                    </mat-form-field>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="reason_expanarea">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            PFA Related Information
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Press to view detail
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+
+                    <mat-form-field class="inner-field">
+                        <input type="number" matInput placeholder="PFA Liver">
+                    </mat-form-field>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="reason_expanarea">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            FreezeDown Related Information
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Press to view detail
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+
+                    <mat-form-field class="inner-field">
+                        <input matInput placeholder="Freeze Liver">
+                    </mat-form-field>
+                </mat-expansion-panel>
+                <mat-expansion-panel class="reason_expanarea">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Choose Image
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Press to view detail
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <image-upload></image-upload>
+                </mat-expansion-panel>
+                <!-- 
+                    <mat-form-field>
+                        <textarea matInput placeholder=""></textarea>
+                    </mat-form-field> 
+                -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <div class="button-row">
+                <button class="formbutton" mat-raised-button color="primary" (click)="open()">Insert</button>
+                <button class="formbutton" mat-raised-button color="accent">Insert without clear</button>
+                <button class="formbutton" mat-raised-button color="warn">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>

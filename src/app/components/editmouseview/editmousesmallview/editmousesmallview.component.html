@@ -1,0 +1,97 @@
+<div class="mat-elevation-z24 card-margin">
+    <div class="row">
+        <div class="col-12 text-center">
+            Editing Mouse ({{prePhysicalID}})
+        </div>
+    </div>
+    <mat-form-field class="full-width">
+        <input matInput required placeholder="Physical ID" value="{{prePhysicalID}}">
+    </mat-form-field>
+    <form [formGroup]="projectForm">
+        <mat-form-field class="full-width">
+            <input class="projectID" type="text" matInput placeholder="Project title" formControlName="projectGroup" required [matAutocomplete]="autoGroup"
+                [formControl]="preProjectTitle" />
+            <mat-autocomplete #autoGroup="matAutocomplete" (optionSelected)="optionselected($event)">
+                <mat-optgroup *ngFor="let group of projectGroupOptions | async" [label]="group.person">
+                    <mat-option *ngFor="let name of group.ProjectTitle" [value]="name">
+                        {{ name }}
+                    </mat-option>
+                </mat-optgroup>
+            </mat-autocomplete>
+        </mat-form-field>
+    </form>
+    <mat-form-field class="full-width">
+        <mat-select required placeholder="Gender" [formControl]="preGender">
+            <mat-option value="Female">Female</mat-option>
+            <mat-option value="Male">Male</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-select required placeholder="Mouse Line" [formControl]="preMouseLine">
+            <mat-option value="Lrg5-rrta-GFP">Lrg5-rrta-GFP</mat-option>
+            <mat-option value="Lrg5-rttA-GFP">Lrg5-rttA-GFP</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <!-- Expansion area-->
+
+    <mat-expansion-panel class="reason_expanarea">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Reason Of Experiement
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-form-field class="reason_textarea">
+            <textarea rows="5" matInput placeholder="Start Writing here" value="{{preReason}}"></textarea>
+        </mat-form-field>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="reason_expanarea">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                PFA Related Information
+            </mat-panel-title>
+            <mat-panel-description>
+                Press to view detail
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <mat-form-field class="inner-field">
+            <input type="number" matInput placeholder="PFA Liver">
+        </mat-form-field>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="reason_expanarea">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                FreezeDown Related Information
+            </mat-panel-title>
+            <mat-panel-description>
+                Press to view detail
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <mat-form-field class="inner-field">
+            <input matInput placeholder="Freeze Liver">
+        </mat-form-field>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="reason_expanarea">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Choose Image
+            </mat-panel-title>
+            <mat-panel-description>
+                Press to view detail
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <img style="width:100%;margin:.5rem;" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <image-upload></image-upload>
+    </mat-expansion-panel>
+    <div class="row">
+        <div class="col-6 text-left">
+            <button class="formbutton" mat-raised-button color="primary" (click)="open()">Update</button>
+        </div>
+        <div class="col-6 text-right">
+            <button class="formbutton" mat-raised-button color="warn" (click)="cancelButtonClicked()">Exit</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="parentcard">
+    <div class="row">
+        <div class="col-6" *ngFor="let mouse of mouselist;let i = index">
+            <editmousesmallview 
+            [mouse]="mouse" 
+            [index]="i"
+            (cancelevent)="canceleventHandler($event)"
+            ></editmousesmallview>
+        </div>
+    </div>
+</div>
