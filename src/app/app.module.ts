@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 
 //Material Modules
 import { 
@@ -84,7 +84,8 @@ import { Angular2Csv } from 'angular2-csv/Angular2-csv';
     MatTooltipModule,
     MatCardModule,
     ImageUploadModule.forRoot(),
-    MatIconModule
+    MatIconModule,
+    LazyLoadImagesModule
   ],
   providers: [
     mouseservice,

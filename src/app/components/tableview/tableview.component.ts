@@ -277,7 +277,7 @@ export class tableview implements OnInit {
 
     openDialog(row): void {
         let dialogRef = this.dialog.open(DialogView, {
-            width: '1000px',
+            width: '800px',
             data: { row: row }
         });
 
