@@ -5,9 +5,10 @@ import { Observable } from 'rxjs';
 import { startWith, map } from 'rxjs/operators';
 import { FormGroup, FormBuilder } from '@angular/forms';
 
-export interface ProjectTitle {
-    person: string;
-    ProjectTitle: string[];
+
+interface CheckBoxModel{
+    id: string,
+    displayname: string
 }
 
 @Component({
@@ -15,27 +16,54 @@ export interface ProjectTitle {
     templateUrl: './insertmouseview.component.html',
     styleUrls: ['./insertmouseview.component.css']
 })
-export class InsertMouseView implements OnInit {
+export class InsertMouseView{
 
     @Output('closepanel') closepanelevent = new EventEmitter<any>();
 
     //Mock group source
-    projectGroups: ProjectTitle[] = [{
-        person: 'Shih Han',
-        ProjectTitle: ['AA Project', 'Hair particles']
-    }, {
-        person: 'Hui San',
-        ProjectTitle: ['MouseLine Investigation', 'BB Project']
-    }, {
-        person: 'Alex',
-        ProjectTitle: ['Delaware']
-    }]
 
-    projectGroupOptions: Observable<ProjectTitle[]>;
+    projectTitles: string[] = [
+        'AA Project',
+        'Hair particles',
+        'MouseLine Investigation',
+        'BB Project',
+        'Delaware'
+    ]
 
-    projectForm: FormGroup = this.fb.group({
-        projectGroup: '',
-    });
+    mouselines: string[] = [
+        'Lrg5-rrta-GFP',
+        'Lrg5-rttA-GFP'
+    ]
+
+    genotypes: string[] = [
+        'AAAA',
+        'BBBB',
+        'CCCC'
+    ]
+
+    phenotypes: string[] = [
+        'AAA',
+        'BBB',
+        'CCC'
+    ]
+
+    //PFA CheckBox model
+    pfamodels: CheckBoxModel[] = [
+        {id: 'pfa_liver_checkbox', displayname: 'Liver'},
+        {id: 'pfa_liver_tumor_checkbox', displayname: 'Liver With Tumor'},
+        {id: 'pfa_small_intenstine_checkbox', displayname: 'Small Intenstine'},
+        {id: 'pfa_small_intenstine_tumor_checkbox', displayname: 'SMall Intenstine With Tumor'},
+        {id: 'pfa_skin_checkbox', displayname: 'Skin'},
+        {id: 'pfa_skin_hair_checkbox', displayname: 'Skin With Hair'},
+        {id: 'pfa_other_checkbox', displayname: 'Others'}
+    ]
+
+    //FreezeDown Model
+    freezedownmodels: CheckBoxModel[] = [
+        {id: 'freeze_down_liver_checkbox', displayname: 'Liver'},
+        {id: 'freeze_down_liver_tumor_checkbox', displayname: 'Liver With Tumor'},
+        {id: 'freeze_down_other_checkbox', displayname: 'Others'}
+    ]
 
     constructor(
         public snackBar: MatSnackBar,
@@ -56,31 +84,22 @@ export class InsertMouseView implements OnInit {
         this.bottomSheet.open(BottomMenu);
     }
 
-    closepanel(): void{
+    closepanel(): void {
         this.closepanelevent.emit();
     }
 
-    ngOnInit() {
-        this.projectGroupOptions = this.projectForm.get('projectGroup')!.valueChanges
-            .pipe(
-                startWith(''),
-                map(val => this.filterGroup(val))
-            );
-    }
 
-    filterGroup(val: string): ProjectTitle[] {
-        if (val) {
-            return this.projectGroups
-                .map(group => ({ person: group.person, ProjectTitle: this._filter(group.ProjectTitle, val) }))
-                .filter(group => group.ProjectTitle.length > 0);
+    /* Retrieved Date Data */
+    private birthDate: Date;
+    private deathDate: Date;
+
+    /* Date related callbacks */
+    dateTrigger(event, result){
+        if(result.targetElement.id == "birthdatepicker"){
+            this.birthDate = result.value;
+        }else{
+            this.deathDate = result.value;
         }
-
-        return this.projectGroups;
-    }
-
-    private _filter(opt: string[], val: string) {
-        const filterValue = val.toLowerCase();
-        return opt.filter(item => item.toLowerCase().startsWith(filterValue));
     }
 }
 

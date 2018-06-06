@@ -8,44 +8,81 @@
     </div>
     <div class="row">
         <div class="col-4 text-right">
-            <button class="formbutton" mat-raised-button color="accent" (click)="openBottomSheet()"><span>Add Category <i class="fa fa-plus" aria-hidden="true"></i></span></button>
+            <button class="formbutton" mat-raised-button color="accent" (click)="openBottomSheet()">
+                <span>Add Category
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </span>
+            </button>
         </div>
         <div class="col-4 offset-4 text-right">
-            <button class="formbutton" mat-raised-button color="warn" (click)="closepanel()"><span>Close Panel <i class="fa fa-times" aria-hidden="true"></i></span></button>
+            <button class="formbutton" mat-raised-button color="warn" (click)="closepanel()">
+                <span>Close Panel
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+            </button>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
             <div class="form-container">
+                <!-- Physical ID -->
                 <mat-form-field>
                     <input matInput required placeholder="Physical ID">
                 </mat-form-field>
-                <form [formGroup]="projectForm">
-                    <mat-form-field style="width:100%;">
-                        <input type="text" matInput placeholder="Project title" formControlName="projectGroup" required [matAutocomplete]="autoGroup"
-                        />
-                        <mat-autocomplete #autoGroup="matAutocomplete">
-                            <mat-optgroup *ngFor="let group of projectGroupOptions | async" [label]="group.person">
-                                <mat-option *ngFor="let name of group.ProjectTitle" [value]="name">
-                                    {{ name }}
-                                </mat-option>
-                            </mat-optgroup>
-                        </mat-autocomplete>
-                    </mat-form-field>
-                </form>
+
+                <!-- Project Title -->
+                <mat-form-field>
+                    <mat-select required placeholder="Project Title">
+                        <mat-option *ngFor="let title of projectTitles" value="{{title}}">{{title}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+
+                <!-- Mouse Line -->
+                <mat-form-field>
+                    <mat-select required placeholder="Mouse Line">
+                        <mat-option *ngFor="let mouseline of mouselines" value="{{mouseline}}">{{mouseline}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <!-- Group two date pickers to one row-->
+                <div class="row">
+                    <div class="col-6">
+                        <!-- Birth Date -->
+                        <mat-form-field>
+                            <input id="birthdatepicker" matInput [matDatepicker]="birthDatepicker" placeholder="Birth Date" (dateChange)="dateTrigger('change', $event)">
+                            <mat-datepicker-toggle matSuffix [for]="birthDatepicker"></mat-datepicker-toggle>
+                            <mat-datepicker #birthDatepicker></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <!-- Death Date -->
+                        <!-- Disabled previous date if birthDate is set-->
+                        <mat-form-field>
+                            <input id="deathdatepicker" matInput [min]="birthDate" [matDatepicker]="deathDatepicker" placeholder="Death Date" (dateChange)="dateTrigger('change', $event)">
+                            <mat-datepicker-toggle matSuffix [for]="deathDatepicker"></mat-datepicker-toggle>
+                            <mat-datepicker #deathDatepicker></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <!-- Gender -->
                 <mat-form-field>
                     <mat-select required placeholder="Gender">
                         <mat-option value="Female">Female</mat-option>
                         <mat-option value="Male">Male</mat-option>
                     </mat-select>
                 </mat-form-field>
-
+                
+                <!-- Geno Type -->
                 <mat-form-field>
-                    <mat-select required placeholder="Mouse Line">
-                        <mat-option value="Lrg5-rrta-GFP">Lrg5-rrta-GFP</mat-option>
-                        <mat-option value="Lrg5-rttA-GFP">Lrg5-rttA-GFP</mat-option>
+                    <mat-select required placeholder="Geno Type">
+                        <mat-option *ngFor="let genotype of genotypes" value="{{genotype}}">{{genotype}}</mat-option>
                     </mat-select>
                 </mat-form-field>
+
+                
+                
                 <mat-expansion-panel class="reason_expanarea">
                     <mat-expansion-panel-header>
                         <mat-panel-title>
@@ -65,10 +102,7 @@
                             Press to view detail
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-
-                    <mat-form-field class="inner-field">
-                        <input type="number" matInput placeholder="PFA Liver">
-                    </mat-form-field>
+                    <mat-checkbox *ngFor="let pfa_model of pfamodels" class="checkbox" [(ngModel)]="pfa_model.id">{{pfa_model.displayname}}</mat-checkbox>
                 </mat-expansion-panel>
                 <mat-expansion-panel class="reason_expanarea">
                     <mat-expansion-panel-header>
@@ -80,9 +114,7 @@
                         </mat-panel-description>
                     </mat-expansion-panel-header>
 
-                    <mat-form-field class="inner-field">
-                        <input matInput placeholder="Freeze Liver">
-                    </mat-form-field>
+                    <mat-checkbox *ngFor="let freezdown_model of freezedownmodels" class="checkbox" [(ngModel)]="freezdown_model.id">{{freezdown_model.displayname}}</mat-checkbox>
                 </mat-expansion-panel>
                 <mat-expansion-panel class="reason_expanarea">
                     <mat-expansion-panel-header>

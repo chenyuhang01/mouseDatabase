@@ -21,7 +21,9 @@ import {
   MatAutocompleteModule,
   MatTooltipModule,
   MatCardModule,
-  MatIconModule
+  MatIconModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 } 
 from '@angular/material';
 import { HttpModule } from '@angular/http';
@@ -84,7 +86,9 @@ import { Angular2Csv } from 'angular2-csv/Angular2-csv';
     MatCardModule,
     ImageUploadModule.forRoot(),
     MatIconModule,
-    LazyLoadImagesModule
+    LazyLoadImagesModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [
     mouseservice,
