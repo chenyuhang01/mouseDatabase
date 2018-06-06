@@ -7,12 +7,19 @@ import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 
 import { ProjectTitle } from '../../insertmouseview/insertmouseview.component';
 import { Mouse } from '../../model/mouse.component';
+
+
+interface Record{
+    parameter: string;
+    edited: boolean;       
+}
+
 @Component({
-    selector: 'editmousesmallview',
-    templateUrl: './editmousesmallview.component.html',
-    styleUrls: ['./editmousesmallview.component.css']
+    selector: 'editmousegroupview',
+    templateUrl: './editmousegroupview.component.html',
+    styleUrls: ['./editmousegroupview.component.css']
 })
-export class EditMouseViewSmall {
+export class EditMouseViewGroup {
 
 
     //Mock group source
@@ -54,21 +61,43 @@ export class EditMouseViewSmall {
     private preReason: string;
     private newValuechosen: boolean = false;
 
+
+
+
+    private recordEditTracker: Record[] = [
+        {
+            parameter: 'gender',
+            edited: false
+        },
+        {
+            parameter: 'project_title',
+            edited: false
+        },
+        {
+            parameter: 'mouseline',
+            edited: false
+        },
+        {
+            parameter: 'pfa_liver',
+            edited: false
+        },
+        {
+            parameter: 'freezedown_liver',
+            edited: false
+        }    
+    ]
+
     ngOnInit() {
         this.projectGroupOptions = this.projectForm.get('projectGroup')!.valueChanges
             .pipe(
                 startWith(''),
                 map(val => this.filterGroup(val))
             );
-        
-        this.prePhysicalID = this.mouse.physical_id;
-        this.preProjectTitle = new FormControl(this.mouse.project_title);
-        this.preGender = new FormControl(this.mouse.gender);
-        this.preMouseLine = new FormControl(this.mouse.mouseline);
-        this.preReason = 'Testing Reason';
-
-
-       
+            this.prePhysicalID = '';
+            this.preProjectTitle = new FormControl('');
+            this.preGender = new FormControl('');
+            this.preMouseLine = new FormControl('');
+            this.preReason = '';
     }
 
     filterGroup(val: string): ProjectTitle[] {
@@ -89,5 +118,15 @@ export class EditMouseViewSmall {
     @Output('cancelevent') cancelevent = new EventEmitter<any>();
     cancelButtonClicked(){
         this.cancelevent.emit(this.index);
+    }
+
+    /* Group Handler */
+    onValueChanged(event){
+
+        this.recordEditTracker.map(record => {
+            if(record.parameter == event.source.id){
+                record.edited = true;
+            }
+        })
     }
 }

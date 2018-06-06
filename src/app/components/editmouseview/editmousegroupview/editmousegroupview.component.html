@@ -1,0 +1,74 @@
+<div class="mat-elevation-z24 card-margin">
+    <div class="row">
+        <div class="col-12 text-center">
+            Group editing mouse
+        </div>
+    </div>
+
+    <mat-form-field class="full-width">
+        <mat-select id="project_title" (selectionChange)="onValueChanged($event)" required placeholder="Project Title" [formControl]="preProjectTitle">
+            <mat-option value="AA Project">AA Project</mat-option>
+            <mat-option value="BB Project">BB Project</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <mat-select id="gender" (selectionChange)="onValueChanged($event)" required placeholder="Gender" [formControl]="preGender">
+            <mat-option value="Female">Female</mat-option>
+            <mat-option value="Male">Male</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-select id="mouseline" (selectionChange)="onValueChanged($event)" required placeholder="Mouse Line" [formControl]="preMouseLine">
+            <mat-option value="Lrg5-rrta-GFP">Lrg5-rrta-GFP</mat-option>
+            <mat-option value="Lrg5-rttA-GFP">Lrg5-rttA-GFP</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <!-- Expansion area-->
+
+    <mat-expansion-panel class="reason_expanarea">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Reason Of Experiement
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-form-field class="reason_textarea">
+            <textarea id="reason" (onchange)="onValueChanged($event)" rows="5" matInput placeholder="Start Writing here" value="{{preReason}}"></textarea>
+        </mat-form-field>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="reason_expanarea">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                PFA Related Information
+            </mat-panel-title>
+            <mat-panel-description>
+                Press to view detail
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <mat-checkbox id="pfa_liver" (change)="onValueChanged($event)" >Liver</mat-checkbox>
+    </mat-expansion-panel>
+    <mat-expansion-panel class="reason_expanarea">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                FreezeDown Related Information
+            </mat-panel-title>
+            <mat-panel-description>
+                Press to view detail
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <mat-checkbox id="freezedown_liver" (change)="onValueChanged($event)">Liver</mat-checkbox>
+
+    </mat-expansion-panel>
+
+    <div class="row">
+        <div class="col-6 text-left">
+            <button class="formbutton" mat-raised-button color="primary" (click)="open()">Update All</button>
+        </div>
+        <div class="col-6 text-right">
+            <button class="formbutton" mat-raised-button color="warn" (click)="cancelButtonClicked()">Cancel</button>
+        </div>
+    </div>
+</div>

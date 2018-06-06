@@ -21,7 +21,8 @@ import {
   MatAutocompleteModule,
   MatTooltipModule,
   MatCardModule,
-  MatIconModule
+  MatIconModule,
+  MatDividerModule
 } 
 from '@angular/material';
 import { HttpModule } from '@angular/http';
@@ -35,6 +36,9 @@ import { DialogView } from './components/tableview/dialogview/dialogview.compone
 import { AppComponent } from './app.component';
 import { EditMouseView } from './components/editmouseview/editmouseview.component';
 import { EditMouseViewSmall } from './components/editmouseview/editmousesmallview/editmousesmallview.component';
+
+import { EditMouseViewGroup } from './components/editmouseview/editmousegroupview/editmousegroupview.component';
+
 //Services module
 import { mouseservice } from '../app/services/dataservice/mouseservice.service';
 import { DynamicLoader } from '../app/services/dynamicloader/dynamicloader.service';
@@ -52,7 +56,8 @@ import { Angular2Csv } from 'angular2-csv/Angular2-csv';
     BottomMenu,
     DialogView,
     EditMouseView,
-    EditMouseViewSmall
+    EditMouseViewSmall,
+    EditMouseViewGroup
   ],
   entryComponents: [
     BottomMenu,
@@ -84,7 +89,8 @@ import { Angular2Csv } from 'angular2-csv/Angular2-csv';
     MatCardModule,
     ImageUploadModule.forRoot(),
     MatIconModule,
-    LazyLoadImagesModule
+    LazyLoadImagesModule,
+    MatDividerModule
   ],
   providers: [
     mouseservice,

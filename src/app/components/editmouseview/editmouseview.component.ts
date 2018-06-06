@@ -2,6 +2,8 @@ import { Component, ViewContainerRef, ViewChild, OnInit, Input, NgZone, EventEmi
 import { EditMouseViewSmall } from './editmousesmallview/editmousesmallview.component';
 import { Mouse } from '../model/mouse.component';
 import { FormControl } from '@angular/forms';
+
+
 @Component({
     selector: 'editmouseview',
     templateUrl: './editmouseview.component.html',
@@ -10,7 +12,11 @@ import { FormControl } from '@angular/forms';
 export class EditMouseView implements OnInit{
 
     @Input() mouselist;
+    @Input() groupEditFlag: boolean;
     @Output('cancelButtonEvent') cancelButtonEvent = new EventEmitter<any>();
+
+    @Input() GroupEditFlag: boolean;
+
     constructor(public zone: NgZone){
         
     }
@@ -23,4 +29,8 @@ export class EditMouseView implements OnInit{
         this.mouselist.splice(index, 1);
         this.cancelButtonEvent.emit(this.mouselist);
     }
+
+
+
+    
 }

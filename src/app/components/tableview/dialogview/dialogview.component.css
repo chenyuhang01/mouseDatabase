@@ -9,7 +9,7 @@
   }
 
   .grid-gallery{
-        height:400px;
+        height:300px;
         overflow-y: scroll;
         overflow-x: hidden;
   }
@@ -27,7 +27,7 @@
     }
 
   .scrollable{
-    height:800px;
+    height:600px;
     overflow-y: scroll;
   }
 .card-item{

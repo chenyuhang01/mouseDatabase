@@ -1,4 +1,9 @@
-<div class="parentcard">
+<!--
+    Using GroupEditFlag to hide or show the individual editing or
+    group edit panels
+-->
+
+<div *ngIf="!GroupEditFlag" class="parentcard">
     <div class="row">
         <div class="col-6" *ngFor="let mouse of mouselist;let i = index">
             <editmousesmallview 
@@ -6,6 +11,16 @@
             [index]="i"
             (cancelevent)="canceleventHandler($event)"
             ></editmousesmallview>
+        </div>
+    </div>
+</div>
+
+<!-- Group Edit Panels-->
+<!-- With group edit, it will passed the flag to indicate whether this is the group edit or individual editing -->
+<div *ngIf="GroupEditFlag" class="parentcard">
+    <div class="row">
+        <div class="col-6">
+            <editmousegroupview></editmousegroupview>
         </div>
     </div>
 </div>

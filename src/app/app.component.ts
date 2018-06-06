@@ -13,7 +13,7 @@ export class AppComponent {
   insertmousechecked_flag = false;
   editmousechecked_flag = true;
   mouselist: Mouse[];
-
+  groupEditFlag: boolean = false;
   @ViewChild('tableview') tableview;
   constructor(public renderer2: Renderer2) {
     
@@ -36,6 +36,11 @@ export class AppComponent {
   confirmButtonEvent(mouselistparam){
 
     this.mouselist = mouselistparam;
+    this.groupEditFlag = false;
+  }
+
+  GroupconfirmButtonEvent(){
+    this.groupEditFlag = true;
   }
   
   cancelButtonEventHandler(mouselist){

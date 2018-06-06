@@ -2,7 +2,10 @@
 <div class="container tableviewclass">
     <div class="row">
         <div class="col-12">
-            <tableview #tableview (insertmouseviewevent)="insertmouseview()" (confirmButtonviewevent)="confirmButtonEvent($event)"></tableview>
+            <tableview #tableview 
+            (insertmouseviewevent)="insertmouseview()" 
+            (confirmButtonviewevent)="confirmButtonEvent($event)"
+            (groupconfirmButtonviewevent)="GroupconfirmButtonEvent()"></tableview>
         </div>
     </div>
 </div>
@@ -12,6 +15,7 @@
             <editmouseview #editmouseview
             [mouselist]="mouselist"
             (cancelButtonEvent)="cancelButtonEventHandler($event)"
+            [GroupEditFlag]="groupEditFlag"
             ></editmouseview>
         </div>
     </div>

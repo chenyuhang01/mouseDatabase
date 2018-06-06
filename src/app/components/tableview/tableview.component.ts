@@ -34,7 +34,7 @@ export class tableview implements OnInit {
 
     @Output('insertmouseviewevent') insertmouseviewevent = new EventEmitter<any>();
     @Output('confirmButtonviewevent') confirmButtonviewevent = new EventEmitter<any>();
-
+    @Output('groupconfirmButtonviewevent') groupconfirmButtonviewevent = new EventEmitter<any>();
     //Table Header file
     columnsToDisplay = [
         'Selection',
@@ -239,6 +239,12 @@ export class tableview implements OnInit {
         this.ToggleColumns(null, 0);
     }
 
+    GroupeditConfirmButton(): void{
+        this.groupconfirmButtonviewevent.emit();
+        this.editConfirmbuttonEnabled = !this.editConfirmbuttonEnabled;
+    }
+
+
     public closeEditEnabled() {
         this.selection.clear();
         this.editConfirmbuttonEnabled = false;
@@ -277,7 +283,7 @@ export class tableview implements OnInit {
 
     openDialog(row): void {
         let dialogRef = this.dialog.open(DialogView, {
-            width: '1000px',
+            width: '800px',
             data: { row: row }
         });
 

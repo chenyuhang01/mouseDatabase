@@ -16,7 +16,8 @@
         <div class="col-6">
             <button *ngIf="!editButtonenabled" class="csvbutton" mat-raised-button color="accent" (click)="editbuttonpressed()"><span>Edit  <i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></button>
             <button *ngIf="editButtonenabled" class="csvbutton" mat-raised-button color="warn" (click)="editbuttonpressed()"><span>Cancel Edit  <i class="fa fa-times" aria-hidden="true"></i></span></button>
-            <button *ngIf="editConfirmbuttonEnabled" class="csvbutton" mat-raised-button style="background-color: #8BC34A;color: white;" (click)="editConfirmButton()"><span>Confirm <i class="fa fa-check" aria-hidden="true"></i></span></button>
+            <button *ngIf="editConfirmbuttonEnabled" class="csvbutton" mat-raised-button style="background-color: #8BC34A;color: white;" (click)="editConfirmButton()"><span>Individual Edit<i class="fa fa-check" aria-hidden="true"></i></span></button>
+            <button *ngIf="editConfirmbuttonEnabled" class="csvbutton" mat-raised-button style="background-color: rgb(74, 195, 185);color: white;" (click)="GroupeditConfirmButton()"><span>Group Edit<i class="fa fa-check" aria-hidden="true"></i></span></button>
         </div>
         <div class="col-6 text-right">
             <div class="button-row">
