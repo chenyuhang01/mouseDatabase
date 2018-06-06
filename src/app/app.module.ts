@@ -44,7 +44,6 @@ import { ImageUploadModule } from "angular2-image-upload";
 import { Angular2Csv } from 'angular2-csv/Angular2-csv';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -93,4 +92,8 @@ import { Angular2Csv } from 'angular2-csv/Angular2-csv';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(){
+    
+  }
+}

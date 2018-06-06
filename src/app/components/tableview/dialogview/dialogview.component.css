@@ -8,9 +8,10 @@
       margin-bottom: 1rem;
   }
 
-  .imagegallery{
-        height:300px;
-      overflow-y: scroll;
+  .grid-gallery{
+        height:400px;
+        overflow-y: scroll;
+        overflow-x: hidden;
   }
 
   .image-card{
@@ -18,7 +19,55 @@
       margin-right: -1.5rem;
   }
 
+  @media (min-width: 991px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+        .adjust-right{
+            padding-left: 5rem;
+        }
+    }
+
   .scrollable{
-    height:600px;
+    height:800px;
     overflow-y: scroll;
+  }
+.card-item{
+    width: 100%;
+}
+  /* Image Gallery*/
+
+  .gallery-block.grid-gallery{
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  
+  .gallery-block.grid-gallery .heading{
+      margin-bottom: 50px;
+      text-align: center;
+  }
+  
+  .gallery-block.grid-gallery .heading h2{
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+  }
+  
+  .gallery-block.grid-gallery a:hover{
+    opacity: 0.8;
+  }
+  
+  .gallery-block.grid-gallery .item img{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+  }
+  
+  .gallery-block.grid-gallery .item{
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 576px) {
+  
+    .gallery-block.grid-gallery .scale-on-hover:hover{
+      transform: scale(1.05);
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+    }
   }

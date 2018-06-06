@@ -27,6 +27,7 @@
     "angular2-csv": "^0.2.5",
     "angular2-focus": "^1.1.2",
     "angular2-image-upload": "^1.0.0-rc.1",
+    "baguettebox.js": "^1.10.0",
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
