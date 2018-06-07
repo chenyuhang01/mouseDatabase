@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
+
 
 //Material Modules
 import { 
@@ -39,12 +39,13 @@ import { EditMouseView } from './components/editmouseview/editmouseview.componen
 import { EditMouseViewSmall } from './components/editmouseview/editmousesmallview/editmousesmallview.component';
 //Services module
 import { mouseservice } from '../app/services/dataservice/mouseservice.service';
+import { categoryservice } from '../app/services/dataservice/categoryservice.service';
 import { DynamicLoader } from '../app/services/dynamicloader/dynamicloader.service';
 
 //3rd Party image uploader module
 import { ImageUploadModule } from "angular2-image-upload";
 import { Angular2Csv } from 'angular2-csv/Angular2-csv';
-
+import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 
 @NgModule({
   declarations: [
@@ -92,6 +93,7 @@ import { Angular2Csv } from 'angular2-csv/Angular2-csv';
   ],
   providers: [
     mouseservice,
+    categoryservice,
     DynamicLoader
   ],
   bootstrap: [AppComponent]
