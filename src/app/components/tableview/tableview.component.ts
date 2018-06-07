@@ -25,6 +25,8 @@ import { DialogView } from './dialogview/dialogview.component';
 
 import { SelectionModel } from '@angular/cdk/collections';
 
+import { MONTH} from '../../constants/constants';
+
 @Component({
     selector: 'tableview',
     templateUrl: './tableview.component.html',
@@ -38,33 +40,60 @@ export class tableview implements OnInit {
     //Table Header file
     columnsToDisplay = [
         'Selection',
+        'GenoType Confirmation',
         'Physical ID',
-        'Project title',
-        'Gender',
         'Mouse Line',
+        'Birth Date',
+        'Death Date',
+        'Age',
+        'Gender',
+        'Geno Type',
+        'PhenoType',
+        'Project title',
+        'Purpose',
+        'Sacrificer',
         'PFA Liver',
-        'FreezeDown Liver'
+        'PFA Liver Tumor',
+        'PFA Small Intenstine',
+        'PFA Small Intenstine With Tumor',
+        'PFA Skin',
+        'PFA Skin With Hair',
+        'PFA Other',
+        'FreezeDown Liver',
+        'FreezeDown Liver Tumor',
+        'FreezeDown Other'
     ];
 
     //It stores the original columns
     originalColumns = [
-        { id: 'select', checked: false },
-        { id: 'physical_id', checked: true },
-        { id: 'project_title', checked: true },
-        { id: 'gender', checked: true },
-        { id: 'mouseline', checked: true },
-        { id: 'pfa_liver', checked: true },
-        { id: 'freezedown_liver', checked: true },
+        { id: 'select', display: this.columnsToDisplay[0], checked: false },
+        { id: 'genotype_confirmation', display: this.columnsToDisplay[1], checked: false },
+        { id: 'physical_id', display: this.columnsToDisplay[2], checked: false },
+        { id: 'mouseline', display: this.columnsToDisplay[3], checked: false },
+        { id: 'birthdate', display: this.columnsToDisplay[4], checked: false },
+        { id: 'deathdate', display: this.columnsToDisplay[5], checked: false },
+        { id: 'age', display: this.columnsToDisplay[6], checked: false },
+        { id: 'gender', display: this.columnsToDisplay[7], checked: false },
+        { id: 'genotype', display: this.columnsToDisplay[8], checked: false },
+        { id: 'phenotype', display: this.columnsToDisplay[9], checked: false },
+        { id: 'projecttitle', display: this.columnsToDisplay[10], checked: false },
+        { id: 'purpose', display: this.columnsToDisplay[11], checked: false },
+        { id: 'sacrificer', display: this.columnsToDisplay[12], checked: false },
+        { id: 'pfa_liver', display: this.columnsToDisplay[13], checked: false },
+        { id: 'pfa_liver_tumor', display: this.columnsToDisplay[14], checked: false },
+        { id: 'pfa_small_intenstine', display: this.columnsToDisplay[15], checked: false },
+        { id: 'pfa_small_intenstine_tumor', display: this.columnsToDisplay[16], checked: false },
+        { id: 'pfa_skin', display: this.columnsToDisplay[17], checked: false },
+        { id: 'pfa_skin_hair', display: this.columnsToDisplay[18], checked: false },
+        { id: 'pfa_other', display: this.columnsToDisplay[19], checked: false },
+        { id: 'freezedown_liver', display: this.columnsToDisplay[20], checked: false },
+        { id: 'freezedown_liver_tumor', display: this.columnsToDisplay[21], checked: false },
+        { id: 'freezedown_other', display: this.columnsToDisplay[22], checked: false },
     ]
 
     //The column to be displayed
     displayedColumns = [
-        'physical_id',
-        'project_title',
-        'gender',
-        'mouseline',
-        'pfa_liver',
-        'freezedown_liver'
+
     ];
 
     //Create datasoucre for mat table
@@ -97,31 +126,64 @@ export class tableview implements OnInit {
 
                 return data[sortHeaderId];
             };
-
         });
+
+        //Toggles the init columns
+
+        //Toggle Physical ID Columns
+        this.ToggleColumns(true, 2);
+
+        //Toogle MouseLine 
+        this.ToggleColumns(true, 3);
+
+        //Toogle Geno Type 
+        this.ToggleColumns(true, 8);
+
+
     }
 
     constructor(
         private mouseDataservice: mouseservice,
         public dialog: MatDialog) {
-
+            
     }
 
 
     //convert json data array from server to mouse models in angular 2 web app
     jsonToMouse() {
         this.datalist = this.datalist.map((data) => {
-            let pfa: PFA = new PFA(data.pfa_liver);
-            let freezedown: FreezeDown = new FreezeDown(data.freezedown_liver);
+            let pfa: PFA = new PFA(
+                data.pfa_liver == 'TRUE' ? true : false,
+                data.pfa_liver_tumor == 'TRUE' ? true : false,
+                data.pfa_small_intenstine == 'TRUE' ? true : false,
+                data.pfa_small_intenstine_tumor == 'TRUE' ? true : false,
+                data.pfa_skin == 'TRUE' ? true : false,
+                data.pfa_skin_hair == 'TRUE' ? true : false,
+                data.pfa_other == 'TRUE' ? true : false
+            );
+            let freezedown: FreezeDown = new FreezeDown(
+                data.freezedown_liver == 'TRUE' ? true : false,
+                data.freezedown_liver_tumor == 'TRUE' ? true : false,
+                data.freezedown_other == 'TRUE' ? true : false
+            );
 
             data = new Mouse(
                 data.physical_id,
-                data.project_title,
                 data.gender,
                 data.mouseline,
+                new Date(data.birthdate),
+                new Date(data.deathdate),
+                data.genotype,
+                data.genotype_confirmation,
+                data.phenotype,
+                data.projecttitle,
+                data.sacrificer,
+                data.purpose,
+                data.comment,
                 '',
                 pfa,
-                freezedown);
+                freezedown
+            );
 
             return data;
         });
@@ -150,15 +212,31 @@ export class tableview implements OnInit {
 
     export_csv() {
         //convert mouse array data into json data
-        let jsonData = this.dataSource.filteredData.map((data: Mouse) => {
+        let jsonData = this.dataSource.sortData(this.dataSource.filteredData,this.dataSource.sort).map((data: Mouse) => {
 
             let jsonObject = {
+                genotype_confirmation: data.genotype_confirmation,
                 physical_id: data.physical_id,
-                project_title: data.project_title,
-                gender: data.gender,
                 mouseline: data.mouseline,
+                birthdate: data.birthdate.toDateString(),
+                deathdate: data.deathdate.toDateString(),
+                age: 34,
+                gender: data.gender,
+                genotype: data.genotype,
+                phenotype: data.phenotype,
+                projecttitle: data.project_title,
+                purpose: data.purpose,
+                sacrificer: data.sacrificer,
                 pfa_liver: data.pfa.liver,
-                freezedown_liver: data.freezedown.liver
+                pfa_liver_tumor: data.pfa.liver_tumor,
+                pfa_small_intenstine: data.pfa.small_intenstine,
+                pfa_small_intenstine_tumor: data.pfa.small_intenstine_tumor,
+                pfa_skin: data.pfa.skin,
+                pfa_skin_hair: data.pfa.skin_hair,
+                pfa_other: data.pfa.other,
+                freezedown_liver: data.freezedown.liver,
+                freezedown_liver_tumor: data.freezedown.liver_tumor,
+                freezedown_other: data.freezedown.other
             }
 
             this.originalColumns.map(data => {
@@ -177,7 +255,6 @@ export class tableview implements OnInit {
             }
         }).filter(data => data != '');
 
-        console.log(csv_display_title);
 
         //Using Angular2Csv Module to export the csv file from the filtered table data
         var options = {
@@ -209,7 +286,7 @@ export class tableview implements OnInit {
             }
         }).filter(data => data != '');
     }
-    
+
     private editButtonenabled: boolean = false;
     private editConfirmbuttonEnabled: boolean = false;
     //Trigger when edit button is pressed
