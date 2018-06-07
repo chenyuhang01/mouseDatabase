@@ -52,11 +52,44 @@
             </div>
         </div>
     </div>
+
+    <div class="row checkbox_row " style="width: 100%">
+        <div class="col-4 text-center">
+            <span>
+                <i>General Information</i>
+            </span>
+        </div>
+        <div class="col-4 text-center">
+            <span>
+                <i>PFA Information</i>
+            </span>
+        </div>
+        <div class="col-4 text-center">
+            <span>
+                <i>FreezeDown Information</i>
+            </span>
+        </div>
+    </div>
     <div class="row checkbox_row">
-        <div class="col-12">
-            Filtered Columns:
+        <div class="col-4">
             <ng-template ngFor let-item [ngForOf]="originalColumns">
-                <mat-checkbox *ngIf="item.id!='select'" class="checkbox" id="{{item.display}}" (change)="checkValue($event)" [checked]="item.checked">{{item.display}}</mat-checkbox>
+                <mat-checkbox *ngIf="item.id!='select' && item.type!='pfa' && item.type!='freezedown'" class="checkbox" id="{{item.display}}"
+                    (change)="checkValue($event)" [checked]="item.checked">{{item.display}}
+                </mat-checkbox>
+            </ng-template>
+        </div>
+        <div class="col-4">
+            <ng-template ngFor let-item [ngForOf]="originalColumns">
+                <mat-checkbox *ngIf="item.id!='select' && item.type!='general' && item.type!='freezedown'" class="checkbox" id="{{item.display}}"
+                    (change)="checkValue($event)" [checked]="item.checked">{{item.display}}
+                </mat-checkbox>
+            </ng-template>
+        </div>
+        <div class="col-4">
+            <ng-template ngFor let-item [ngForOf]="originalColumns">
+                <mat-checkbox *ngIf="item.id!='select' && item.type!='general' && item.type!='pfa'" class="checkbox" id="{{item.display}}"
+                    (change)="checkValue($event)" [checked]="item.checked">{{item.display}}
+                </mat-checkbox>
             </ng-template>
         </div>
     </div>
@@ -263,9 +296,9 @@
                     mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selectRow(row)"></tr>
             </table>
 
-            
+
         </div>
-        
+
     </div>
     <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
 </div>
