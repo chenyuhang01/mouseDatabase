@@ -6,6 +6,7 @@ export class Mouse{
         public birthdate:Date,
         public deathdate:Date,
         public genotype:string,
+        public age:number,
         public genotype_confirmation:string,
         public phenotype:string,
         public project_title:string,

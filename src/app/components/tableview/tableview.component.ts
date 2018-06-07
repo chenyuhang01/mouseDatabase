@@ -25,7 +25,7 @@ import { DialogView } from './dialogview/dialogview.component';
 
 import { SelectionModel } from '@angular/cdk/collections';
 
-import { MONTH } from '../../constants/constants';
+import { MONTH, ONEDAY } from '../../constants/constants';
 
 @Component({
     selector: 'tableview',
@@ -34,6 +34,8 @@ import { MONTH } from '../../constants/constants';
 })
 export class tableview implements OnInit {
 
+    Math: any;
+    ONEDAY: any;
     @Output('insertmouseviewevent') insertmouseviewevent = new EventEmitter<any>();
     @Output('confirmButtonviewevent') confirmButtonviewevent = new EventEmitter<any>();
 
@@ -130,7 +132,8 @@ export class tableview implements OnInit {
     constructor(
         private mouseDataservice: mouseservice,
         public dialog: MatDialog) {
-
+            this.Math = Math;
+            this.ONEDAY = ONEDAY;
     }
 
 
@@ -152,6 +155,8 @@ export class tableview implements OnInit {
                 data.freezedown_other
             );
 
+            let age = Math.round( Math.abs((new Date(data.deathdate).getTime() - new Date(data.birthdate).getTime())/(ONEDAY)));
+
             data = new Mouse(
                 data.physical_id,
                 data.gender,
@@ -159,6 +164,7 @@ export class tableview implements OnInit {
                 new Date(data.birthdate),
                 new Date(data.deathdate),
                 data.genotype,
+                age,
                 data.genotype_confirmation,
                 data.phenotype,
                 data.projecttitle,
