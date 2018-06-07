@@ -128,33 +128,16 @@ export class InsertMouseView implements OnInit {
             this.deathDate = result.value;
         }
     }
-    
-    ButtonHandler(event):void{
-        event.preventDefault();
-        let id = event.srcElement.id;
 
-        switch(id){
-            case 'insert':
-                this.insertButtonPressed();
-                break;
-            case 'insert_wo_clear':
-                this.insert_wo_ButtonPressed();
-                break;
-            case 'clear':
-                this.clearButtonPressed();
-                break;
-        }
-    }
-
-    insertButtonPressed(){
+    insertButtonPressed(event){
         console.log('Insert button pressed');
     }
 
-    insert_wo_ButtonPressed(){
+    insert_wo_ButtonPressed(event){
         console.log('Insert withou clear button pressed');
     }
 
-    clearButtonPressed(){
+    clearButtonPressed(event){
         console.log('clear button pressed');
     }
 }
