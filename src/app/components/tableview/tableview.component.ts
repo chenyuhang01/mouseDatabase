@@ -25,7 +25,7 @@ import { DialogView } from './dialogview/dialogview.component';
 
 import { SelectionModel } from '@angular/cdk/collections';
 
-import { MONTH} from '../../constants/constants';
+import { MONTH } from '../../constants/constants';
 
 @Component({
     selector: 'tableview',
@@ -52,43 +52,28 @@ export class tableview implements OnInit {
         'Project title',
         'Purpose',
         'Sacrificer',
-        'PFA Liver',
-        'PFA Liver Tumor',
-        'PFA Small Intenstine',
-        'PFA Small Intenstine With Tumor',
-        'PFA Skin',
-        'PFA Skin With Hair',
-        'PFA Other',
-        'FreezeDown Liver',
-        'FreezeDown Liver Tumor',
-        'FreezeDown Other'
+        'PFA',
+        'Freeze Down',
+
     ];
 
     //It stores the original columns
     originalColumns = [
         { id: 'select', display: this.columnsToDisplay[0], checked: false },
-        { id: 'genotype_confirmation', type: 'general', display: this.columnsToDisplay[1], checked: false },
-        { id: 'physical_id', type: 'general', display: this.columnsToDisplay[2], checked: false },
-        { id: 'mouseline', type: 'general', display: this.columnsToDisplay[3], checked: false },
-        { id: 'birthdate', type: 'general', display: this.columnsToDisplay[4], checked: false },
-        { id: 'deathdate', type: 'general', display: this.columnsToDisplay[5], checked: false },
-        { id: 'age', type: 'general', display: this.columnsToDisplay[6], checked: false },
-        { id: 'gender', type: 'general', display: this.columnsToDisplay[7], checked: false },
-        { id: 'genotype', type: 'general', display: this.columnsToDisplay[8], checked: false },
-        { id: 'phenotype', type: 'general', display: this.columnsToDisplay[9], checked: false },
-        { id: 'projecttitle', type: 'general', display: this.columnsToDisplay[10], checked: false },
-        { id: 'purpose', type: 'general', display: this.columnsToDisplay[11], checked: false },
-        { id: 'sacrificer', type: 'general', display: this.columnsToDisplay[12], checked: false },
-        { id: 'pfa_liver', type: 'pfa', display: this.columnsToDisplay[13], checked: false },
-        { id: 'pfa_liver_tumor', type: 'pfa', display: this.columnsToDisplay[14], checked: false },
-        { id: 'pfa_small_intenstine', type: 'pfa', display: this.columnsToDisplay[15], checked: false },
-        { id: 'pfa_small_intenstine_tumor', type: 'pfa', display: this.columnsToDisplay[16], checked: false },
-        { id: 'pfa_skin', type: 'pfa', display: this.columnsToDisplay[17], checked: false },
-        { id: 'pfa_skin_hair', type: 'pfa', display: this.columnsToDisplay[18], checked: false },
-        { id: 'pfa_other', type: 'pfa', display: this.columnsToDisplay[19], checked: false },
-        { id: 'freezedown_liver', type: 'freezedown', display: this.columnsToDisplay[20], checked: false },
-        { id: 'freezedown_liver_tumor', type: 'freezedown',display: this.columnsToDisplay[21], checked: false },
-        { id: 'freezedown_other', type: 'freezedown', display: this.columnsToDisplay[22], checked: false },
+        { id: 'genotype_confirmation', display: this.columnsToDisplay[1], checked: false },
+        { id: 'physical_id', display: this.columnsToDisplay[2], checked: false },
+        { id: 'mouseline', display: this.columnsToDisplay[3], checked: false },
+        { id: 'birthdate', display: this.columnsToDisplay[4], checked: false },
+        { id: 'deathdate', display: this.columnsToDisplay[5], checked: false },
+        { id: 'age', display: this.columnsToDisplay[6], checked: false },
+        { id: 'gender', display: this.columnsToDisplay[7], checked: false },
+        { id: 'genotype', display: this.columnsToDisplay[8], checked: false },
+        { id: 'phenotype', display: this.columnsToDisplay[9], checked: false },
+        { id: 'projecttitle', display: this.columnsToDisplay[10], checked: false },
+        { id: 'purpose', display: this.columnsToDisplay[11], checked: false },
+        { id: 'sacrificer', display: this.columnsToDisplay[12], checked: false },
+        { id: 'pfa', display: this.columnsToDisplay[13], checked: false },
+        { id: 'freezedown', display: this.columnsToDisplay[14], checked: false }
     ]
 
     //The column to be displayed
@@ -145,7 +130,7 @@ export class tableview implements OnInit {
     constructor(
         private mouseDataservice: mouseservice,
         public dialog: MatDialog) {
-            
+
     }
 
 
@@ -159,12 +144,12 @@ export class tableview implements OnInit {
                 data.pfa_small_intenstine_tumor == 'TRUE' ? true : false,
                 data.pfa_skin == 'TRUE' ? true : false,
                 data.pfa_skin_hair == 'TRUE' ? true : false,
-                data.pfa_other == 'TRUE' ? true : false
+                data.pfa_other
             );
             let freezedown: FreezeDown = new FreezeDown(
                 data.freezedown_liver == 'TRUE' ? true : false,
                 data.freezedown_liver_tumor == 'TRUE' ? true : false,
-                data.freezedown_other == 'TRUE' ? true : false
+                data.freezedown_other
             );
 
             data = new Mouse(
@@ -212,7 +197,7 @@ export class tableview implements OnInit {
 
     export_csv() {
         //convert mouse array data into json data
-        let jsonData = this.dataSource.sortData(this.dataSource.filteredData,this.dataSource.sort).map((data: Mouse) => {
+        let jsonData = this.dataSource.sortData(this.dataSource.filteredData, this.dataSource.sort).map((data: Mouse) => {
 
             let jsonObject = {
                 genotype_confirmation: data.genotype_confirmation,

@@ -18,10 +18,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118B08",
@@ -42,10 +42,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118B09",
@@ -66,10 +66,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118B10",
@@ -90,10 +90,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118A10",
@@ -114,10 +114,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117B01",
@@ -138,10 +138,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118B11",
@@ -162,10 +162,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117B04",
@@ -186,10 +186,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118B05",
@@ -210,10 +210,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4121A11",
@@ -234,10 +234,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4121A14",
@@ -258,10 +258,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4122A01",
@@ -282,10 +282,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4122A02",
@@ -306,10 +306,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4122A04",
@@ -330,10 +330,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984B01",
@@ -354,10 +354,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984B08",
@@ -378,10 +378,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984A06",
@@ -402,10 +402,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984A07",
@@ -426,10 +426,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984A08",
@@ -450,10 +450,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4119D01",
@@ -474,10 +474,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4119D02",
@@ -498,10 +498,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5502A01",
@@ -522,10 +522,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5502A02",
@@ -546,10 +546,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5502A04",
@@ -570,10 +570,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5502A05",
@@ -594,10 +594,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118B02",
@@ -618,10 +618,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117B02",
@@ -642,10 +642,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117B03",
@@ -666,10 +666,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984A01",
@@ -690,10 +690,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984A02",
@@ -714,10 +714,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984A04",
@@ -738,10 +738,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2985A06",
@@ -762,10 +762,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2985A14",
@@ -786,10 +786,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984B02",
@@ -810,10 +810,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984B13",
@@ -834,10 +834,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118B03",
@@ -858,10 +858,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117C05",
@@ -882,10 +882,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117C06",
@@ -906,10 +906,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4681B02",
@@ -930,10 +930,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4681B04",
@@ -954,10 +954,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4681B05",
@@ -978,10 +978,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4681B06",
@@ -1002,10 +1002,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118B04",
@@ -1026,10 +1026,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117B05",
@@ -1050,10 +1050,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117C07",
@@ -1074,10 +1074,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117D20",
@@ -1098,10 +1098,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118C03",
@@ -1122,10 +1122,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118D05",
@@ -1146,10 +1146,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "(DOX 4 Days)4882D08",
@@ -1170,10 +1170,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "(DOX 4 Days)4882D09",
@@ -1194,10 +1194,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "(DOX 4 Days)4882D10",
@@ -1218,10 +1218,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117D02",
@@ -1242,10 +1242,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117D03",
@@ -1266,10 +1266,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4118D11",
@@ -1290,10 +1290,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4882A06",
@@ -1314,10 +1314,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4520C07",
@@ -1338,10 +1338,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4520C08",
@@ -1362,10 +1362,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "3760C13",
@@ -1386,10 +1386,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "3760C17",
@@ -1410,10 +1410,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "-",
@@ -1434,10 +1434,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5213C01",
@@ -1458,10 +1458,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5213C06",
@@ -1482,10 +1482,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5213C07",
@@ -1506,10 +1506,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "-",
@@ -1530,10 +1530,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4120C12",
@@ -1554,10 +1554,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5213D08",
@@ -1578,10 +1578,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117D13",
@@ -1602,10 +1602,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4117D14",
@@ -1626,10 +1626,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2985A04",
@@ -1650,10 +1650,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885C01",
@@ -1674,10 +1674,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5644A07",
@@ -1698,10 +1698,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5644B01",
@@ -1722,10 +1722,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5644B02",
@@ -1746,10 +1746,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5644B03",
@@ -1770,10 +1770,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5644B04",
@@ -1794,10 +1794,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5644B05",
@@ -1818,10 +1818,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885D07",
@@ -1842,10 +1842,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5502D01",
@@ -1866,10 +1866,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5502D02",
@@ -1890,10 +1890,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4926D09",
@@ -1914,10 +1914,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4926D10",
@@ -1938,10 +1938,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4926D11",
@@ -1962,10 +1962,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5644A03",
@@ -1986,10 +1986,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5644A04",
@@ -2010,10 +2010,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5644A05",
@@ -2034,10 +2034,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5644A06",
@@ -2058,10 +2058,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6142A17",
@@ -2082,10 +2082,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6142A18",
@@ -2106,10 +2106,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6142A19",
@@ -2130,10 +2130,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6142B05",
@@ -2154,10 +2154,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6142B06",
@@ -2178,10 +2178,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6142B07",
@@ -2202,10 +2202,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885A03",
@@ -2226,10 +2226,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "TOM",
@@ -2250,10 +2250,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2985A05",
@@ -2274,10 +2274,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984B01",
@@ -2298,10 +2298,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885A01",
@@ -2322,10 +2322,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885B07",
@@ -2346,10 +2346,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885B10",
@@ -2370,10 +2370,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4882A01",
@@ -2394,10 +2394,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4882A02",
@@ -2418,10 +2418,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4882A03",
@@ -2442,10 +2442,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4882A04",
@@ -2466,10 +2466,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2985A03",
@@ -2490,10 +2490,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885A05",
@@ -2514,10 +2514,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4466B02",
@@ -2538,10 +2538,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4466B04",
@@ -2562,10 +2562,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4466B06",
@@ -2586,10 +2586,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4466B07",
@@ -2610,10 +2610,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6670A01",
@@ -2634,10 +2634,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6670A02",
@@ -2658,10 +2658,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6670A07",
@@ -2682,10 +2682,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6670A08",
@@ -2706,10 +2706,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604A01",
@@ -2730,10 +2730,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604A02",
@@ -2754,10 +2754,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604A03",
@@ -2778,10 +2778,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604A04",
@@ -2802,10 +2802,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604A05",
@@ -2826,10 +2826,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604A06",
@@ -2850,10 +2850,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604B14",
@@ -2874,10 +2874,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604B17",
@@ -2898,10 +2898,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604B18",
@@ -2922,10 +2922,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604B19",
@@ -2946,10 +2946,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5604B20",
@@ -2970,10 +2970,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "5213A09",
@@ -2994,10 +2994,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6438A06",
@@ -3018,10 +3018,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6438A07",
@@ -3042,10 +3042,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7141A02",
@@ -3066,10 +3066,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7141A04",
@@ -3090,10 +3090,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885B06",
@@ -3114,10 +3114,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885C04",
@@ -3138,10 +3138,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7126A01",
@@ -3162,10 +3162,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7126A03",
@@ -3186,10 +3186,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7126A05",
@@ -3210,10 +3210,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7126A06",
@@ -3234,10 +3234,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6442A04",
@@ -3258,10 +3258,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885D06",
@@ -3282,10 +3282,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885D08",
@@ -3306,10 +3306,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103C01",
@@ -3330,10 +3330,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103C02",
@@ -3354,10 +3354,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103C20",
@@ -3378,10 +3378,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103B09",
@@ -3402,10 +3402,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103B10",
@@ -3426,10 +3426,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "8088B11",
@@ -3450,10 +3450,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "8088B12",
@@ -3474,10 +3474,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "8088B14",
@@ -3498,10 +3498,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "8088B17",
@@ -3522,10 +3522,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "8088B18",
@@ -3546,10 +3546,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103A02",
@@ -3570,10 +3570,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103A19",
@@ -3594,10 +3594,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103A20",
@@ -3618,10 +3618,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103B03",
@@ -3642,10 +3642,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103B04",
@@ -3666,10 +3666,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103B05",
@@ -3690,10 +3690,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103B06",
@@ -3714,10 +3714,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103B07",
@@ -3738,10 +3738,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103B08",
@@ -3762,10 +3762,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6573A03",
@@ -3786,10 +3786,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6573A04",
@@ -3810,10 +3810,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6573A05",
@@ -3834,10 +3834,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6573A06",
@@ -3858,10 +3858,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6573A07",
@@ -3882,10 +3882,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4883A13",
@@ -3906,10 +3906,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "3760A20",
@@ -3930,10 +3930,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "3760B05",
@@ -3954,10 +3954,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "3760C01",
@@ -3978,10 +3978,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566A11",
@@ -4002,10 +4002,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566A12",
@@ -4026,10 +4026,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566A13",
@@ -4050,10 +4050,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7048A04",
@@ -4074,10 +4074,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7048B17",
@@ -4098,10 +4098,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7048B18",
@@ -4122,10 +4122,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7048B19",
@@ -4146,10 +4146,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4466D18",
@@ -4170,10 +4170,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4466D17",
@@ -4194,10 +4194,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6668B01",
@@ -4218,10 +4218,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6668B02",
@@ -4242,10 +4242,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6573A02",
@@ -4266,10 +4266,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6573A19",
@@ -4290,10 +4290,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "3760B01",
@@ -4314,10 +4314,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "3760B03",
@@ -4338,10 +4338,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4885B12",
@@ -4362,10 +4362,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "8116A11",
@@ -4386,10 +4386,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "8116A12",
@@ -4410,10 +4410,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566C06",
@@ -4434,10 +4434,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566C07",
@@ -4458,10 +4458,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566C08",
@@ -4482,10 +4482,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566C09",
@@ -4506,10 +4506,10 @@
     "pfa_small_intenstine_tumor": "TRUE",
     "pfa_skin": "TRUE",
     "pfa_skin_hair": "TRUE",
-    "pfa_other": "TRUE",
+    "pfa_other": "",
     "freezedown_liver": "TRUE",
     "freezedown_liver_tumor": "TRUE",
-    "freezedown_other": "TRUE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7048A02",
@@ -4530,10 +4530,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7048A03",
@@ -4554,10 +4554,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7048B12",
@@ -4578,10 +4578,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7048B13",
@@ -4602,10 +4602,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7048B14",
@@ -4626,10 +4626,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6670B09",
@@ -4650,10 +4650,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6670B10",
@@ -4674,10 +4674,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6670B11",
@@ -4698,10 +4698,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6670C07",
@@ -4722,10 +4722,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6670C08",
@@ -4746,10 +4746,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6670C10",
@@ -4770,10 +4770,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "8088B19",
@@ -4794,10 +4794,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7590A02",
@@ -4818,10 +4818,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4469I02",
@@ -4842,10 +4842,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4469I03",
@@ -4866,10 +4866,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4469I04",
@@ -4890,10 +4890,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4469I07",
@@ -4914,10 +4914,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "6668B05",
@@ -4938,10 +4938,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103D01",
@@ -4962,10 +4962,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103D02",
@@ -4986,10 +4986,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103D03",
@@ -5010,10 +5010,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7501A08",
@@ -5034,10 +5034,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7501A09",
@@ -5058,10 +5058,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7501A10",
@@ -5082,10 +5082,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7501A11",
@@ -5106,10 +5106,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103G01",
@@ -5130,10 +5130,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103G02",
@@ -5154,10 +5154,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103G04",
@@ -5178,10 +5178,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103G05",
@@ -5202,10 +5202,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103G06",
@@ -5226,10 +5226,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103G07",
@@ -5250,10 +5250,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103G08",
@@ -5274,10 +5274,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103G09",
@@ -5298,10 +5298,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7103G10",
@@ -5322,10 +5322,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566D09",
@@ -5346,10 +5346,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566D10",
@@ -5370,10 +5370,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566D11",
@@ -5394,10 +5394,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566D12",
@@ -5418,10 +5418,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "7566D13",
@@ -5442,10 +5442,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4123A05",
@@ -5466,10 +5466,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4123A07",
@@ -5490,10 +5490,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "4123A09",
@@ -5514,10 +5514,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984B09",
@@ -5538,10 +5538,10 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   },
   {
     "physical_id": "2984B10",
@@ -5562,9 +5562,9 @@
     "pfa_small_intenstine_tumor": "FALSE",
     "pfa_skin": "FALSE",
     "pfa_skin_hair": "FALSE",
-    "pfa_other": "FALSE",
+    "pfa_other": "",
     "freezedown_liver": "FALSE",
     "freezedown_liver_tumor": "FALSE",
-    "freezedown_other": "FALSE"
+    "freezedown_other": ""
   }
 ]

@@ -54,40 +54,16 @@
     </div>
 
     <div class="row checkbox_row " style="width: 100%">
-        <div class="col-4 text-center">
+        <div class="col-4">
             <span>
                 <i>General Information</i>
             </span>
         </div>
-        <div class="col-4 text-center">
-            <span>
-                <i>PFA Information</i>
-            </span>
-        </div>
-        <div class="col-4 text-center">
-            <span>
-                <i>FreezeDown Information</i>
-            </span>
-        </div>
     </div>
     <div class="row checkbox_row">
-        <div class="col-4">
+        <div class="col-12">
             <ng-template ngFor let-item [ngForOf]="originalColumns">
-                <mat-checkbox *ngIf="item.id!='select' && item.type!='pfa' && item.type!='freezedown'" class="checkbox" id="{{item.display}}"
-                    (change)="checkValue($event)" [checked]="item.checked">{{item.display}}
-                </mat-checkbox>
-            </ng-template>
-        </div>
-        <div class="col-4">
-            <ng-template ngFor let-item [ngForOf]="originalColumns">
-                <mat-checkbox *ngIf="item.id!='select' && item.type!='general' && item.type!='freezedown'" class="checkbox" id="{{item.display}}"
-                    (change)="checkValue($event)" [checked]="item.checked">{{item.display}}
-                </mat-checkbox>
-            </ng-template>
-        </div>
-        <div class="col-4">
-            <ng-template ngFor let-item [ngForOf]="originalColumns">
-                <mat-checkbox *ngIf="item.id!='select' && item.type!='general' && item.type!='pfa'" class="checkbox" id="{{item.display}}"
+                <mat-checkbox *ngIf="item.id !== 'select'" class="checkbox" id="{{item.display}}"
                     (change)="checkValue($event)" [checked]="item.checked">{{item.display}}
                 </mat-checkbox>
             </ng-template>
@@ -136,13 +112,13 @@
                 <!-- Birth Date Column -->
                 <ng-container matColumnDef="birthdate">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Birth Date</th>
-                    <td mat-cell *matCellDef="let mouse"> {{mouse?.birthdate.toDateString()}}</td>
+                    <td mat-cell *matCellDef="let mouse"> {{mouse?.birthdate.toLocaleDateString("en-sg")}}</td>
                 </ng-container>
 
                 <!-- Death Date Column -->
                 <ng-container matColumnDef="deathdate">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header>Death Date</th>
-                    <td mat-cell *matCellDef="let mouse"> {{mouse?.deathdate.toDateString()}}</td>
+                    <td mat-cell *matCellDef="let mouse"> {{mouse?.deathdate.toLocaleDateString("en-sg")}}</td>
                 </ng-container>
 
                 <!-- Age Column -->
@@ -189,106 +165,33 @@
 
 
                 <!-- PFA Liver Column -->
-                <ng-container matColumnDef="pfa_liver">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header>PFA Liver</th>
+                <ng-container matColumnDef="pfa">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>PFA</th>
                     <td mat-cell *matCellDef="let mouse">
-                        <span *ngIf="mouse.pfa.liver">
+                        <span *ngIf="mouse.pfa.liver ||
+                                    mouse.pfa.liver_tumor || 
+                                    mouse.pfa.small_intenstine ||
+                                    mouse.pfa.small_intenstine_tumor ||
+                                    mouse.pfa.skin ||
+                                    mouse.pfa.skin_hair ||
+                                    (mouse.pfa.other !== '')">
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </span>
                     </td>
                 </ng-container>
-
-
-                <!-- PFA Liver With Tumor Column -->
-                <ng-container matColumnDef="pfa_liver_tumor">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header>PFA Liver With Tumor</th>
-                    <td mat-cell *matCellDef="let mouse">
-                        <span *ngIf="mouse.pfa.liver_tumor">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </span>
-                    </td>
-                </ng-container>
-
-                <!-- PFA Small Intenstine Column -->
-                <ng-container matColumnDef="pfa_small_intenstine">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header>PFA Small Intenstine</th>
-                    <td mat-cell *matCellDef="let mouse">
-                        <span *ngIf="mouse.pfa.small_intenstine">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </span>
-                    </td>
-                </ng-container>
-
-                <!-- PFA Small Intenstine With Tumor Column -->
-                <ng-container matColumnDef="pfa_small_intenstine_tumor">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header>PFA Small Intenstine With Tumor</th>
-                    <td mat-cell *matCellDef="let mouse">
-                        <span *ngIf="mouse.pfa.small_intenstine_tumor">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </span>
-                    </td>
-                </ng-container>
-
-                <!-- PFA Skin Column -->
-                <ng-container matColumnDef="pfa_skin">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header>PFA Skin</th>
-                    <td mat-cell *matCellDef="let mouse">
-                        <span *ngIf="mouse.pfa.skin">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </span>
-                    </td>
-                </ng-container>
-
-                <!-- PFA Skin With Hair Column -->
-                <ng-container matColumnDef="pfa_skin_hair">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header>PFA Skin With Hair</th>
-                    <td mat-cell *matCellDef="let mouse">
-                        <span *ngIf="mouse.pfa.skin_hair">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </span>
-                    </td>
-                </ng-container>
-
-                <!-- PFA Other With Hair Column -->
-                <ng-container matColumnDef="pfa_other">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header>PFA Other</th>
-                    <td mat-cell *matCellDef="let mouse">
-                        <span *ngIf="mouse.pfa.other">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </span>
-                    </td>
-                </ng-container>
-
 
                 <!-- Freeze Down Liver Column -->
-                <ng-container matColumnDef="freezedown_liver">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header>FreezeDown Liver</th>
+                <ng-container matColumnDef="freezedown">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>FreezeDown</th>
                     <td mat-cell *matCellDef="let mouse">
-                        <span *ngIf="mouse.freezedown.liver">
+                        <span *ngIf="mouse.freezedown.liver ||
+                                    mouse.freezedown.liver_tumor ||
+                                    (mouse.freezedown.other !== '')">
                             <i class="fa fa-check" aria-hidden="true"></i>
                         </span>
                     </td>
                 </ng-container>
 
-                <!-- Freeze Down Liver  TumorColumn -->
-                <ng-container matColumnDef="freezedown_liver_tumor">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header>FreezeDown Liver Tumor</th>
-                    <td mat-cell *matCellDef="let mouse">
-                        <span *ngIf="mouse.freezedown.liver_tumor">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </span>
-                    </td>
-                </ng-container>
-
-                <!-- Freeze Down Other TumorColumn -->
-                <ng-container matColumnDef="freezedown_other">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header>FreezeDown Other</th>
-                    <td mat-cell *matCellDef="let mouse">
-                        <span *ngIf="mouse.freezedown.other">
-                            <i class="fa fa-check" aria-hidden="true"></i>
-                        </span>
-                    </td>
-                </ng-container>
 
                 <!-- Row Definition-->
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

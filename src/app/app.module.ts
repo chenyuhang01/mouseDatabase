@@ -23,7 +23,8 @@ import {
   MatCardModule,
   MatIconModule,
   MatDatepickerModule,
-  MatNativeDateModule
+  MatNativeDateModule,
+  MAT_DATE_LOCALE
 } 
 from '@angular/material';
 import { HttpModule } from '@angular/http';
@@ -94,7 +95,8 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
   providers: [
     mouseservice,
     categoryservice,
-    DynamicLoader
+    DynamicLoader,
+    {provide: MAT_DATE_LOCALE, useValue: 'en-sg'}
   ],
   bootstrap: [AppComponent]
 })
