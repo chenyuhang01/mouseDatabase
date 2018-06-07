@@ -28,6 +28,7 @@ export class InsertMouseView implements OnInit {
     private mouseline_select:string;
     private gender_select:string;
     private genotype_select:string;
+    private genotype_confirmation:string;
     private phenotype_select:string;
     private project_title_select:string;
     private sacrificer_select:string;

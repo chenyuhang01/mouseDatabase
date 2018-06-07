@@ -30,16 +30,34 @@
                     <input [(ngModel)]="physical_id_inputs" matInput required placeholder="Physical ID">
                 </mat-form-field>
 
-                <!-- Mouse Line -->
-                <mat-form-field>
-                    <mat-select [(ngModel)]="mouseline_select" required placeholder="Mouse Line">
-                        <mat-option *ngFor="let mouseline of mouselines" value="{{mouseline}}">{{mouseline}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
+                <!-- Group  Mouse Line and Gender Confirmation to one row-->
+                <div class="row">
+                    <div class="col-4">
+
+                        <!-- Gender -->
+                        <mat-form-field style="width: 100%;">
+                            <mat-select [(ngModel)]="gender_select" required placeholder="Gender">
+                                <mat-option value="Female">Female</mat-option>
+                                <mat-option value="Male">Male</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-8">
+
+                        <!-- Mouse Line -->
+                        <mat-form-field style="width: 100%;">
+                            <mat-select [(ngModel)]="mouseline_select" required placeholder="Mouse Line">
+                                <mat-option *ngFor="let mouseline of mouselines" value="{{mouseline}}">{{mouseline}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                </div>
+
 
                 <!-- Group two date pickers to one row-->
-                <div class="row" >
-                    <div class="col-6" >
+                <div class="row">
+                    <div class="col-6">
                         <!-- Birth Date -->
                         <mat-form-field style="width: 100%;">
                             <input id="birthdatepicker" matInput [matDatepicker]="birthDatepicker" placeholder="Birth Date" (dateChange)="dateTrigger('change', $event)">
@@ -58,20 +76,25 @@
                     </div>
                 </div>
 
-                <!-- Gender -->
-                <mat-form-field>
-                    <mat-select [(ngModel)]="gender_select" required placeholder="Gender">
-                        <mat-option value="Female">Female</mat-option>
-                        <mat-option value="Male">Male</mat-option>
-                    </mat-select>
-                </mat-form-field>
 
-                <!-- Geno Type -->
-                <mat-form-field>
-                    <mat-select [(ngModel)]="genotype_select" required placeholder="Geno Type">
-                        <mat-option *ngFor="let genotype of genotypes" value="{{genotype}}">{{genotype}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
+                <!-- Group Geno Type and Geno Type Confirmation to one row-->
+                <div class="row">
+                    <div class="col-5">
+                        <!-- Geno Type -->
+                        <mat-form-field style="width: 100%">
+                            <mat-select [(ngModel)]="genotype_select" required placeholder="Geno Type">
+                                <mat-option *ngFor="let genotype of genotypes" value="{{genotype}}">{{genotype}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-7">
+                        <!-- Geno Type Confirmation-->
+                        <mat-form-field style="width: 100%">
+                            <input [(ngModel)]="genotype_confirmation" matInput placeholder="GenoType Confirmation">
+                        </mat-form-field>
+                    </div>
+                </div>
+
 
 
                 <!-- Pheno Type -->
@@ -80,21 +103,30 @@
                         <mat-option *ngFor="let phenotype of phenotypes" value="{{phenotype}}">{{phenotype}}</mat-option>
                     </mat-select>
                 </mat-form-field>
+                <!-- Group Project Title and  Sacrificer to one row-->
+                <div class="row">
+                    <div class="col-8">
+                        <!-- Project Title -->
+                        <mat-form-field style="width: 100%;">
+                            <mat-select [(ngModel)]="project_title_select" required placeholder="Project Title">
+                                <mat-option *ngFor="let title of projectTitles" value="{{title}}">{{title}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-4">
+                        <!-- Sacrificer -->
+                        <mat-form-field style="width: 100%;">
+                            <mat-select [(ngModel)]="sacrificer_select" required placeholder="Sacrificer">
+                                <mat-option *ngFor="let sacrificer of sacrificers" value="{{sacrificer}}">{{sacrificer}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
 
-                <!-- Project Title -->
-                <mat-form-field>
-                    <mat-select [(ngModel)]="project_title_select" required placeholder="Project Title">
-                        <mat-option *ngFor="let title of projectTitles" value="{{title}}">{{title}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
 
-                <!-- Sacrificer -->
-                <mat-form-field>
-                    <mat-select [(ngModel)]="sacrificer_select" required placeholder="Sacrificer">
-                        <mat-option *ngFor="let sacrificer of sacrificers" value="{{sacrificer}}">{{sacrificer}}</mat-option>
-                    </mat-select>
-                </mat-form-field>
-                
+
+
+
                 <!-- Purpose Of The Experiement-->
                 <mat-expansion-panel class="reason_expanarea">
                     <mat-expansion-panel-header>
@@ -106,7 +138,7 @@
                         <textarea [(ngModel)]="purpose_textarea" rows="5" matInput placeholder="Start Writing here"></textarea>
                     </mat-form-field>
                 </mat-expansion-panel>
-                
+
 
                 <!-- Comments -->
                 <mat-expansion-panel class="reason_expanarea">
@@ -116,9 +148,9 @@
                         </mat-panel-title>
                     </mat-expansion-panel-header>
                     <mat-form-field class="reason_textarea">
-                        <textarea  [(ngModel)]="comment_textarea" rows="5" matInput placeholder="Start Writing here"></textarea>
+                        <textarea [(ngModel)]="comment_textarea" rows="5" matInput placeholder="Start Writing here"></textarea>
                     </mat-form-field>
-                </mat-expansion-panel>                
+                </mat-expansion-panel>
 
                 <!-- PFA Related checkboxs-->
                 <mat-expansion-panel class="reason_expanarea">
