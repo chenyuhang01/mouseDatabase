@@ -66,7 +66,7 @@ export class InsertMouseView implements OnInit {
         { id: this.pfa_liver_checkbox, displayname: 'Liver' },
         { id: this.pfa_liver_tumor_checkbox, displayname: 'Liver With Tumor' },
         { id: this.pfa_small_intenstine_checkbox, displayname: 'Small Intenstine' },
-        { id: this.pfa_small_intenstine_tumor_checkbox, displayname: 'SMall Intenstine With Tumor' },
+        { id: this.pfa_small_intenstine_tumor_checkbox, displayname: 'Small Intenstine With Tumor' },
         { id: this.pfa_skin_checkbox, displayname: 'Skin' },
         { id: this.pfa_skin_hair_checkbox, displayname: 'Skin With Hair' },
         { id: this.pfa_other_checkbox, displayname: 'Others' }
