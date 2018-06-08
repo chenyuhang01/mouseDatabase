@@ -162,7 +162,19 @@
                             Press to view detail
                         </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <mat-checkbox *ngFor="let pfa_model of pfamodels" class="checkbox" [(ngModel)]="pfa_model.id">{{pfa_model.displayname}}</mat-checkbox>
+                    <mat-checkbox class="checkbox" [(ngModel)]="pfa_liver_checkbox">Liver</mat-checkbox>
+                    <mat-checkbox class="checkbox" [(ngModel)]="pfa_liver_tumor_checkbox">Liver With Tumor</mat-checkbox>
+                    <mat-checkbox class="checkbox" [(ngModel)]="pfa_small_intenstine_checkbox">Small Intenstine</mat-checkbox>
+                    <mat-checkbox class="checkbox" [(ngModel)]="pfa_small_intenstine_tumor_checkbox">Small Intenstine With Tumor</mat-checkbox>
+                    <mat-checkbox class="checkbox" [(ngModel)]="pfa_skin_checkbox">Skin</mat-checkbox>
+                    <mat-checkbox class="checkbox" [(ngModel)]="pfa_skin_hair_checkbox">Skin With Hair</mat-checkbox>
+                    
+                    <mat-checkbox class="checkbox" [(ngModel)]="pfa_other_checkbox">Others: </mat-checkbox>
+                    
+                    <!-- Other Type -->
+                    <mat-form-field >
+                        <input [disabled]="!pfa_other_checkbox" [checked]="pfa_other_checkbox" [(ngModel)]="pfa_other_string" matInput placeholder="">
+                    </mat-form-field>
                 </mat-expansion-panel>
 
                 <!-- FreezeDown Related checkboxs-->
@@ -176,7 +188,15 @@
                         </mat-panel-description>
                     </mat-expansion-panel-header>
 
-                    <mat-checkbox *ngFor="let freezdown_model of freezedownmodels" class="checkbox" [(ngModel)]="freezdown_model.id">{{freezdown_model.displayname}}</mat-checkbox>
+                    <mat-checkbox class="checkbox" [(ngModel)]="freeze_down_liver_checkbox">Liver</mat-checkbox>
+                    <mat-checkbox class="checkbox" [(ngModel)]="freeze_down_liver_tumor_checkbox">Liver With Tumor</mat-checkbox>
+                    <br>
+                    <mat-checkbox class="checkbox" [(ngModel)]="freeze_down_other_checkbox" [checked]="freeze_down_other_checkbox" >Others: </mat-checkbox>
+                    
+                    <!-- Other Type -->
+                    <mat-form-field >
+                        <input [disabled]="!freeze_down_other_checkbox" [(ngModel)]="freeze_down_other_string" matInput placeholder="">
+                    </mat-form-field>
                 </mat-expansion-panel>
 
                 <!-- Image Uploading section -->

@@ -55,27 +55,27 @@ export class tableview implements OnInit {
         'Purpose',
         'Sacrificer',
         'PFA',
-        'Freeze Down',
+        'Freeze Down'
 
     ];
 
     //It stores the original columns
     originalColumns = [
-        { id: 'select', display: this.columnsToDisplay[0], checked: false },
-        { id: 'genotype_confirmation', display: this.columnsToDisplay[1], checked: false },
-        { id: 'physical_id', display: this.columnsToDisplay[2], checked: false },
-        { id: 'mouseline', display: this.columnsToDisplay[3], checked: false },
-        { id: 'birthdate', display: this.columnsToDisplay[4], checked: false },
-        { id: 'deathdate', display: this.columnsToDisplay[5], checked: false },
-        { id: 'age', display: this.columnsToDisplay[6], checked: false },
-        { id: 'gender', display: this.columnsToDisplay[7], checked: false },
-        { id: 'genotype', display: this.columnsToDisplay[8], checked: false },
-        { id: 'phenotype', display: this.columnsToDisplay[9], checked: false },
-        { id: 'projecttitle', display: this.columnsToDisplay[10], checked: false },
-        { id: 'purpose', display: this.columnsToDisplay[11], checked: false },
-        { id: 'sacrificer', display: this.columnsToDisplay[12], checked: false },
-        { id: 'pfa', display: this.columnsToDisplay[13], checked: false },
-        { id: 'freezedown', display: this.columnsToDisplay[14], checked: false }
+        { id: 'select', pos: -1, display: this.columnsToDisplay[0], checked: false },
+        { id: 'genotype_confirmation', pos: 0, display: this.columnsToDisplay[1], checked: false },
+        { id: 'physical_id', pos: 1, display: this.columnsToDisplay[2], checked: false },
+        { id: 'mouseline', pos: 2, display: this.columnsToDisplay[3], checked: false },
+        { id: 'birthdate', pos: 3, display: this.columnsToDisplay[4], checked: false },
+        { id: 'deathdate', pos: 4, display: this.columnsToDisplay[5], checked: false },
+        { id: 'age', pos: 5, display: this.columnsToDisplay[6], checked: false },
+        { id: 'gender', pos: 6, display: this.columnsToDisplay[7], checked: false },
+        { id: 'genotype', pos: 7, display: this.columnsToDisplay[8], checked: false },
+        { id: 'phenotype', pos: 8, display: this.columnsToDisplay[9], checked: false },
+        { id: 'projecttitle', pos: 9, display: this.columnsToDisplay[10], checked: false },
+        { id: 'purpose', pos: 10, display: this.columnsToDisplay[11], checked: false },
+        { id: 'sacrificer', pos: 11, display: this.columnsToDisplay[12], checked: false },
+        { id: 'pfa', pos: 12, display: this.columnsToDisplay[13], checked: false },
+        { id: 'freezedown', pos: 13, display: this.columnsToDisplay[14], checked: false }
     ]
 
     //The column to be displayed
@@ -104,11 +104,22 @@ export class tableview implements OnInit {
 
             //Set the custom sorting data method
             this.dataSource.sortingDataAccessor = (data: any, sortHeaderId: string): string => {
-                if (sortHeaderId === 'pfa_liver') {
-                    return data.pfa.liver;
+                if (sortHeaderId === 'pfa') {
+                    let flags = data.pfa.liver ||
+                        data.pfa.liver_tumor ||
+                        data.pfa.small_intenstine ||
+                        data.pfa.small_intenstine_tumor ||
+                        data.pfa.skin ||
+                        data.pfa.skin_hair ||
+                        (data.pfa.other !== '')
+                    return flags;
                 }
-                if (sortHeaderId === 'freezedown_liver') {
-                    return data.freezedown.liver;
+                if (sortHeaderId === 'freezedown') {
+
+                    let flags = data.freezedown.liver ||
+                        data.freezedown.liver_tumor ||
+                        (data.freezedown.other !== '');
+                    return flags;
                 }
 
                 return data[sortHeaderId];
@@ -132,8 +143,8 @@ export class tableview implements OnInit {
     constructor(
         private mouseDataservice: mouseservice,
         public dialog: MatDialog) {
-            this.Math = Math;
-            this.ONEDAY = ONEDAY;
+        this.Math = Math;
+        this.ONEDAY = ONEDAY;
     }
 
 
@@ -155,7 +166,7 @@ export class tableview implements OnInit {
                 data.freezedown_other
             );
 
-            let age = Math.round( Math.abs((new Date(data.deathdate).getTime() - new Date(data.birthdate).getTime())/(ONEDAY)));
+            let age = Math.round(Math.abs((new Date(data.deathdate).getTime() - new Date(data.birthdate).getTime()) / (ONEDAY)));
 
             data = new Mouse(
                 data.physical_id,
@@ -205,6 +216,8 @@ export class tableview implements OnInit {
         //convert mouse array data into json data
         let jsonData = this.dataSource.sortData(this.dataSource.filteredData, this.dataSource.sort).map((data: Mouse) => {
 
+
+
             let jsonObject = {
                 genotype_confirmation: data.genotype_confirmation,
                 physical_id: data.physical_id,
@@ -231,20 +244,110 @@ export class tableview implements OnInit {
             }
 
             this.originalColumns.map(data => {
+                let id = data.id;
                 if (!data.checked) {
-                    delete jsonObject[data.id];
+                    if (id == 'pfa') {
+                        //remove property from json object
+                        let pfacol_arr = [
+                            'pfa_liver',
+                            'pfa_liver_tumor',
+                            'pfa_small_intenstine',
+                            'pfa_small_intenstine_tumor',
+                            'pfa_skin',
+                            'pfa_skin_hair',
+                            'pfa_other'
+                        ]
+                        jsonObject = this.removejsonPropery(jsonObject, pfacol_arr);
+                        //Remove header name from csv_display_title
+                    } else if (id == 'freezedown') {
+                        let pfacol_arr = [
+                            'freezedown_liver',
+                            'freezedown_liver_tumor',
+                            'freezedown_other'
+                        ]
+                        jsonObject = this.removejsonPropery(jsonObject, pfacol_arr);
+                    } else {
+                        if (data.pos != -1) {
+                            //Remove property from the json object
+                            let pfacol_arr = [];
+                            pfacol_arr.push(id);
+                            jsonObject = this.removejsonPropery(jsonObject, pfacol_arr);
+                        }
+                    }
                 }
             })
             return jsonObject;
         });
 
-        let csv_display_title = this.originalColumns.map((data, index) => {
-            if (data.checked) {
-                return this.columnsToDisplay[index];
-            } else {
-                return '';
+        let csv_display_title = [
+            'GenoType Confirmation',
+            'Physical ID',
+            'Mouse Line',
+            'Birth Date',
+            'Death Date',
+            'Age',
+            'Gender',
+            'Geno Type',
+            'PhenoType',
+            'Project title',
+            'Purpose',
+            'Sacrificer',
+            'PFA Liver',
+            'PFA Liver With Tumor',
+            'PFA Small Internstine',
+            'PFA Small Internstine WIth Tumor',
+            'PFA Skin',
+            'PFA Skin With Hair',
+            'PFA Other',
+            'FreezeDown Liver',
+            'FreezeDown Liver With Tumor',
+            'FreezeDown Other'
+        ];
+
+        //Processing col headers
+        this.originalColumns.map(data => {
+
+            let id = data.id;
+
+            if (!data.checked) {
+                switch (id) {
+                    case 'pfa':
+                        //remove 7 elements starting from pos 12
+                        let arr_display_pfa = [
+                            'PFA Liver',
+                            'PFA Liver With Tumor',
+                            'PFA Small Internstine',
+                            'PFA Small Internstine WIth Tumor',
+                            'PFA Skin',
+                            'PFA Skin With Hair',
+                            'PFA Other'
+                        ]
+                        for (let d of arr_display_pfa) {
+                            let index = csv_display_title.indexOf(d);
+                            csv_display_title.splice(index, 1);
+                        }
+                        break;
+                    case 'freezedown':
+                        //remove 3 elements starting from pos 19
+                        let arr_display_freezedown = [
+                            'FreezeDown Liver',
+                            'FreezeDown Liver With Tumor',
+                            'FreezeDown Other'
+                        ]
+                        for (let d of arr_display_freezedown) {
+                            let index = csv_display_title.indexOf(d);
+                            csv_display_title.splice(index, 1);
+                        }
+                        break;
+                    default:
+                        if(data.pos != -1){
+                            let index = csv_display_title.indexOf(data.display);
+                            csv_display_title.splice(index, 1);
+                            break;
+                        }
+                }
             }
-        }).filter(data => data != '');
+        });
 
 
         //Using Angular2Csv Module to export the csv file from the filtered table data
@@ -260,6 +363,15 @@ export class tableview implements OnInit {
         //It will trigger donwload actions
         new Angular2Csv(jsonData, 'Reports', options);
     }
+
+    removejsonPropery(targetJson, col_id_arr: string[]): any {
+        col_id_arr.map((col_id) => {
+            delete targetJson[col_id];
+        });
+
+        return targetJson;
+    }
+
     //CheckBox Related Method
 
     //This will toggle the speicifc column based on pos

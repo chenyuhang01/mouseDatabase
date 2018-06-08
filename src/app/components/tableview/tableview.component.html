@@ -63,8 +63,7 @@
     <div class="row checkbox_row">
         <div class="col-12">
             <ng-template ngFor let-item [ngForOf]="originalColumns">
-                <mat-checkbox *ngIf="item.id !== 'select'" class="checkbox" id="{{item.display}}"
-                    (change)="checkValue($event)" [checked]="item.checked">{{item.display}}
+                <mat-checkbox *ngIf="item.id !== 'select'" class="checkbox" id="{{item.display}}" (change)="checkValue($event)" [checked]="item.checked">{{item.display}}
                 </mat-checkbox>
             </ng-template>
         </div>
@@ -175,7 +174,16 @@
                                     mouse.pfa.skin ||
                                     mouse.pfa.skin_hair ||
                                     (mouse.pfa.other !== '')">
-                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i style="color: lightgreen" class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        <span *ngIf="!(mouse.pfa.liver ||
+                                       mouse.pfa.liver_tumor ||
+                                       mouse.pfa.small_intenstine ||
+                                       mouse.pfa.small_intenstine_tumor ||
+                                       mouse.pfa.skin ||
+                                       mouse.pfa.skin_hair ||
+                                      (mouse.pfa.other !== ''))">
+                            <i style="color: red" class="fa fa-times" aria-hidden="true"></i>
                         </span>
                     </td>
                 </ng-container>
@@ -187,7 +195,12 @@
                         <span *ngIf="mouse.freezedown.liver ||
                                     mouse.freezedown.liver_tumor ||
                                     (mouse.freezedown.other !== '')">
-                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <i style="color: lightgreen" class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        <span *ngIf="!(mouse.freezedown.liver ||
+                        mouse.freezedown.liver_tumor ||
+                        (mouse.freezedown.other !== ''))">
+                            <i style="color: red" class="fa fa-times" aria-hidden="true"></i>
                         </span>
                     </td>
                 </ng-container>
