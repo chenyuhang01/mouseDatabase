@@ -1,22 +1,53 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { Http } from '@angular/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { BASEURL } from '../../constants/constants';
+import { BASEURL, GETCAT, INSERTCAT } from '../../constants/constants';
 
 @Injectable()
-export class categoryservice{
+export class categoryservice {
 
 
-    constructor(private http:Http){
+    constructor(private httpclient: HttpClient) {
 
     }
 
-    getData() : Observable<any>{
+    getData(): Observable<any> {
 
-        let requesturl:string = './assets/category.json';
+        let requesturl: string = BASEURL + GETCAT;
 
-        return this.http.get(requesturl);
+        //Solve CSS problem
+        const httpOptions = {
+            headers: new HttpHeaders({
+                'Access-Control-Allow-Headers': 'http://127.0.0.1:8000/',
+                'Content-Type': 'application/json;charset=utf-8'
+            })
+        };
+
+        return this.httpclient.get(requesturl);
+    }
+
+    insertData(typename: string, value: string): Observable<any> {
+
+        let requesturl: string = BASEURL + INSERTCAT;
+
+        //Solve CSS problem
+        const httpOptions = {
+            headers: new HttpHeaders({
+                'Access-Control-Allow-Headers': 'http://127.0.0.1:8000/',
+                'Content-Type': 'application/json;charset=utf-8'
+            })
+        };
+
+        //Data must Stringify
+        let data = {
+            type: typename,
+            input: value
+        }
+
+        let jsondata = JSON.stringify(data);
+
+        return this.httpclient.post(requesturl, data, httpOptions);
     }
 }

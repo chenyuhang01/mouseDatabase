@@ -2,31 +2,51 @@
   <div class="row mad-list">
     <div class="col-8">
       <mat-form-field class="mat-field">
-        <input matInput placeholder="New Mouse Line">
+        <input [(ngModel)]="mouseline_cat_input" matInput placeholder="New Mouse Line">
       </mat-form-field>
     </div>
     <div class="col-4 text-right">
-      <button class="formbutton" mat-raised-button color="primary" (click)="open()">Add</button>
+      <button id="mouseline" class="formbutton" mat-raised-button color="primary" (click)="sendRequest($event)">Add</button>
     </div>
   </div>
   <div class="row mad-list">
     <div class="col-8">
       <mat-form-field class="mat-field">
-        <input matInput placeholder="New Geno Type">
+        <input [(ngModel)]="genotype_cat_input" matInput placeholder="New Geno Type">
       </mat-form-field>
     </div>
     <div class="col-4 text-right">
-      <button class="formbutton" mat-raised-button color="accent">Add</button>
+      <button id="genotype" class="formbutton" mat-raised-button color="accent" (click)="sendRequest($event)">Add</button>
     </div>
   </div>
   <div class="row mad-list">
     <div class="col-8">
       <mat-form-field class="mat-field">
-        <input matInput placeholder="New Pheno Type">
+        <input [(ngModel)]="phenotype_cat_input" matInput placeholder="New Pheno Type">
       </mat-form-field>
     </div>
     <div class="col-4 text-right">
-      <button class="formbutton" mat-raised-button color="warn">Add</button>
+      <button id="phenotype" class="formbutton" mat-raised-button color="warn" (click)="sendRequest($event)">Add</button>
+    </div>
+  </div>
+  <div class="row mad-list">
+    <div class="col-8">
+      <mat-form-field class="mat-field">
+        <input [(ngModel)]="sacrificer_cat_input" matInput placeholder="New Sacrificer">
+      </mat-form-field>
+    </div>
+    <div class="col-4 text-right">
+      <button id="sacrificer" class="formbutton" mat-raised-button color="warn" (click)="sendRequest($event)">Add</button>
+    </div>
+  </div>
+  <div class="row mad-list">
+    <div class="col-8">
+      <mat-form-field class="mat-field">
+        <input [(ngModel)]="project_title_cat_input" matInput placeholder="New Project Title">
+      </mat-form-field>
+    </div>
+    <div class="col-4 text-right">
+      <button id="project_title" class="formbutton" mat-raised-button color="warn" (click)="sendRequest($event)">Add</button>
     </div>
   </div>
 </mat-nav-list>

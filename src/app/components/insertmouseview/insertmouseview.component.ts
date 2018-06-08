@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, AfterViewInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material';
 import { MatBottomSheet, MatBottomSheetRef, MatListModule, MatAutocompleteModule } from '@angular/material';
 import { Observable } from 'rxjs';
@@ -69,32 +69,55 @@ export class InsertMouseView implements OnInit {
     ) { }
 
     ngOnInit() {
+        //Get Category data
+        this.getCategoryData(true);
+    }
 
+    public getCategoryData(beforeCreated: boolean) {
         //Getting categories from server and initialize all the selection models
+        if (!beforeCreated) {
+            this.open("Fetching Catelog Data...", 0);
+        }
+
         this.categoryserviceHandler.getData().subscribe((data) => {
-            let data_json = data.json();
-            console.log(data_json);
-            this.projectTitles = data_json.projecttitle;
-            this.mouselines = data_json.mouseline;
-            this.genotypes = data_json.genotype;
-            this.phenotypes = data_json.phenotype;
-            this.sacrificers = data_json.sacrificer;
+            let data_json = data;
+
+            let error: boolean = data_json.error;
+            let errorCode: number = data_json.errorCode;
+
+            this.projectTitles = data_json.result.project_titles;
+            this.mouselines = data_json.result.mouselines;
+            this.genotypes = data_json.result.genotypes;
+            this.phenotypes = data_json.result.phenotypes;
+            this.sacrificers = data_json.result.sacrificers;
+
+            this.open("Fetching Catelog Data Completed", 2000);
         })
     }
 
     //Used to open the snackbar
-    open(): void {
-        let snackBarRef = this.snackBar.open(
-            'Inserting now...',
-            'Dismiss',
-            {
-                duration: 2000
-            });
+    open(message: string, duration: number): void {
+        if (duration == 0) {
+            let snackBarRef = this.snackBar.open(
+                message);
+        } else {
+            let snackBarRef = this.snackBar.open(
+                message,
+                'Dismiss',
+                {
+                    duration: duration
+                });
+        }
+
     }
 
     //Open buttom sheet
     openBottomSheet(): void {
-        this.bottomSheet.open(BottomMenu);
+        const refToBottomSheet = this.bottomSheet.open(BottomMenu);
+        refToBottomSheet.afterDismissed().subscribe(() => {
+            //Get Category data
+            this.getCategoryData(false);
+        });
     }
 
     //Emits the close panel event out of this insert mouse component
@@ -125,8 +148,8 @@ export class InsertMouseView implements OnInit {
             sacrificer: this.sacrificer_select,
             purpose: this.purpose_textarea,
             comment: this.comment_textarea,
-            birthdate: this.birthDate?this.birthDate.toLocaleDateString():'',
-            deathdate: this.deathDate?this.deathDate.toLocaleDateString():'',
+            birthdate: this.birthDate ? this.birthDate.toLocaleDateString() : '',
+            deathdate: this.deathDate ? this.deathDate.toLocaleDateString() : '',
             pfa: {
                 liver: this.pfa_liver_checkbox,
                 liver_tumor: this.pfa_liver_tumor_checkbox,
@@ -159,7 +182,7 @@ export class InsertMouseView implements OnInit {
         this.purpose_textarea = '';
         this.comment_textarea = '';
 
-        //Cleart all the inputs checkbox
+        //Clear all the inputs checkbox
         this.pfa_liver_checkbox = false;
         this.pfa_liver_tumor_checkbox = false;
         this.pfa_small_intenstine_checkbox = false;
@@ -193,9 +216,6 @@ export class InsertMouseView implements OnInit {
         console.log('clear button pressed');
         this.clearAllInputs();
     }
-
-
-
 }
 
 @Component({
@@ -204,22 +224,89 @@ export class InsertMouseView implements OnInit {
     styleUrls: ['./bottomsheetview/bottomsheetview.component.css']
 })
 export class BottomMenu {
+
+
+    private mouseline_cat_input: string;
+    private genotype_cat_input: string;
+    private phenotype_cat_input: string;
+    private sacrificer_cat_input: string;
+    private project_title_cat_input: string;
+    private insertmouseview: InsertMouseView;
+
     constructor(
         public snackBar: MatSnackBar,
-        private bottomSheetRef: MatBottomSheetRef<BottomMenu>) { }
+        private bottomSheetRef: MatBottomSheetRef<BottomMenu>,
+        private dataservice: categoryservice) { }
 
-    openLink(event: MouseEvent): void {
-        this.bottomSheetRef.dismiss();
-        event.preventDefault();
+    //Trigger sendRequest event when buttons are clicked
+    sendRequest(event): void {
+        console.log(event);
+        let id = event.target.id || event.srcElement.id || event.currentTarget.id;
+
+        this.makesnackBar(null, null, 'Inserting now..', 0);
+
+        switch (id) {
+            case "mouseline":
+                console.log(this.mouseline_cat_input);
+                this.sendAddRequest("mouseline", this.mouseline_cat_input);
+                break;
+            case "genotype":
+                console.log(this.genotype_cat_input);
+                this.sendAddRequest("genotype", this.genotype_cat_input);
+                break;
+            case "phenotype":
+                console.log(this.phenotype_cat_input);
+                this.sendAddRequest("phenotype", this.phenotype_cat_input);
+                break;
+            case "sacrificer":
+                console.log(this.sacrificer_cat_input);
+                this.sendAddRequest("sacrificer", this.sacrificer_cat_input);
+                break;
+            case "project_title":
+                console.log(this.project_title_cat_input);
+                this.sendAddRequest("project_title", this.project_title_cat_input);
+                break;
+        }
+        //Clear input
+        this.clearall();
     }
 
-    open(): void {
-        let snackBarRef = this.snackBar.open(
-            'Inserting now...',
-            'Dismiss',
-            {
-                duration: 2000
-            });
+    //Clear all the inputs
+    clearall() {
+        this.mouseline_cat_input = '';
+        this.genotype_cat_input = '';
+        this.phenotype_cat_input = '';
+        this.sacrificer_cat_input = '';
+        this.project_title_cat_input = '';
     }
 
+    //Send Request to server
+    sendAddRequest(type, input) {
+        this.dataservice.insertData(type, input).subscribe((event) => {
+            let errorCode = event.errorCode;
+            let error = event.error;
+            let message = event.result;
+
+            this.makesnackBar(errorCode, error, message, 3000);
+        });
+    }
+
+    makesnackBar(errorCode: number, error: boolean, message: string, duration: number) {
+
+        if (duration == 0) {
+            let snackBarRef = this.snackBar.open(
+                message,
+                'Dismiss');
+        } else {
+
+            let displaymessage: string = error ? 'Error Occurs: ' + errorCode : message;
+
+            let snackBarRef = this.snackBar.open(
+                displaymessage,
+                'Dismiss',
+                {
+                    duration: duration
+                });
+        }
+    }
 }

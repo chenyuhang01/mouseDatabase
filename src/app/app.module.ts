@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 
 //Material Modules
 import { 
@@ -90,7 +90,8 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
     MatIconModule,
     LazyLoadImagesModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    HttpClientModule
   ],
   providers: [
     mouseservice,
