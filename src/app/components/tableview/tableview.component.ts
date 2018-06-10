@@ -95,7 +95,6 @@ export class tableview implements OnInit {
     ngOnInit() {
         //Getting data from database
         this.mouseDataservice.getData().subscribe((data) => {
-            data = data.json();
             this.datalist = data;
             this.jsonToMouse();
             this.dataSource = new MatTableDataSource(this.datalist);
@@ -222,8 +221,8 @@ export class tableview implements OnInit {
                 genotype_confirmation: data.genotype_confirmation,
                 physical_id: data.physical_id,
                 mouseline: data.mouseline,
-                birthdate: data.birthdate.toDateString(),
-                deathdate: data.deathdate.toDateString(),
+                birthdate: data.birthdate.toLocaleDateString("en-sg"),
+                deathdate: data.deathdate.toLocaleDateString("en-sg"),
                 age: 34,
                 gender: data.gender,
                 genotype: data.genotype,

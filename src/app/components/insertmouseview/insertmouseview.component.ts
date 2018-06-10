@@ -6,6 +6,7 @@ import { startWith, map } from 'rxjs/operators';
 
 
 import { categoryservice } from '../../services/dataservice/categoryservice.service';
+import { mouseservice } from '../../services/dataservice/mouseservice.service';
 
 interface CheckBoxModel {
     id: boolean,
@@ -65,7 +66,8 @@ export class InsertMouseView implements OnInit {
     constructor(
         private snackBar: MatSnackBar,
         private bottomSheet: MatBottomSheet,
-        private categoryserviceHandler: categoryservice
+        private categoryserviceHandler: categoryservice,
+        private mouseserviceHandler: mouseservice
     ) { }
 
     ngOnInit() {
@@ -148,8 +150,8 @@ export class InsertMouseView implements OnInit {
             sacrificer: this.sacrificer_select,
             purpose: this.purpose_textarea,
             comment: this.comment_textarea,
-            birthdate: this.birthDate ? this.birthDate.toLocaleDateString() : '',
-            deathdate: this.deathDate ? this.deathDate.toLocaleDateString() : '',
+            birthdate: this.birthDate ? this.birthDate.toLocaleDateString("en-sg") : '',
+            deathdate: this.deathDate ? this.deathDate.toLocaleDateString("en-sg") : '',
             pfa: {
                 liver: this.pfa_liver_checkbox,
                 liver_tumor: this.pfa_liver_tumor_checkbox,
@@ -204,6 +206,13 @@ export class InsertMouseView implements OnInit {
     insertButtonPressed(event) {
         console.log('Insert button pressed');
         let jsonObject = this.getJsonObject();
+
+        this.mouseserviceHandler.insertData(jsonObject).subscribe(
+            (event) => {
+                console.log(event);
+            }
+        )
+
         this.clearAllInputs();
     }
 

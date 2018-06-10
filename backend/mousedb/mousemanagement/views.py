@@ -5,64 +5,100 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-#Inserting all models
+# Inserting all models
 from .models import Genotype, Phenotype, Sacrificer, Mouse, Project_title, Mouseline
 
 
-#Importing category for json sending
+# Importing category for json sending
 from category import Object
 
-#For converting json object
+# For converting json object
 import json
 
-# def mouseinsert(request):
-#     json_mouse_data = json.loads(request.GET['data'])
-#     physical_id = json_mouse_data['physical_id']
 
-#     count = Mouse.objects.filter(physical_id=physical_id).count()
+def mouseinsert(request):
+    json_mouse_data = json.loads(request.body)
 
-#     if count >= 1:
-#         print('There is existing primary key exists')
+    print(request.body)
 
+    physical_id = json_mouse_data['physical_id']
+    gender = json_mouse_data['gender']
+    mouseline = json_mouse_data['mouseline']
+    birthdate = json_mouse_data['birthdate']
+    deathdate = json_mouse_data['deathdate']
+    genotype = json_mouse_data['genotype']
+    genotype_confirmation = json_mouse_data['genotype_confirmation']
+    phenotype = json_mouse_data['phenotype']
+    project_title = json_mouse_data['project_title']
+    sacrificer = json_mouse_data['sacrificer']
 
+    purpose = json_mouse_data['purpose']
+    comment = json_mouse_data['comment']
+
+    pfa_liver = json_mouse_data['pfa']['liver']
+    pfa_liver_tumor = json_mouse_data['pfa']['liver_tumor']
+    pfa_small_intenstine = json_mouse_data['pfa']['small_intenstine']
+    pfa_small_intenstine_tumor = json_mouse_data['pfa']['small_intenstine_tumor']
+    pfa_skin = json_mouse_data['pfa']['skin']
+    pfa_skin_hair = json_mouse_data['pfa']['skin_hair']
+    pfa_other = json_mouse_data['pfa']['other']
+    freezedown_liver = json_mouse_data['freezedown']['liver']
+    freezedown_liver_tumor = json_mouse_data['freezedown']['liver_tumor']
+    freezedown_other = json_mouse_data['freezedown']['other']
+
+    #Get Mouse Line
+    #Get PhenoType
+    #Get GenotType
+    #Get Sacrificer
+    #Get Project_Title
+
+    #Creating mouse object
+    #Inserting parameters
+    #Save the mouse
+
+    return HttpResponse(1)
 
 
 def getcategory(request):
-    
+
     before_json_objects = Object()
-    
-    
-    #Get mouselines from db
-    before_json_objects.mouselines = list(Mouseline.objects.values_list('name', flat=True))
 
-    #Get genotypes from db
-    before_json_objects.genotypes = list(Genotype.objects.values_list('name', flat=True))
+    # Get mouselines from db
+    before_json_objects.mouselines = list(
+        Mouseline.objects.values_list('name', flat=True))
 
-    #Get phenotypes from db
-    before_json_objects.phenotypes = list(Phenotype.objects.values_list('name', flat=True))
+    # Get genotypes from db
+    before_json_objects.genotypes = list(
+        Genotype.objects.values_list('name', flat=True))
 
-    #Get Sacrificer from db
-    before_json_objects.sacrificers = list(Sacrificer.objects.values_list('name', flat=True))
+    # Get phenotypes from db
+    before_json_objects.phenotypes = list(
+        Phenotype.objects.values_list('name', flat=True))
 
-    #Get Project Title from db
-    before_json_objects.project_titles = list(Project_title.objects.values_list('name', flat=True))
+    # Get Sacrificer from db
+    before_json_objects.sacrificers = list(
+        Sacrificer.objects.values_list('name', flat=True))
+
+    # Get Project Title from db
+    before_json_objects.project_titles = list(
+        Project_title.objects.values_list('name', flat=True))
 
     json_object = before_json_objects.toJSON()
 
     response = makeEvent(
-            name='getCategory',
-            result=before_json_objects,
-            error=False,
-            errorCode=0
-        )
+        name='getCategory',
+        result=before_json_objects,
+        error=False,
+        errorCode=0
+    )
 
     return response
 
 
-#This is for inserting all the category
+# This is for inserting all the category
 def category_insert(request):
 
-    #Using this way to decode json data
+    # Using this way to decode json data
     json_data = json.loads(request.body)
     input = json_data['input']
     type = json_data['type']
@@ -88,7 +124,7 @@ def category_insert(request):
         return response
     else:
         result = makeinsertion(type=type, input=input)
-    
+
     if(result):
         response = makeEvent(
             name='CategoryInsert',
@@ -102,8 +138,9 @@ def category_insert(request):
             result='',
             error=True,
             errorCode=2
-        ) 
+        )
     return response
+
 
 def getcount(type, input):
     if(type == 'genotype'):
@@ -119,15 +156,16 @@ def getcount(type, input):
     else:
         return -1
 
+
 def makeinsertion(type, input):
     if(type == 'genotype'):
         genotype = Genotype(input)
         genotype.save()
-        return 'New GenoType Record is inserted [%s].' % input 
+        return 'New GenoType Record is inserted [%s].' % input
     elif(type == 'phenotype'):
         phenotype = Phenotype(input)
         phenotype.save()
-        return 'New Phenotype Record is inserted [%s].' % input 
+        return 'New Phenotype Record is inserted [%s].' % input
     elif(type == 'sacrificer'):
         sacrificer = Sacrificer(input)
         sacrificer.save()
@@ -143,6 +181,7 @@ def makeinsertion(type, input):
     else:
         return None
 
+
 def makeEvent(name, result, error, errorCode):
     event = Object()
     event.name = name
@@ -153,4 +192,4 @@ def makeEvent(name, result, error, errorCode):
     response = HttpResponse(event_json, content_type="application/json")
     response["Access-Control-Allow-Origin"] = "*"
     response["Access-Control-Allow-Headers"] = "http://localhost:4200/"
-    return response   
+    return response
