@@ -27,7 +27,7 @@
             <div class="form-container">
                 <!-- Physical ID -->
                 <mat-form-field>
-                    <input [(ngModel)]="physical_id_inputs" matInput required placeholder="Physical ID">
+                    <input [(ngModel)]="physical_id_inputs" matInput placeholder="Physical ID">
                 </mat-form-field>
 
                 <!-- Group  Mouse Line and Gender Confirmation to one row-->
@@ -36,7 +36,7 @@
 
                         <!-- Gender -->
                         <mat-form-field style="width: 100%;">
-                            <mat-select [(ngModel)]="gender_select" required placeholder="Gender">
+                            <mat-select [(ngModel)]="gender_select"  placeholder="Gender">
                                 <mat-option value="Female">Female</mat-option>
                                 <mat-option value="Male">Male</mat-option>
                             </mat-select>
@@ -46,7 +46,7 @@
 
                         <!-- Mouse Line -->
                         <mat-form-field style="width: 100%;">
-                            <mat-select [(ngModel)]="mouseline_select" required placeholder="Mouse Line">
+                            <mat-select [(ngModel)]="mouseline_select"  placeholder="Mouse Line">
                                 <mat-option *ngFor="let mouseline of mouselines" value="{{mouseline}}">{{mouseline}}</mat-option>
                             </mat-select>
                         </mat-form-field>
@@ -82,7 +82,7 @@
                     <div class="col-5">
                         <!-- Geno Type -->
                         <mat-form-field style="width: 100%">
-                            <mat-select [(ngModel)]="genotype_select" required placeholder="Geno Type">
+                            <mat-select [(ngModel)]="genotype_select"  placeholder="Geno Type">
                                 <mat-option *ngFor="let genotype of genotypes" value="{{genotype}}">{{genotype}}</mat-option>
                             </mat-select>
                         </mat-form-field>
@@ -99,7 +99,7 @@
 
                 <!-- Pheno Type -->
                 <mat-form-field>
-                    <mat-select [(ngModel)]="phenotype_select" required placeholder="Pheno Type">
+                    <mat-select [(ngModel)]="phenotype_select"  placeholder="Pheno Type">
                         <mat-option *ngFor="let phenotype of phenotypes" value="{{phenotype}}">{{phenotype}}</mat-option>
                     </mat-select>
                 </mat-form-field>
@@ -108,7 +108,7 @@
                     <div class="col-8">
                         <!-- Project Title -->
                         <mat-form-field style="width: 100%;">
-                            <mat-select [(ngModel)]="project_title_select" required placeholder="Project Title">
+                            <mat-select [(ngModel)]="project_title_select"  placeholder="Project Title">
                                 <mat-option *ngFor="let title of projectTitles" value="{{title}}">{{title}}</mat-option>
                             </mat-select>
                         </mat-form-field>
@@ -116,7 +116,7 @@
                     <div class="col-4">
                         <!-- Sacrificer -->
                         <mat-form-field style="width: 100%;">
-                            <mat-select [(ngModel)]="sacrificer_select" required placeholder="Sacrificer">
+                            <mat-select [(ngModel)]="sacrificer_select"  placeholder="Sacrificer">
                                 <mat-option *ngFor="let sacrificer of sacrificers" value="{{sacrificer}}">{{sacrificer}}</mat-option>
                             </mat-select>
                         </mat-form-field>

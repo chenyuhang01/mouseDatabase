@@ -52,7 +52,7 @@ class Mouse(models.Model):
 
     mouseline = models.ForeignKey(Mouseline, on_delete=models.CASCADE)
     birthdate = models.DateField(blank = False)
-    deathdate = models.DateField(blank = True)
+    deathdate = models.DateField(blank = False)
     genotype = models.ForeignKey(Genotype, on_delete=models.CASCADE)
     genotype_confirmation = models.CharField(max_length=30, blank = True, null = True)
     phenotype = models.ForeignKey(Phenotype, on_delete=models.CASCADE)

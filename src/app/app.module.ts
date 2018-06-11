@@ -24,7 +24,7 @@ import {
   MatIconModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MAT_DATE_LOCALE
+  MAT_DATE_LOCALE,MAT_SNACK_BAR_DATA
 } 
 from '@angular/material';
 import { HttpModule } from '@angular/http';
@@ -38,6 +38,7 @@ import { DialogView } from './components/tableview/dialogview/dialogview.compone
 import { AppComponent } from './app.component';
 import { EditMouseView } from './components/editmouseview/editmouseview.component';
 import { EditMouseViewSmall } from './components/editmouseview/editmousesmallview/editmousesmallview.component';
+import { SnackBarComponent, NotificationService } from './services/notificationservice/notification.service';
 //Services module
 import { mouseservice } from '../app/services/dataservice/mouseservice.service';
 import { categoryservice } from '../app/services/dataservice/categoryservice.service';
@@ -48,6 +49,7 @@ import { ImageUploadModule } from "angular2-image-upload";
 import { Angular2Csv } from 'angular2-csv/Angular2-csv';
 import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,13 +58,15 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
     BottomMenu,
     DialogView,
     EditMouseView,
-    EditMouseViewSmall
+    EditMouseViewSmall,
+    SnackBarComponent
   ],
   entryComponents: [
     BottomMenu,
     DialogView,
     EditMouseViewSmall,
-    EditMouseView
+    EditMouseView,
+    SnackBarComponent
   ],
   imports: [
     BrowserModule,
@@ -97,6 +101,7 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
     mouseservice,
     categoryservice,
     DynamicLoader,
+    NotificationService,
     {provide: MAT_DATE_LOCALE, useValue: 'en-sg'}
   ],
   bootstrap: [AppComponent]

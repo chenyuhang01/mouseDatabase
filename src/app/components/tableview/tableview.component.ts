@@ -4,10 +4,7 @@ import {
     MatTableDataSource,
     MatSort,
     MatPaginator,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatCheckboxModule
+    MatSnackBar
 } from '@angular/material';
 
 
@@ -26,6 +23,8 @@ import { DialogView } from './dialogview/dialogview.component';
 import { SelectionModel } from '@angular/cdk/collections';
 
 import { MONTH, ONEDAY } from '../../constants/constants';
+
+import { NotificationService } from '../../services/notificationservice/notification.service';
 
 @Component({
     selector: 'tableview',
@@ -84,7 +83,7 @@ export class tableview implements OnInit {
     ];
 
     //Create datasoucre for mat table
-    private dataSource: any;
+    private dataSource: MatTableDataSource<Mouse>;
     private selection = new SelectionModel<Mouse>(true, []);
     //data getting from service
     private datalist: any;
@@ -93,11 +92,51 @@ export class tableview implements OnInit {
     @ViewChild(MatSort) sort: MatSort;
 
     ngOnInit() {
+        this.Init();
+
+        //Toggles the init columns
+
+        //Toggle Physical ID Columns
+        this.ToggleColumns(true, 2);
+
+        //Toogle MouseLine 
+        this.ToggleColumns(true, 3);
+
+        //Toogle Geno Type 
+        this.ToggleColumns(true, 8);
+    }
+
+    public getTableContent() {
+        this.notificationService.toast(
+            "Fetching table data now...",
+            false
+        )
+       
+        this.mouseDataservice.getData().subscribe((data) => {
+            this.jsonToMouse(data);
+
+            this.notificationService.toast(
+                "Fetching table data completed...",
+                false
+            )
+            
+            this.dataSource.disconnect();
+            this.dataSource.data = this.datalist;
+            this.dataSource.connect();
+        });
+    }
+
+    Init() {
         //Getting data from database
         this.mouseDataservice.getData().subscribe((data) => {
-            this.datalist = data;
-            this.jsonToMouse();
+            this.jsonToMouse(data);
             this.dataSource = new MatTableDataSource(this.datalist);
+
+            this.notificationService.toast(
+                "Fetching table data completed...",
+                false
+            )
+
             this.dataSource.paginator = this.paginator;
             this.dataSource.sort = this.sort;
 
@@ -124,23 +163,12 @@ export class tableview implements OnInit {
                 return data[sortHeaderId];
             };
         });
-
-        //Toggles the init columns
-
-        //Toggle Physical ID Columns
-        this.ToggleColumns(true, 2);
-
-        //Toogle MouseLine 
-        this.ToggleColumns(true, 3);
-
-        //Toogle Geno Type 
-        this.ToggleColumns(true, 8);
-
-
     }
 
     constructor(
         private mouseDataservice: mouseservice,
+        private snackBar: MatSnackBar,
+        private notificationService:NotificationService,
         public dialog: MatDialog) {
         this.Math = Math;
         this.ONEDAY = ONEDAY;
@@ -148,39 +176,40 @@ export class tableview implements OnInit {
 
 
     //convert json data array from server to mouse models in angular 2 web app
-    jsonToMouse() {
-        this.datalist = this.datalist.map((data) => {
+    jsonToMouse(data) {
+        this.datalist = data.map((data) => {
+            let data_field = data.fields;
             let pfa: PFA = new PFA(
-                data.pfa_liver == 'TRUE' ? true : false,
-                data.pfa_liver_tumor == 'TRUE' ? true : false,
-                data.pfa_small_intenstine == 'TRUE' ? true : false,
-                data.pfa_small_intenstine_tumor == 'TRUE' ? true : false,
-                data.pfa_skin == 'TRUE' ? true : false,
-                data.pfa_skin_hair == 'TRUE' ? true : false,
-                data.pfa_other
+                data_field.pfa_liver,
+                data_field.pfa_liver_tumor ,
+                data_field.pfa_small_intenstine,
+                data_field.pfa_small_intenstine_tumor,
+                data_field.pfa_skin ,
+                data_field.pfa_skin_hair,
+                data_field.pfa_other
             );
             let freezedown: FreezeDown = new FreezeDown(
-                data.freezedown_liver == 'TRUE' ? true : false,
-                data.freezedown_liver_tumor == 'TRUE' ? true : false,
-                data.freezedown_other
+                data_field.freezedown_liver,
+                data_field.freezedown_liver_tumor,
+                data_field.freezedown_other
             );
 
-            let age = Math.round(Math.abs((new Date(data.deathdate).getTime() - new Date(data.birthdate).getTime()) / (ONEDAY)));
+            let age = Math.round(Math.abs((new Date(data_field.deathdate).getTime() - new Date(data_field.birthdate).getTime()) / (ONEDAY)));
 
             data = new Mouse(
-                data.physical_id,
-                data.gender,
-                data.mouseline,
-                new Date(data.birthdate),
-                new Date(data.deathdate),
-                data.genotype,
+                data.pk,
+                data_field.gender,
+                data_field.mouseline,
+                new Date(data_field.birthdate),
+                new Date(data_field.deathdate),
+                data_field.genotype,
                 age,
-                data.genotype_confirmation,
-                data.phenotype,
-                data.projecttitle,
-                data.sacrificer,
-                data.purpose,
-                data.comment,
+                data_field.genotype_confirmation,
+                data_field.phenotype,
+                data_field.project_title,
+                data_field.sacrificer,
+                data_field.purpose,
+                data_field.comment,
                 '',
                 pfa,
                 freezedown
@@ -216,6 +245,7 @@ export class tableview implements OnInit {
         let jsonData = this.dataSource.sortData(this.dataSource.filteredData, this.dataSource.sort).map((data: Mouse) => {
 
 
+            let age = Math.round(Math.abs((new Date(data.deathdate).getTime() - new Date(data.birthdate).getTime()) / (ONEDAY)));
 
             let jsonObject = {
                 genotype_confirmation: data.genotype_confirmation,
@@ -223,7 +253,7 @@ export class tableview implements OnInit {
                 mouseline: data.mouseline,
                 birthdate: data.birthdate.toLocaleDateString("en-sg"),
                 deathdate: data.deathdate.toLocaleDateString("en-sg"),
-                age: 34,
+                age: age,
                 gender: data.gender,
                 genotype: data.genotype,
                 phenotype: data.phenotype,
@@ -339,7 +369,7 @@ export class tableview implements OnInit {
                         }
                         break;
                     default:
-                        if(data.pos != -1){
+                        if (data.pos != -1) {
                             let index = csv_display_title.indexOf(data.display);
                             csv_display_title.splice(index, 1);
                             break;
@@ -464,4 +494,5 @@ export class tableview implements OnInit {
             console.log('The dialog was closed');
         });
     }
+
 }

@@ -42,7 +42,10 @@ export class AppComponent {
     if(mouselist.length == 0){
       this.tableview.closeEditEnabled();
     }
-    
+  }
+
+  insertSuccessEventHandler(){
+    this.tableview.getTableContent();
   }
 
 }

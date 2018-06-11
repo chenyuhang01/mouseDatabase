@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { BASEURL, INSERTMOUSE } from '../../constants/constants';
+import { BASEURL, INSERTMOUSE, MOUSETABLE } from '../../constants/constants';
 
 @Injectable()
 export class mouseservice {
@@ -14,10 +14,17 @@ export class mouseservice {
     }
 
     getData(): Observable<any> {
+        let requesturl: string = BASEURL + MOUSETABLE;
 
-        let requesturl: string = './assets/mouse_db.json';
+        //Solve CSS problem
+        const httpOptions = {
+            headers: new HttpHeaders({
+                'Access-Control-Allow-Headers': 'http://127.0.0.1:8000/',
+                'Content-Type': 'application/json;charset=utf-8'
+            })
+        };
 
-        return this.http.get(requesturl);
+        return this.http.get(requesturl, httpOptions);
     }
 
     insertData(mouse): Observable<any> {

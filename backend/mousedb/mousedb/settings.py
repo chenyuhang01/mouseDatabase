@@ -132,6 +132,10 @@ CORS_ALLOW_HEADERS = (
     'Access-Control-Allow-Headers'
 )
 
+DATE_FORMAT = [
+    '%d/%m/%Y'
+]
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
