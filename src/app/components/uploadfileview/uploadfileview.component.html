@@ -1,7 +1,27 @@
 <div class="mat-elevation-z15 round-corner">
-    <div class="row">
-        <div class="col">
-            <h1>Upload File View</h1>
+    <mat-list>
+        <div *ngFor="let file of fileLists">
+            <mat-list-item id="{{file.fileid}}" class="loading-bar">
+                <div class="row" style="width: 100%;">
+                    <div class="col-5" style="width: 100%;">
+                        <h4 mat-line>{{file.file.name}}</h4>
+                        <p mat-line>{{file.file_time}}</p>
+
+                    </div>
+                    <div class="col-1">
+                        <i *ngIf="file.complete&&file.error==0" class="fa fa-check" aria-hidden="true" style="margin:1rem auto auto auto;color:green"></i>
+                        <i *ngIf="file.complete&&file.error==1" class="fa fa-times" aria-hidden="true" style="margin:1rem auto auto auto;color:red"></i>
+                        <i *ngIf="file.complete&&file.error==2" class="fa fa-exclamation-triangle" aria-hidden="true" style="margin:1rem auto auto auto;color:yellow"></i>
+                    </div>
+                    <div class="col-4" style="width: 100%;margin:auto;">
+                        <mat-progress-bar [value]="file.value"></mat-progress-bar>
+                    </div>
+                    <div class="col-2">
+                        <button *ngIf="file.complete" mat-button (click)="dismiss(file.fileid)" color="warn" style="margin:1rem auto auto auto;">Dismiss</button>
+                    </div>
+                </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
         </div>
-    </div>
+    </mat-list>
 </div>

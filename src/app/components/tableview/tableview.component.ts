@@ -27,6 +27,8 @@ import { MONTH, ONEDAY } from '../../constants/constants';
 import { NotificationService } from '../../services/notificationservice/notification.service';
 import { FileUploader } from '../../services/dataservice/fileuploader.service';
 
+import { FileInterface } from '../model/file';
+
 @Component({
     selector: 'tableview',
     templateUrl: './tableview.component.html',
@@ -253,6 +255,7 @@ export class tableview implements OnInit {
 
     onFileChange(event){
         console.log(event);
+
         this.fileuploader.addFiles(event.target.files);
         this.importcsvevent.emit();
     }

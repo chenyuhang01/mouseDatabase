@@ -24,6 +24,7 @@ import {
   MatIconModule,
   MatDatepickerModule,
   MatNativeDateModule,
+  MatProgressBarModule,
   MAT_DATE_LOCALE,MAT_SNACK_BAR_DATA
 } 
 from '@angular/material';
@@ -99,7 +100,8 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
     LazyLoadImagesModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressBarModule
   ],
   providers: [
     mouseservice,

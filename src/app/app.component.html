@@ -31,7 +31,9 @@
         <div class="col-6">
             <uploadfileview 
             #uploadfileview
+            [hidden]="!uploadfileviewchecked_flag"
             (uploadFinishedEvent)="uploadFinishedEventHandler()"
+            (notasksevent)="notaskseventHandler()"
             ></uploadfileview>
         </div>
     </div>

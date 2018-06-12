@@ -9,6 +9,7 @@ import { Mouse } from '../app/components/model/mouse.component';
 export class AppComponent {
   title = 'app';
   insertmousechecked_flag = false;
+  uploadfileviewchecked_flag = false;
   editmousechecked_flag = true;
   mouselist: Mouse[];
 
@@ -50,11 +51,16 @@ export class AppComponent {
 
   startUploading(){
     this.uploadfileview.startupload();
+    this.uploadfileviewchecked_flag = true;
   }
 
   uploadFinishedEventHandler(){
     this.tableview.getTableContent();
-    this.insertmouseviewref.getCategoryData(false);
+    this.insertmouseviewref.getCategoryData(false); 
+  }
+
+  notaskseventHandler(){
+    this.uploadfileviewchecked_flag = !this.uploadfileviewchecked_flag;
   }
 
 }
