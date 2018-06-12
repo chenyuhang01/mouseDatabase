@@ -18,8 +18,31 @@ import json
 
 
 
-#Get mouse table
+#Handing file upload
+def fileupload(request):
+    for k in request.FILES.items():
+        print(k)
 
+    # handle_uploaded_file(request.FILES['uploadFile'])
+    response = makeEvent(
+        name='UploadCSVEvent',
+        result='Success',
+        error=False,
+        errorCode=0
+    )
+
+    return response
+
+
+
+#Gets parts of file and write to disk drive
+def handle_uploaded_file(file):
+    with open('inputfile.csv', 'wb+') as destination:
+        for chunk in file.chunk:
+            destination.write(chunk)
+
+
+#Get mouse table
 def getmousetable(request):
     mouseLists = serializers.serialize("json", Mouse.objects.all())
     

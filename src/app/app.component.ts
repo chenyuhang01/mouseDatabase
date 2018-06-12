@@ -1,7 +1,5 @@
-import { Component, ViewContainerRef, ViewChild, Renderer2} from '@angular/core';
-import { DynamicLoader } from './services/dynamicloader/dynamicloader.service';
+import { Component, ViewChild, Renderer2} from '@angular/core';
 
-import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Mouse } from '../app/components/model/mouse.component';
 @Component({
   selector: 'app-root',
@@ -15,6 +13,7 @@ export class AppComponent {
   mouselist: Mouse[];
 
   @ViewChild('tableview') tableview;
+  @ViewChild('uploadfileview') uploadfileview;
   constructor(public renderer2: Renderer2) {
     
   }
@@ -46,6 +45,10 @@ export class AppComponent {
 
   insertSuccessEventHandler(){
     this.tableview.getTableContent();
+  }
+
+  startUploading(){
+    this.uploadfileview.startupload();
   }
 
 }

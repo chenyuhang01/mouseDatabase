@@ -4,6 +4,7 @@ export const INSERTCAT: string = 'category_insert';
 
 export const INSERTMOUSE: string = 'mouseinsert';
 export const MOUSETABLE: string = 'getmousetable';
+export const UPLOADFILE: string = 'fileupload';
 
 export const MONTH = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 export const ONEDAY = 24*60*60*1000;

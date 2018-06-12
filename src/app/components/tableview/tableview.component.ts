@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, ViewChild, Output, EventEmitter, ElementRef } from '@angular/core';
 import { Mouse, PFA, FreezeDown } from '../model/mouse.component';
 import {
     MatTableDataSource,
@@ -25,6 +25,7 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { MONTH, ONEDAY } from '../../constants/constants';
 
 import { NotificationService } from '../../services/notificationservice/notification.service';
+import { FileUploader } from '../../services/dataservice/fileuploader.service';
 
 @Component({
     selector: 'tableview',
@@ -37,6 +38,11 @@ export class tableview implements OnInit {
     ONEDAY: any;
     @Output('insertmouseviewevent') insertmouseviewevent = new EventEmitter<any>();
     @Output('confirmButtonviewevent') confirmButtonviewevent = new EventEmitter<any>();
+
+    
+    @Output('importcsvevent') importcsvevent = new EventEmitter<any>();
+
+    @ViewChild('csvfileInput') csvfileInput: ElementRef;
 
     //Table Header file
     columnsToDisplay = [
@@ -169,6 +175,7 @@ export class tableview implements OnInit {
         private mouseDataservice: mouseservice,
         private snackBar: MatSnackBar,
         private notificationService:NotificationService,
+        private fileuploader: FileUploader,
         public dialog: MatDialog) {
         this.Math = Math;
         this.ONEDAY = ONEDAY;
@@ -238,6 +245,16 @@ export class tableview implements OnInit {
     insertmouseview() {
         this.insertmouseviewevent.emit();
         this.insertmousechecked = !this.insertmousechecked;
+    }
+
+    import_csv(){
+        this.csvfileInput.nativeElement.click();
+    }
+
+    onFileChange(event){
+        console.log(event);
+        this.fileuploader.addFiles(event.target.files);
+        this.importcsvevent.emit();
     }
 
     export_csv() {

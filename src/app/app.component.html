@@ -2,25 +2,34 @@
 <div class="container tableviewclass">
     <div class="row">
         <div class="col-12">
-            <tableview #tableview (insertmouseviewevent)="insertmouseview()" (confirmButtonviewevent)="confirmButtonEvent($event)"></tableview>
+            <tableview 
+                #tableview 
+                (insertmouseviewevent)="insertmouseview()" 
+                (confirmButtonviewevent)="confirmButtonEvent($event)"
+                (importcsvevent)="startUploading()"></tableview>
         </div>
     </div>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <editmouseview #editmouseview
-            [mouselist]="mouselist"
-            (cancelButtonEvent)="cancelButtonEventHandler($event)"
+            <editmouseview 
+                #editmouseview
+                [mouselist]="mouselist"
+                (cancelButtonEvent)="cancelButtonEventHandler($event)"
             ></editmouseview>
         </div>
     </div>
     <div class="row">
         <div class="col-6">
-            <insertmouseview #insertmouseviewref
-            [hidden]="!insertmousechecked_flag" 
-            (closepanel)="closepanel()"
-            (insertSuccessEvent)="insertSuccessEventHandler()"></insertmouseview>
+            <insertmouseview 
+                #insertmouseviewref
+                [hidden]="!insertmousechecked_flag" 
+                (closepanel)="closepanel()"
+                (insertSuccessEvent)="insertSuccessEventHandler()"></insertmouseview>
+        </div>
+        <div class="col-6">
+            <uploadfileview #uploadfileview></uploadfileview>
         </div>
     </div>
 </div>

@@ -39,10 +39,13 @@ import { AppComponent } from './app.component';
 import { EditMouseView } from './components/editmouseview/editmouseview.component';
 import { EditMouseViewSmall } from './components/editmouseview/editmousesmallview/editmousesmallview.component';
 import { SnackBarComponent, NotificationService } from './services/notificationservice/notification.service';
+import { Uploadfileview } from './components/uploadfileview/uploadfileview.component';
+
 //Services module
 import { mouseservice } from '../app/services/dataservice/mouseservice.service';
 import { categoryservice } from '../app/services/dataservice/categoryservice.service';
 import { DynamicLoader } from '../app/services/dynamicloader/dynamicloader.service';
+import { FileUploader } from '../app/services/dataservice/fileuploader.service';
 
 //3rd Party image uploader module
 import { ImageUploadModule } from "angular2-image-upload";
@@ -59,7 +62,8 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
     DialogView,
     EditMouseView,
     EditMouseViewSmall,
-    SnackBarComponent
+    SnackBarComponent,
+    Uploadfileview
   ],
   entryComponents: [
     BottomMenu,
@@ -102,6 +106,7 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
     categoryservice,
     DynamicLoader,
     NotificationService,
+    FileUploader,
     {provide: MAT_DATE_LOCALE, useValue: 'en-sg'}
   ],
   bootstrap: [AppComponent]

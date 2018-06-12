@@ -1,4 +1,5 @@
 <div class="mat-elevation-z15 round-corner">
+    <input style="display:none;" type="file" #csvfileInput (change)="onFileChange($event)">
     <div class="row">
         <div class="col-4"></div>
         <div class="col-4 text-center">
@@ -8,6 +9,7 @@
         </div>
         <div class="col-4 text-right">
             <mat-form-field class="search">
+                
                 <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
             </mat-form-field>
         </div>
@@ -38,7 +40,7 @@
                         <i class="fa fa-download" aria-hidden="true"></i>
                     </span>
                 </button>
-                <button class="csvbutton" mat-raised-button color="accent">
+                <button class="csvbutton" mat-raised-button color="accent" (click)="import_csv()">
                     <span>Import CSV
                         <i class="fa fa-upload" aria-hidden="true"></i>
                     </span>
