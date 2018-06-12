@@ -14,6 +14,7 @@ export class AppComponent {
 
   @ViewChild('tableview') tableview;
   @ViewChild('uploadfileview') uploadfileview;
+  @ViewChild('insertmouseviewref') insertmouseviewref;
   constructor(public renderer2: Renderer2) {
     
   }
@@ -49,6 +50,11 @@ export class AppComponent {
 
   startUploading(){
     this.uploadfileview.startupload();
+  }
+
+  uploadFinishedEventHandler(){
+    this.tableview.getTableContent();
+    this.insertmouseviewref.getCategoryData(false);
   }
 
 }

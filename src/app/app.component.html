@@ -29,7 +29,10 @@
                 (insertSuccessEvent)="insertSuccessEventHandler()"></insertmouseview>
         </div>
         <div class="col-6">
-            <uploadfileview #uploadfileview></uploadfileview>
+            <uploadfileview 
+            #uploadfileview
+            (uploadFinishedEvent)="uploadFinishedEventHandler()"
+            ></uploadfileview>
         </div>
     </div>
 </div>

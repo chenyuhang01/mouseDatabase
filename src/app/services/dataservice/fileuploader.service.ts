@@ -1,47 +1,63 @@
 import { Injectable } from '@angular/core';
 
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpRequest } from '@angular/common/http';
 
 import { UPLOADFILE, BASEURL } from '../../constants/constants';
+import { Observable } from 'rxjs';
+
+//Solve CSS problem
+const httpOptions = {
+    headers: new HttpHeaders({
+        'Access-Control-Allow-Headers': BASEURL
+    })
+};
 
 @Injectable()
 export class FileUploader {
 
     private fileToBeUploaded: File[] = [];
+    private listOfObservable: Observable<any>[] = [];
 
     constructor(private http: HttpClient) { }
 
-    addFiles(file: File) {
-        this.fileToBeUploaded.push(file);
+    addFiles(file) {
+        for (let fileinput of file) {
+            this.fileToBeUploaded.push(fileinput);
+        }
+
         console.log("File Added");
     }
 
     uploadFiles() {
 
         const fileuploadrequesturl = BASEURL + UPLOADFILE;
-
+        let filenameLists: string[] = []
         console.log("Start Uploading file");
 
         if (this.fileToBeUploaded.length > 0) {
-            let formdata = new FormData();
+
 
             for (let file of this.fileToBeUploaded) {
-                formdata.append('uploadFile', new Blob([file]), file.name);
+                let formdata = new FormData();
+                formdata.append('file', file);
+                formdata.append('filename', file.name);
+
+                this.listOfObservable.push(this.http.post(
+                    fileuploadrequesturl,
+                    formdata,
+                    httpOptions
+                ));
+                console.log('Uploading Now: ' + file.name);
+                var index = this.fileToBeUploaded.indexOf(file);
+                if (index > -1) {
+                    this.fileToBeUploaded.splice(index, 1);
+                }
             }
-            //Solve CSS problem
-            const httpOptions = {
-                headers: new HttpHeaders({
-                    'Access-Control-Allow-Headers': 'http://127.0.0.1:8000/',
-                    'Content-Type': 'multipart/form-data',
-                    'Accept': 'application/json'
-                })
-            };
-            return this.http.post(
-                fileuploadrequesturl,
-                formdata,
-                httpOptions
-            )
+
+
+            return this.listOfObservable;
         }
+
 
     }
 }
