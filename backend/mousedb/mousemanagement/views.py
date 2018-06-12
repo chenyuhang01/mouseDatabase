@@ -5,10 +5,15 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime
 from django.core import serializers
+from django.core.files.storage import default_storage
+from django.core.files.base import ContentFile
 
+from django.db import OperationalError
+
+import os
 # Inserting all models
 from .models import Genotype, Phenotype, Sacrificer, Mouse, Project_title, Mouseline
-
+import time
 
 # Importing category for json sending
 from category import Object
@@ -16,31 +21,58 @@ from category import Object
 # For converting json object
 import json
 
+import pandas as pd
 
+from csv2db import csv2db
 
 #Handing file upload
 def fileupload(request):
-    for k in request.FILES.items():
-        print(k)
+    print(request.POST)
+    fileid = request.POST['fileid']
+    file = request.FILES['file']
+    filename = request.POST['filename']
 
-    # handle_uploaded_file(request.FILES['uploadFile'])
-    response = makeEvent(
-        name='UploadCSVEvent',
-        result='Success',
-        error=False,
-        errorCode=0
-    )
+    path = handle_uploaded_file(file, filename)
+
+    (record_error, error) = parsecsv(path)
+
+    errorCode = 9 if error else 0
+
+    if(error):
+        response = makeUploadEvent(
+            name='UploadCSVEvent',
+            result=record_error,
+            error=error,
+            errorCode=errorCode,
+            fileid=fileid
+        )
+    else:
+        response = makeUploadEvent(
+            name='UploadCSVEvent',
+            result='All The mouse has been imported into database.',
+            error=error,
+            errorCode=errorCode,
+            fileid=fileid
+        )        
 
     return response
 
-
+def parsecsv(file):
+    csv2dbhandler = csv2db(file)
+    finished = False
+    while(not finished):
+        try:
+            (record_error, error) = csv2dbhandler.startparsing()
+            finished = True
+            os.remove(file)
+        except OperationalError:
+            time.sleep(3)
+    return (record_error, error)
 
 #Gets parts of file and write to disk drive
-def handle_uploaded_file(file):
-    with open('inputfile.csv', 'wb+') as destination:
-        for chunk in file.chunk:
-            destination.write(chunk)
-
+def handle_uploaded_file(file, filename):
+    path = default_storage.save(filename, ContentFile(file.read()))
+    return path
 
 #Get mouse table
 def getmousetable(request):
@@ -340,6 +372,19 @@ def makeEvent(name, result, error, errorCode):
     event.error = error
     event.errorCode = errorCode
     event.result = result
+    event_json = event.toJSON()
+    response = HttpResponse(event_json, content_type="application/json")
+    response["Access-Control-Allow-Origin"] = "*"
+    response["Access-Control-Allow-Headers"] = "http://localhost:4200/"
+    return response
+
+def makeUploadEvent(name, result, error, errorCode, fileid):
+    event = Object()
+    event.name = name
+    event.error = error
+    event.errorCode = errorCode
+    event.result = result
+    event.fileid = fileid
     event_json = event.toJSON()
     response = HttpResponse(event_json, content_type="application/json")
     response["Access-Control-Allow-Origin"] = "*"
