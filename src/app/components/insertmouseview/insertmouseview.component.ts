@@ -6,7 +6,6 @@ import { MatBottomSheet, MatBottomSheetRef } from '@angular/material';
 import { categoryservice } from '../../services/dataservice/categoryservice.service';
 import { mouseservice } from '../../services/dataservice/mouseservice.service';
 import { NotificationService } from '../../services/notificationservice/notification.service';
-import { extractStyleParams } from '@angular/animations/browser/src/util';
 
 @Component({
     selector: 'insertmouseview',
@@ -19,7 +18,6 @@ export class InsertMouseView implements OnInit {
     @Output('insertSuccessEvent') insertSuccessEvent = new EventEmitter<any>();
 
     /* Retrieved data section */
-
     private physical_id_inputs: string = '';
     private mouseline_select: string = '';
     private gender_select: string = '';
@@ -122,9 +120,9 @@ export class InsertMouseView implements OnInit {
     /* Date related callbacks */
     dateTrigger(event, result) {
         if (result.targetElement.id == "birthdatepicker") {
-            this.birthDate = result.value;
+            this.birthDate.setDate(result.value);
         } else {
-            this.deathDate = result.value;
+            this.deathDate.setDate(result.value);
         }
     }
 

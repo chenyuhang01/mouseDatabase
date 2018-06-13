@@ -27,7 +27,7 @@ export class PFA{
        public small_intenstine_tumor:boolean,
        public skin:boolean,
        public skin_hair:boolean,
-       public other:boolean
+       public other:string
    ){ } 
 }
 
@@ -35,6 +35,6 @@ export class FreezeDown{
     constructor(
         public liver:boolean,
         public liver_tumor:boolean,
-        public other:boolean        
+        public other:string        
     ){ }
 }

@@ -1,93 +1,25 @@
-<mat-card class="scrollable">
-    <mat-card-header>
+<div class="dialog-container">
+    <!-- <mat-card-header>
         <mat-card-title>Physical: {{data.row.physical_id}}</mat-card-title>
-        <mat-card-subtitle>Gender: {{ data.row.gender }}</mat-card-subtitle>
     </mat-card-header>
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <img style="width:100%;margin:.5rem;" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-            </div>
-            <div class="col-6">
-                <div class="row row-margin">
-                    <div class="col-12">
-                        Mouse Line: {{ data.row.mouseline }}
-                    </div>
-                </div>
-                <div class="row row-margin">
-                    <div class="col-12">
-                        Project Title: {{ data.row.project_title}}
-                    </div>
-                </div>
-                <div class="row row-margin">
-                    <div class="col-12">
-                        <mat-expansion-panel>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    PFA Detail:
-                                </mat-panel-title>
-                            </mat-expansion-panel-header>
-                            <div>
-                                Liver: {{ data.row.pfa.liver}}
-                            </div>
-                        </mat-expansion-panel>
-                    </div>
-                </div>
-                <div class="row row-margin">
-                    <div class="col-12">
-                        <mat-expansion-panel>
-                            <mat-expansion-panel-header>
-                                <mat-panel-title>
-                                    FreezeDown Detail:
-                                </mat-panel-title>
-                            </mat-expansion-panel-header>
-                            <div>Liver: {{ data.row.freezedown.liver}}</div>
-                        </mat-expansion-panel>
-                    </div>
-                </div>
+    <mat-card-content> -->
+    <div class="row">
+        <div class="col-12">
+            <h4>Physical ID: {{data.row.physical_id}}</h4>
+        </div>
+    </div>
+    <div class="gallery-block grid-gallery lazy-load-images">
+        <div class="row" style="width:100%;">
+            <div *ngFor="let image of imageLists" class="col-3 item">
+                <a class="lightbox" href="{{image}}">
+                    <img class="img-fluid image scale-on-hover" src="{{image}}">
+                </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <mat-expansion-panel>
-                    <mat-expansion-panel-header>
-                        <mat-panel-title>
-                            Images:
-                        </mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <div class="gallery-block grid-gallery lazy-load-images">
-                        <div class="row adjust-right" >
-                            <div class="col-lg-3 item">
-                                <a class="lightbox" href="https://material.angular.io/assets/img/examples/shiba2.jpg">
-                                    <img class="img-fluid image scale-on-hover" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-                                </a>
-                            </div>
-                            <div class="col-lg-3 item ">
-                                <a class="lightbox" href="https://material.angular.io/assets/img/examples/shiba2.jpg">
-                                    <img class="img-fluid image scale-on-hover" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-                                </a>
-                            </div>
-                            <div class="col-lg-3 item">
-                                <a class="lightbox" href="https://material.angular.io/assets/img/examples/shiba2.jpg">
-                                    <img class="img-fluid image scale-on-hover" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-                                </a>
-                            </div>
-                            <div class="col-lg-3 item">
-                                <a class="lightbox" href="https://material.angular.io/assets/img/examples/shiba2.jpg">
-                                    <img class="img-fluid image scale-on-hover" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </mat-expansion-panel>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-right">
+            <button mat-raised-button color="warn" (click)="onExitClick()">Exit</button>
         </div>
-    </mat-card-content>
-    <mat-card-actions>
-        <div class="row">
-            <div class="col-12 text-right">
-                <button mat-raised-button color="warn" (click)="onExitClick()">Exit</button>
-            </div>
-        </div>
-    </mat-card-actions>
-</mat-card>
+    </div>
+</div>

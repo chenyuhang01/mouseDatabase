@@ -55,5 +55,15 @@ export class AppComponent {
     this.uploadfileviewchecked_flag = !this.uploadfileviewchecked_flag;
   }
 
+  updatefinishedEventHandler(){
+    console.log("Update Finished");
+    this.tableview.getTableContent();
+  }
+
+  importImageeventHandler(physical_id){
+    this.uploadfileview.startuploadImage(physical_id);
+    this.uploadfileviewchecked_flag = true;
+  }
+
 }
 

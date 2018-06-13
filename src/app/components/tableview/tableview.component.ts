@@ -506,8 +506,9 @@ export class tableview implements OnInit {
 
     openDialog(row): void {
         let dialogRef = this.dialog.open(DialogView, {
-            width: '1000px',
-            data: { row: row }
+            width: '1200px',
+            data: { row: row },
+            panelClass: 'my-panel'
         });
 
         dialogRef.afterClosed().subscribe(result => {

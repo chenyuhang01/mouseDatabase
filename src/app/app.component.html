@@ -17,6 +17,8 @@
                 #editmouseview
                 [mouselist]="mouselist"
                 (cancelButtonEvent)="cancelButtonEventHandler($event)"
+                (updatefinishedEvent)="updatefinishedEventHandler()"
+                (importImageevent)="importImageeventHandler($event)"
             ></editmouseview>
         </div>
     </div>

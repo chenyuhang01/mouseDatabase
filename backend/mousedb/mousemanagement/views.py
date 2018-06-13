@@ -24,10 +24,84 @@ import json
 import pandas as pd
 
 from csv2db import csv2db
+from os import listdir
+from os.path import isfile, join
+import shutil
+
+#Get image gallery
+def getimages(request):
+    
+    physical_id = json.loads(request.body)['physical_id']
+    cwd = os.getcwd()
+
+    try:
+        mypath = cwd + '/mousemanagement/static/photos/%s' % physical_id
+        filelists = [f for f in listdir(mypath) if isfile(join(mypath, f)) and '.jpg' in f]
+    
+    except OSError:
+        response = makeEvent(
+            name='mouseimageevent',
+            result= 'The target [%s] mouse does not have image folder.',
+            error=True,
+            errorCode=12)            
+        
+        return response 
+
+    filelistsString = ''
+
+    for file in filelists:
+        filelistsString += file + ','
+
+    response = makeEvent(
+        name='mouseimageevent',
+        result= filelistsString,
+        error=False,
+        errorCode=0)  
+
+    return response
+
+#Handling image upload
+def imageFileUpload(request):
+    fileid = request.POST['fileid']
+    file = request.FILES['file']
+    filename = request.POST['filename']
+    physical_id = request.POST['physical_id']
+    cwd = os.getcwd()
+    mypath = cwd + '/mousemanagement/static/photos/%s' % physical_id
+
+    if(not os.path.isdir(mypath)):
+        os.makedirs(mypath)
+    
+
+    temp_path = handle_uploaded_file(file, mypath + '/' + filename)
+
+    error = False
+    if(not os.path.isfile(mypath + '/' + filename)): 
+        error = True  
+
+    errorCode = 13 if error else 0
+
+    if(error):
+        response = makeUploadEvent(
+            name='UploadImageEvent',
+            result=record_error,
+            error=error,
+            errorCode=errorCode,
+            fileid=fileid
+        )
+    else:
+        response = makeUploadEvent(
+            name='UploadImageEvent',
+            result='Image Uploaded',
+            error=error,
+            errorCode=errorCode,
+            fileid=fileid
+        )        
+
+    return response    
 
 #Handing file upload
 def fileupload(request):
-    print(request.POST)
     fileid = request.POST['fileid']
     file = request.FILES['file']
     filename = request.POST['filename']
@@ -100,13 +174,111 @@ def makeMouseLists(name, result, error, errorCode):
     response["Access-Control-Allow-Headers"] = "http://localhost:4200/"
     return response
 
+
+#Update Mouse section
+def updatemouse(request):
+    json_mouse_data = json.loads(request.body)
+    physical_id_input = json_mouse_data['physical_id']
+    error = False
+    error_message = ''
+    #Check If Existing mouse
+    count = Mouse.objects.filter(physical_id=physical_id_input).count()
+    if count == 0:
+        response = makeEvent(
+        name='mouseinsertEvent',
+        result='Particular mouse not found in the database.Check with the admin.[%s]' % physical_id_input,
+        error=True,
+        errorCode=10)            
+        
+        return response  
+
+    mouse = Mouse.objects.get(physical_id__exact=physical_id_input)
+    mouse.gender = json_mouse_data['gender']
+
+
+    #Get Mouse Line
+    (mouseline, error_message, error) = getItemFromDatabase(json_mouse_data['mouseline'], error, error_message, Mouseline, 'Mouseline')
+
+    #Get PhenoType
+    (phenotype, error_message, error) = getItemFromDatabase(json_mouse_data['phenotype'], error, error_message, Phenotype, 'Phenotype')
+
+    #Get GenotType
+    (genotype, error_message, error) = getItemFromDatabase(json_mouse_data['genotype'], error, error_message, Genotype, 'Genotype')
+
+    #Get Sacrificer
+    (sacrificer, error_message, error) = getItemFromDatabase( json_mouse_data['sacrificer'], error, error_message, Sacrificer, 'Sacrificer')
+
+    #Get Project_Title
+    (project_title, error_message, error) = getItemFromDatabase(json_mouse_data['project_title'], error, error_message, Project_title, 'Project_title')
+
+
+    if error:
+        response = makeEvent(
+        name='mouseupdateevent',
+        result= error_message + '.Mouse [%s]' % physical_id_input,
+        error=True,
+        errorCode=10)            
+        
+        return response 
+
+    mouse.mouseline = mouseline
+    mouse.genotype = genotype
+    mouse.sacrificer = sacrificer
+    mouse.project_title = project_title
+    mouse.phenotype = phenotype
+
+
+    birthdate_input = json_mouse_data['birthdate']
+    birthdate = datetime.strptime(birthdate_input, '%d/%m/%Y')
+    birthdate = birthdate.strftime("%Y-%m-%d")
+    mouse.birthdate = birthdate
+
+    deathdate_input = json_mouse_data['deathdate']
+    deathdate = datetime.strptime(deathdate_input, '%d/%m/%Y')
+    deathdate = deathdate.strftime("%Y-%m-%d")
+    mouse.deathdate = deathdate
+
+
+    mouse.genotype_confirmation = json_mouse_data['genotype_confirmation']
+
+    mouse.purpose = json_mouse_data['purpose']
+    mouse.comment= json_mouse_data['comment']
+
+    mouse.pfa_liver = json_mouse_data['pfa']['liver']
+    mouse.pfa_liver_tumor = json_mouse_data['pfa']['liver_tumor']
+    mouse.pfa_small_intenstine = json_mouse_data['pfa']['small_intenstine']
+    mouse.pfa_small_intenstine_tumor = json_mouse_data['pfa']['small_intenstine_tumor']
+    mouse.pfa_skin = json_mouse_data['pfa']['skin']
+    mouse.pfa_skin_hair = json_mouse_data['pfa']['skin_hair']
+    mouse.pfa_other = json_mouse_data['pfa']['other']
+    mouse.freezedown_liver = json_mouse_data['freezedown']['liver']
+    mouse.freezedown_liver_tumor = json_mouse_data['freezedown']['liver_tumor']
+    mouse.freezedown_other = json_mouse_data['freezedown']['other']
+
+    try:
+        mouse.save()
+    except ValueError:
+        response = makeEvent(
+            name='mouseupdateevent',
+            result='Encounter internal database error.[%s]' % physical_id_input,
+            error=True,
+            errorCode=11
+        )
+        return response 
+    
+    response = makeEvent(
+        name='mouseupdateevent',
+        result='The mouse has been successfullty updated.[%s]' % physical_id_input,
+        error=False,
+        errorCode=0
+    )            
+    return response
+
+
+
 #Insert Mouse section
 def mouseinsert(request):
     json_mouse_data = json.loads(request.body)
-
-
-
-
 
     physical_id_input = json_mouse_data['physical_id']
 
@@ -229,7 +401,7 @@ def mouseinsert(request):
             errorCode=5
         )
         return response
-        
+    
 
 def getItemFromDatabase(key, error, error_message, typeObject, typestring):
     result = ''
@@ -390,3 +562,5 @@ def makeUploadEvent(name, result, error, errorCode, fileid):
     response["Access-Control-Allow-Origin"] = "*"
     response["Access-Control-Allow-Headers"] = "http://localhost:4200/"
     return response
+
+

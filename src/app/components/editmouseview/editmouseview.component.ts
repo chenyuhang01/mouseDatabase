@@ -11,6 +11,8 @@ export class EditMouseView implements OnInit{
 
     @Input() mouselist;
     @Output('cancelButtonEvent') cancelButtonEvent = new EventEmitter<any>();
+    @Output('updatefinishedEvent') updatefinishedEvent = new EventEmitter<any>();
+    @Output('importImageevent') importImageevent = new EventEmitter<any>();
     constructor(public zone: NgZone){
         
     }
@@ -22,5 +24,13 @@ export class EditMouseView implements OnInit{
     canceleventHandler(index){
         this.mouselist.splice(index, 1);
         this.cancelButtonEvent.emit(this.mouselist);
+    }
+
+    updatefinishedEventHandler(){
+        this.updatefinishedEvent.emit();
+    }
+
+    importImageeventHandler(physical_id){
+        this.importImageevent.emit(physical_id);
     }
 }

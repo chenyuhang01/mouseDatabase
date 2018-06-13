@@ -11,4 +11,7 @@ urlpatterns = [
     url(r'^mouseinsert$',views.mouseinsert, name='mouseinsert'),
     url(r'^getmousetable$',views.getmousetable, name='getmousetable'),
     url(r'^fileupload$',views.fileupload, name='fileupload'),
+    url(r'^updatemouse$',views.updatemouse, name='updatemouse'),
+    url(r'^getimages$',views.getimages, name='getimages'),
+    url(r'^imageFileUpload$',views.imageFileUpload, name='imageFileUpload'),
 ]

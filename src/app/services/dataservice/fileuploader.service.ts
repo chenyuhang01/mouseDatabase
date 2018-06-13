@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient, HttpHeaders, HttpRequest } from '@angular/common/http';
 
-import { UPLOADFILE, BASEURL } from '../../constants/constants';
+import { UPLOADFILE, BASEURL, IMAGEUPLOAD } from '../../constants/constants';
 import { Observable } from 'rxjs';
 
 
@@ -17,21 +17,54 @@ const httpOptions = {
 export class FileUploader {
 
     private fileToBeUploaded: File[] = [];
+    private ImagefileToBeUploaded: File[] = [];
     private listOfObservable: any[] = [];
 
     private counter:number = 0;
+
+    private imageCounter:number = 0;
     constructor(private http: HttpClient) { }
 
     addFiles(file) {
         for (let fileinput of file) {
             this.fileToBeUploaded.push(fileinput);
         }
-
-        console.log("File Added");
     }
+
 
     getFiles(){
         return this.fileToBeUploaded;
+    }
+
+    uploadImageFiles(physical_id: string){
+        const fileuploadrequesturl = BASEURL + IMAGEUPLOAD;
+
+        console.log("Start Uploading file");
+
+        if (this.fileToBeUploaded.length > 0) {
+            for (let file of this.fileToBeUploaded) {
+                let formdata = new FormData();
+                formdata.append('fileid', this.counter.toString());
+                formdata.append('file', file);
+                formdata.append('filename', file.name);
+                formdata.append('physical_id', physical_id)
+                
+                this.listOfObservable.push(
+                    
+                    {
+                        observable: this.http.post(fileuploadrequesturl,formdata,httpOptions),
+                        fileid: this.counter
+                    }
+                );
+
+                this.counter = this.counter + 1;
+                console.log('Uploading Now: ' + file.name);
+                var index = this.fileToBeUploaded.indexOf(file);
+            }
+            this.fileToBeUploaded = [];
+
+            return this.listOfObservable;
+        }       
     }
 
     uploadFiles() {
@@ -63,7 +96,5 @@ export class FileUploader {
 
             return this.listOfObservable;
         }
-
-
     }
 }
