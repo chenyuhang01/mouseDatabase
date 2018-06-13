@@ -1,9 +1,9 @@
 import { Injectable, Component, Inject } from '@angular/core';
+import { timer } from 'rxjs';
 
 import {
-    MatSnackBar, MAT_SNACK_BAR_DATA, MatSnackBarRef
+    MatSnackBar, MAT_SNACK_BAR_DATA
 } from '@angular/material';
-import { timer } from 'rxjs';
 
 interface Message {
     message: any,
@@ -13,7 +13,6 @@ interface Message {
 @Injectable()
 export class NotificationService {
 
-    private currentSnackBarRef: MatSnackBarRef<any> = null;
     private messageLists: Message[] = [];
 
     private timer_local;
@@ -30,7 +29,7 @@ export class NotificationService {
                 this.open();
             });
     }
-
+    
     toast(message: any, iserror: boolean): void {
         let message_temp: Message = {
             message: message,
@@ -51,12 +50,10 @@ export class NotificationService {
     open(): void {
 
         if (this.messageLists.length == 0) {
-            console.log('0');
             this.suscription.unsubscribe();
             this.stopped = true;
         }
         else if (this.messageLists.length == 1) {
-            console.log('1');
             let messagetemp = this.messageLists.shift();
             this.snackBar.openFromComponent(
                 SnackBarComponent,
@@ -66,7 +63,6 @@ export class NotificationService {
                 }
             )
         } else {
-            console.log('>1');
             let messagetemp = this.messageLists.shift();
             this.snackBar.openFromComponent(
                 SnackBarComponent,

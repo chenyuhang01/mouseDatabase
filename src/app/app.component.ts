@@ -1,4 +1,4 @@
-import { Component, ViewChild, Renderer2} from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 import { Mouse } from '../app/components/model/mouse.component';
 @Component({
@@ -16,50 +16,42 @@ export class AppComponent {
   @ViewChild('tableview') tableview;
   @ViewChild('uploadfileview') uploadfileview;
   @ViewChild('insertmouseviewref') insertmouseviewref;
-  constructor(public renderer2: Renderer2) {
-    
-  }
-
-
-  ngOnInit() {
-   
-  }
+  constructor() { }
 
   insertmouseview() {
-    this.insertmousechecked_flag = !this.insertmousechecked_flag ;
+    this.insertmousechecked_flag = !this.insertmousechecked_flag;
   }
 
-  closepanel(){
+  closepanel() {
     this.insertmouseview();
     this.tableview.closepanel();
   }
-  
-  confirmButtonEvent(mouselistparam){
 
+  confirmButtonEvent(mouselistparam) {
     this.mouselist = mouselistparam;
   }
-  
-  cancelButtonEventHandler(mouselist){
-    if(mouselist.length == 0){
+
+  cancelButtonEventHandler(mouselist) {
+    if (mouselist.length == 0) {
       this.tableview.closeEditEnabled();
     }
   }
 
-  insertSuccessEventHandler(){
+  insertSuccessEventHandler() {
     this.tableview.getTableContent();
   }
 
-  startUploading(){
+  startUploading() {
     this.uploadfileview.startupload();
     this.uploadfileviewchecked_flag = true;
   }
 
-  uploadFinishedEventHandler(){
+  uploadFinishedEventHandler() {
     this.tableview.getTableContent();
-    this.insertmouseviewref.getCategoryData(false); 
+    this.insertmouseviewref.getCategoryData(false);
   }
 
-  notaskseventHandler(){
+  notaskseventHandler() {
     this.uploadfileviewchecked_flag = !this.uploadfileviewchecked_flag;
   }
 

@@ -1,4 +1,4 @@
-export const BASEURL: string = 'http://192.168.0.146:8000/mousemanagement/';
+export const BASEURL: string = 'http://127.0.0.1:8000/mousemanagement/';
 export const GETCAT: string = 'getcategory';
 export const INSERTCAT: string = 'category_insert';
 

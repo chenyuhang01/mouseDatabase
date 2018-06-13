@@ -1,2 +1,0 @@
-genotype_confirmation,physical_id,mouseline,birthdate,deathdate,gender,genotype,phenotype,project_title,purpose,sacrificer,comment,pfa_liver,pfa_liver_tumor,pfa_small_intenstine,pfa_small_intenstine_tumor,pfa_skin,pfa_skin_hair,pfa_other,freezedown_liver,freezedown_liver_tumor,freezedown_other
-Confirmed,new40003,Lrg5-rrta-GFP,21/10/2016,9/12/2016,Female,Lgr5(T/+),Full Grown,unknown,For FACS,Naiyang,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,
