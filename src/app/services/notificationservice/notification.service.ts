@@ -35,6 +35,7 @@ export class NotificationService {
             message: message,
             iserror: iserror
         }
+         
         this.messageLists.push(message_temp);
         if (this.messageLists.length == 1 && this.stopped) {
             this.suscription = this.timer_local.subscribe(
@@ -43,6 +44,8 @@ export class NotificationService {
                 });
             this.stopped = false;
         }
+
+        console.log('In toast: ' + this.messageLists.length);
     }
 
 
@@ -52,9 +55,12 @@ export class NotificationService {
         if (this.messageLists.length == 0) {
             this.suscription.unsubscribe();
             this.stopped = true;
+            console.log('In open(0): ' + this.messageLists.length);
         }
         else if (this.messageLists.length == 1) {
             let messagetemp = this.messageLists.shift();
+            console.log('In open(1): ' + this.messageLists.length);
+            console.log(messagetemp.message);
             this.snackBar.openFromComponent(
                 SnackBarComponent,
                 {
@@ -64,6 +70,8 @@ export class NotificationService {
             )
         } else {
             let messagetemp = this.messageLists.shift();
+            console.log('In open(>1): ' + this.messageLists.length);
+            console.log(messagetemp.message);
             this.snackBar.openFromComponent(
                 SnackBarComponent,
                 {

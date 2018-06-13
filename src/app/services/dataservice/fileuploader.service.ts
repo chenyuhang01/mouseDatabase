@@ -17,12 +17,10 @@ const httpOptions = {
 export class FileUploader {
 
     private fileToBeUploaded: File[] = [];
-    private ImagefileToBeUploaded: File[] = [];
     private listOfObservable: any[] = [];
 
     private counter:number = 0;
 
-    private imageCounter:number = 0;
     constructor(private http: HttpClient) { }
 
     addFiles(file) {
@@ -40,7 +38,7 @@ export class FileUploader {
         const fileuploadrequesturl = BASEURL + IMAGEUPLOAD;
 
         console.log("Start Uploading file");
-
+        this.listOfObservable = [];
         if (this.fileToBeUploaded.length > 0) {
             for (let file of this.fileToBeUploaded) {
                 let formdata = new FormData();
@@ -62,7 +60,6 @@ export class FileUploader {
                 var index = this.fileToBeUploaded.indexOf(file);
             }
             this.fileToBeUploaded = [];
-
             return this.listOfObservable;
         }       
     }
@@ -72,7 +69,7 @@ export class FileUploader {
         const fileuploadrequesturl = BASEURL + UPLOADFILE;
 
         console.log("Start Uploading file");
-
+        this.listOfObservable = [];
         if (this.fileToBeUploaded.length > 0) {
             for (let file of this.fileToBeUploaded) {
                 let formdata = new FormData();

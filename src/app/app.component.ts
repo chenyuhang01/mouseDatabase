@@ -48,8 +48,11 @@ export class AppComponent {
 
   uploadFinishedEventHandler() {
     this.tableview.getTableContent();
+
     this.insertmouseviewref.getCategoryData(false);
   }
+
+
 
   notaskseventHandler() {
     this.uploadfileviewchecked_flag = !this.uploadfileviewchecked_flag;
@@ -60,9 +63,21 @@ export class AppComponent {
     this.tableview.getTableContent();
   }
 
+  importtableImageeventHandler(physical_id){
+    this.uploadfileview.startuploadImage(physical_id);
+
+    this.uploadfileviewchecked_flag = true;
+  }
+
   importImageeventHandler(physical_id){
     this.uploadfileview.startuploadImage(physical_id);
     this.uploadfileviewchecked_flag = true;
+  }
+
+  uploadImageFinishedEventHandler(){
+    if(this.tableview.dialogRef != null){
+      this.tableview.dialogRef.componentInstance.getImage();
+    }
   }
 
 }

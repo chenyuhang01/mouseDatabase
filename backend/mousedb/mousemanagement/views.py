@@ -92,7 +92,7 @@ def imageFileUpload(request):
     else:
         response = makeUploadEvent(
             name='UploadImageEvent',
-            result='Image Uploaded',
+            result='%s Image Uploaded.' % filename,
             error=error,
             errorCode=errorCode,
             fileid=fileid

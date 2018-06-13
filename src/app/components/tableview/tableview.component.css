@@ -65,3 +65,8 @@ th.mat-sort-header-sorted {
 .expanarea{
     width: 100%;
 }
+
+::ng-deep .my-tooltip {
+    background-color: #3F51B5;
+    white-space: pre-line;
+}

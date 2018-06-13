@@ -6,6 +6,7 @@
                 #tableview 
                 (insertmouseviewevent)="insertmouseview()" 
                 (confirmButtonviewevent)="confirmButtonEvent($event)"
+                (importtableImageevent)="importtableImageeventHandler($event)"
                 (importcsvevent)="startUploading()"></tableview>
         </div>
     </div>
@@ -35,6 +36,7 @@
             #uploadfileview
             [hidden]="!uploadfileviewchecked_flag"
             (uploadFinishedEvent)="uploadFinishedEventHandler()"
+            (uploadImageFinishedEvent)="uploadImageFinishedEventHandler()"
             (notasksevent)="notaskseventHandler()"
             ></uploadfileview>
         </div>

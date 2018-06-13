@@ -12,14 +12,18 @@
         <div class="row" style="width:100%;">
             <div *ngFor="let image of imageLists" class="col-3 item">
                 <a class="lightbox" href="{{image}}">
-                    <img class="img-fluid image scale-on-hover" src="{{image}}">
+                    <img class="img-fluid image scale-on-hover"  [lazyLoad]="image">
                 </a>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-12 text-right">
+        <div class="col-6 text-left">
+            <button class="formbutton" mat-raised-button color="accent" (click)="UploadImage()">Upload Images</button>
+        </div>
+        <div class="col-6 text-right">
             <button mat-raised-button color="warn" (click)="onExitClick()">Exit</button>
         </div>
     </div>
 </div>
+<input style="display:none;" type="file" #imagefileInput (change)="onFileChange($event)" accept=".jpg" multiple>

@@ -115,10 +115,6 @@ export class tableview implements OnInit {
     }
 
     public getTableContent() {
-        this.notificationService.toast(
-            "Fetching table data now...",
-            false
-        )
        
         this.mouseDataservice.getData().subscribe((data) => {
             this.jsonToMouse(data);
@@ -499,20 +495,32 @@ export class tableview implements OnInit {
     }
 
     position = new FormControl('below');
-    showDelay = new FormControl(1000);
+    showDelay = new FormControl(500);
     selectRow(row) {
         this.openDialog(row);
     }
 
+    @Output('importtableImageevent') importtableImageevent = new EventEmitter<any>();
+
+    private dialogRef = null;
+
     openDialog(row): void {
-        let dialogRef = this.dialog.open(DialogView, {
+        this.dialogRef = this.dialog.open(DialogView, {
             width: '1200px',
             data: { row: row },
             panelClass: 'my-panel'
         });
+        
+        this.dialogRef.componentInstance.importImageevent.subscribe(
+            event => {
+                this.importtableImageevent.emit(event);
+            }
+        )
+        
 
-        dialogRef.afterClosed().subscribe(result => {
+        this.dialogRef.afterClosed().subscribe(result => {
             console.log('The dialog was closed');
+            this.dialogRef = null;
         });
     }
 

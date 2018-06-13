@@ -73,13 +73,6 @@ export class InsertMouseView implements OnInit {
     public getCategoryData(beforeCreated: boolean) {
         //Getting categories from server and initialize all the selection models
 
-        //MatSnackBar 
-        if (!beforeCreated) {
-            this.notificationService.toast(
-                'Fetching Catelog Data...',
-                false
-            )
-        }
 
         this.categoryserviceHandler.getData().subscribe((data) => {
             let data_json = data;

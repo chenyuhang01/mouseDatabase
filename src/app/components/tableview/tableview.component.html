@@ -210,8 +210,24 @@
 
                 <!-- Row Definition-->
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr class="row_style" matTooltip='Press To View All Details' [matTooltipPosition]="position.value" [matTooltipShowDelay]="showDelay.value"
-                    mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selectRow(row)"></tr>
+                <tr class="row_style"  
+                    [matTooltipPosition]="position.value" 
+                    [matTooltipShowDelay]="showDelay.value"
+                    mat-row *matRowDef="let row; columns: displayedColumns;" 
+                    (dblclick)="selectRow(row)" 
+                    matTooltip='PFA Liver:{{row.pfa.liver}}
+                                &#13;PFA Liver Tumor:{{row.pfa.liver_tumor}}
+                                &#13;PFA Small Intenstine:{{row.pfa.small_intenstine}}
+                                &#13;PFA Small Intenstine Tumor:{{row.pfa.small_intenstine_tumor}}
+                                &#13;PFA Skin:{{row.pfa.skin}}
+                                &#13;PFA Skin Hair:{{row.pfa.skin_hair}}
+                                &#13;PFA Other:{{row.pfa.other}}
+                                &#13;FreezeDown Liver:{{row.freezedown.liver}}
+                                &#13;FreezeDown Liver Tumor:{{row.freezedown.liver_tumor}}
+                                &#13;FreezeDown Other:{{row.freezedown.other}}
+                                '
+
+                    matTooltipClass="my-tooltip"></tr>
             </table>
 
 

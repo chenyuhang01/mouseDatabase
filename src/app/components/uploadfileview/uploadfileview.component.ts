@@ -20,6 +20,7 @@ interface FileUploadInterface {
 export class Uploadfileview {
 
     @Output('uploadFinishedEvent') uploadFinishedEvent = new EventEmitter<any>();
+    @Output('uploadImageFinishedEvent') uploadImageFinishedEvent = new EventEmitter<any>();
     @Output('notasksevent') notasksevent =  new EventEmitter<any>();
     private fileLists: FileUploadInterface[] = [];
     private counter: number = 0;
@@ -108,7 +109,7 @@ export class Uploadfileview {
                                     }
                                 }
                             }
-                            this.uploadFinishedEvent.emit();
+                            this.uploadImageFinishedEvent.emit();
                         }
                     },
 

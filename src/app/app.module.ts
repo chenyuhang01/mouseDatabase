@@ -51,8 +51,8 @@ import { FileUploader } from '../app/services/dataservice/fileuploader.service';
 //3rd Party image uploader module
 import { ImageUploadModule } from "angular2-image-upload";
 import { Angular2Csv } from 'angular2-csv/Angular2-csv';
-import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -97,7 +97,7 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
     MatCardModule,
     ImageUploadModule.forRoot(),
     MatIconModule,
-    LazyLoadImagesModule,
+    LazyLoadImageModule,
     MatDatepickerModule,
     MatNativeDateModule,
     HttpClientModule,
