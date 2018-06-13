@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Output, EventEmitter, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, Output, EventEmitter, ElementRef, Inject } from '@angular/core';
 import { Mouse, PFA, FreezeDown } from '../model/mouse.component';
 import {
     MatTableDataSource,
@@ -62,8 +62,8 @@ export class tableview implements OnInit {
         'Purpose',
         'Sacrificer',
         'PFA',
-        'Freeze Down'
-
+        'Freeze Down',
+        'Detail'
     ];
 
     //It stores the original columns
@@ -82,7 +82,8 @@ export class tableview implements OnInit {
         { id: 'purpose', pos: 10, display: this.columnsToDisplay[11], checked: false },
         { id: 'sacrificer', pos: 11, display: this.columnsToDisplay[12], checked: false },
         { id: 'pfa', pos: 12, display: this.columnsToDisplay[13], checked: false },
-        { id: 'freezedown', pos: 13, display: this.columnsToDisplay[14], checked: false }
+        { id: 'freezedown', pos: 13, display: this.columnsToDisplay[14], checked: false },
+        { id: 'detail', pos: -1, display: this.columnsToDisplay[15], checked: false }
     ]
 
     //The column to be displayed
@@ -199,7 +200,12 @@ export class tableview implements OnInit {
                 data_field.freezedown_other
             );
 
+            
             let age = Math.round(Math.abs((new Date(data_field.deathdate).getTime() - new Date(data_field.birthdate).getTime()) / (ONEDAY)));
+
+            if(new Date(data_field.birthdate).toLocaleDateString("en-sg")=='01/01/1980'){
+                age = -1;
+            }
 
             data = new Mouse(
                 data.pk,
@@ -523,5 +529,143 @@ export class tableview implements OnInit {
             this.dialogRef = null;
         });
     }
+    detail(mouse){
+        this.dialog.open(
+            viewDialog,
+            {   
+                width: '550px',
+                data: { mouse:  mouse },
+                panelClass: 'my-panel'
+            }
+        )
+    }
+}
 
+@Component({
+  selector: 'viewdialog',
+  template: `
+    <div class="round-corner">
+        <mat-list>
+        <h3 mat-subheader>PFA</h3>
+            <mat-list-item>
+                <div class="row" style="width: 100%;">
+                    <div class="col-6"  >
+                        <span *ngIf="data.mouse.pfa.liver">Liver: 
+                            <i class="fa fa-check" aria-hidden="true" style="color: green;"></i>
+                        </span>
+                        <span *ngIf="!data.mouse.pfa.liver">Liver: 
+                            <i class="fa fa-times" aria-hidden="true" style="color: red;"></i>
+                        </span>
+                    </div>
+                    <div class="col-6" >
+                        <span *ngIf="data.mouse.pfa.liver_tumor" >Liver Tumor: 
+                            <i class="fa fa-check" aria-hidden="true" style="color: green;"></i>
+                        </span>
+                        <span *ngIf="!data.mouse.pfa.liver_tumor">Liver Tumor: 
+                            <i class="fa fa-times" aria-hidden="true" style="color: red;"></i>
+                        </span>
+                    </div>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="row" style="width: 100%;">
+                    <div class="col-6"  >
+                        <span *ngIf="data.mouse.pfa.small_intenstine">Small Intenstine: 
+                            <i class="fa fa-check" aria-hidden="true" style="color: green;"></i>
+                        </span>
+                        <span *ngIf="!data.mouse.pfa.small_intenstine">Small Intenstine: 
+                            <i class="fa fa-times" aria-hidden="true" style="color: red;"></i>
+                        </span>
+                    </div>
+                    <div class="col-6" >
+                        <span *ngIf="data.mouse.pfa.small_intenstine_tumor" >Small Intenstine Tumor: 
+                            <i class="fa fa-check" aria-hidden="true" style="color: green;"></i>
+                        </span>
+                        <span *ngIf="!data.mouse.pfa.small_intenstine_tumor">Small Intenstine Tumor: 
+                            <i class="fa fa-times" aria-hidden="true" style="color: red;"></i>
+                        </span>
+                    </div>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="row" style="width: 100%;">
+                    <div class="col-6"  >
+                        <span *ngIf="data.mouse.pfa.skin">Skin: 
+                            <i class="fa fa-check" aria-hidden="true" style="color: green;"></i>
+                        </span>
+                        <span *ngIf="!data.mouse.pfa.skin">Skin: 
+                            <i class="fa fa-times" aria-hidden="true" style="color: red;"></i>
+                        </span>
+                    </div>
+                    <div class="col-6" >
+                        <span *ngIf="data.mouse.pfa.skin_hair" >Skin Hair: 
+                            <i class="fa fa-check" aria-hidden="true" style="color: green;"></i>
+                        </span>
+                        <span *ngIf="!data.mouse.pfa.skin_hair">Skin Hair: 
+                            <i class="fa fa-times" aria-hidden="true" style="color: red;"></i>
+                        </span>
+                    </div>
+                </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="row" style="width: 100%;">
+                    <div class="col-6">
+                        <span *ngIf="data.mouse.pfa.other != ''">Other: 
+                            {{data.mouse.pfa.other}}
+                        </span>
+                        <span *ngIf="data.mouse.pfa.other == ''">Other: 
+                            <i class="fa fa-times" aria-hidden="true" style="color: red;"></i>
+                        </span>
+                    </div>
+                </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <h3 mat-subheader>FreezeDown</h3>
+            <mat-list-item>
+            <div class="row" style="width: 100%;">
+                <div class="col-6"  >
+                    <span *ngIf="data.mouse.freezedown.liver">Liver: 
+                        <i class="fa fa-check" aria-hidden="true" style="color: green;"></i>
+                    </span>
+                    <span *ngIf="!data.mouse.freezedown.liver">Liver: 
+                        <i class="fa fa-times" aria-hidden="true" style="color: red;"></i>
+                    </span>
+                </div>
+                <div class="col-6" >
+                    <span *ngIf="data.mouse.freezedown.liver_tumor" >Liver Tumor: 
+                        <i class="fa fa-check" aria-hidden="true" style="color: green;"></i>
+                    </span>
+                    <span *ngIf="!data.mouse.freezedown.liver_tumor">Liver Tumor: 
+                        <i class="fa fa-times" aria-hidden="true" style="color: red;"></i>
+                    </span>
+                </div>
+            </div>
+            </mat-list-item>
+            <mat-list-item>
+                <div class="row" style="width: 100%;">
+                    <div class="col-6">
+                        <span *ngIf="data.mouse.freezedown.other != ''">Other: 
+                            {{data.mouse.freezedown.other}}
+                        </span>
+                        <span *ngIf="data.mouse.freezedown.other == ''">Other: 
+                            <i class="fa fa-times" aria-hidden="true" style="color: red;"></i>
+                        </span>
+                    </div>
+                </div>
+            </mat-list-item>
+        </mat-list>
+        
+
+    </div>
+  `,
+  styles: [
+      `
+      .round-corner{
+         border-radius: 10px;
+        
+      `
+  ]
+})
+export class viewDialog {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
 }

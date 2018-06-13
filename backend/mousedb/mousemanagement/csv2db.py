@@ -15,12 +15,13 @@ class csv2db:
         self.csvfile = csvfile
 
     def startparsing(self):
-        data = pd.read_csv(self.csvfile,keep_default_na=True,na_values='')
+        data = pd.read_csv(self.csvfile,keep_default_na=False,na_values='none')
 
         print(data.columns.values)
 
         record_error = ''
-        error = True
+        error = False
+        global_error = False
         for index, row in data.iterrows():
             # if row['physical_id'] == '':
             #     record_error += 'Data Contains empty physical ID'
@@ -28,16 +29,16 @@ class csv2db:
             existed = self.checkExisting(row['physical_id'])
             if(existed):
                 record_error += 'Same Phsyical ID Mouse Existed [%s].' % row['physical_id']
+                global_error = True
             else:
-                error = False
-                # error_message, error = self.checkIfAnyEmpty(row)
+                error, error_message = self.checkIfAnyEmpty(row)
                 if(not error):
                     mouse = self.parseMouse(row)
                     mouse.save()
-                    error = False
                 else:
                     record_error += ('For [%s] mouse,' + error_message ) % row['physical_id']
-        return record_error, error
+        print(record_error)
+        return record_error, global_error
 
     def checkExisting(self, physical_id):
         # Check If Existing mouse
@@ -74,13 +75,10 @@ class csv2db:
     def checkIfAnyEmpty(self, row_value):
         error_message = ''
         for key in row_value.keys():
-            if('pfa' in key):
+            if 'pfa' in key or 'freezedown' in key or 'purpose' in key or 'reason' in key or 'comment' in key:
                 continue
-            if('freezedown' in key):
-                continue
-            
-            if(np.isnan(row_value[key])):
-                error_message ='All the mouses fields cannot be empty except pfa and freezedown.'
+            if(row_value[key] == ''):
+                error_message ='All the mouses fields cannot be empty.[%s]' % key
                 return True, error_message
         
         return False, ''
@@ -117,25 +115,24 @@ class csv2db:
                         'sacrificer'
                     )
 
-
-        birthdate = datetime.strptime(row_value['birthdate'], '%d/%m/%Y')
-        birthdate = birthdate.strftime("%Y-%m-%d")
+        if(row_value['birthdate'] == '0/0/0000') or (row_value['birthdate'] == '00/00/0000'):
+            birthdate = '1980-01-01'
+        else:
+            birthdate = datetime.strptime(row_value['birthdate'], '%d/%m/%Y')
+            birthdate = birthdate.strftime("%Y-%m-%d")
 
         deathdate = datetime.strptime(row_value['deathdate'], '%d/%m/%Y')
         deathdate = deathdate.strftime("%Y-%m-%d")
 
-
-        if np.isnan(row_value['pfa_other']):
+        if  row_value['pfa_other'] == 'none':
             pfa_other =  '' 
         else:
             pfa_other =  row_value['pfa_other']
 
-        if np.isnan(row_value['freezedown_other']):
+        if  row_value['freezedown_other'] == 'none':
             freezedown_other =  '' 
         else:
-            freezedown_other =  row_value['freezedown_other']
-
-        print(pfa_other)
+            freezedown_other = row_value['freezedown_other']
 
         mouse = Mouse(
             physical_id = row_value['physical_id'],
@@ -159,6 +156,6 @@ class csv2db:
             pfa_other= pfa_other,
             freezedown_liver=row_value['freezedown_liver'],
             freezedown_liver_tumor=row_value['freezedown_liver_tumor'],
-            freezedown_other=freezedown_other,
+            freezedown_other=freezedown_other
         )
         return mouse

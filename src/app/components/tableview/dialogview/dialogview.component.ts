@@ -52,10 +52,7 @@ export class DialogView implements OnInit {
             true
           )
         } else {
-          this.notificationService.toast(
-            'Image feteched Success',
-            false
-          )
+
           let images: string[] = result.split(",");
           images.splice(-1, 1);
           this.imageLists = [];

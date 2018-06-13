@@ -33,7 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 //User defined view
-import { tableview } from './components/tableview/tableview.component';
+import { tableview, viewDialog } from './components/tableview/tableview.component';
 import { InsertMouseView, BottomMenu } from './components/insertmouseview/insertmouseview.component';
 import { DialogView } from './components/tableview/dialogview/dialogview.component';
 import { AppComponent } from './app.component';
@@ -54,6 +54,8 @@ import { Angular2Csv } from 'angular2-csv/Angular2-csv';
 
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 
+import { PopoverModule } from '../../node_modules/ngx-popover';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,14 +66,16 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     EditMouseView,
     EditMouseViewSmall,
     SnackBarComponent,
-    Uploadfileview
+    Uploadfileview,
+    viewDialog
   ],
   entryComponents: [
     BottomMenu,
     DialogView,
     EditMouseViewSmall,
     EditMouseView,
-    SnackBarComponent
+    SnackBarComponent,
+    viewDialog
   ],
   imports: [
     BrowserModule,
@@ -101,7 +105,8 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     MatDatepickerModule,
     MatNativeDateModule,
     HttpClientModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    PopoverModule
   ],
   providers: [
     mouseservice,

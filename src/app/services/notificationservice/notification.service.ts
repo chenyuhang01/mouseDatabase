@@ -1,9 +1,10 @@
-import { Injectable, Component, Inject } from '@angular/core';
+import { Injectable, Component, Inject, Output, EventEmitter } from '@angular/core';
 import { timer } from 'rxjs';
 
 import {
-    MatSnackBar, MAT_SNACK_BAR_DATA
+    MatSnackBar, MAT_SNACK_BAR_DATA, MatSnackBarRef
 } from '@angular/material';
+
 
 interface Message {
     message: any,
@@ -61,21 +62,32 @@ export class NotificationService {
             let messagetemp = this.messageLists.shift();
             console.log('In open(1): ' + this.messageLists.length);
             console.log(messagetemp.message);
-            this.snackBar.openFromComponent(
+            let ref:MatSnackBarRef<SnackBarComponent> = this.snackBar.openFromComponent(
                 SnackBarComponent,
                 {
                     data: messagetemp,
                     duration: 2000
                 }
             )
+            ref.instance.dismissEvent.subscribe(
+                event => {
+                    this.snackBar.dismiss();
+                }
+            )
         } else {
             let messagetemp = this.messageLists.shift();
             console.log('In open(>1): ' + this.messageLists.length);
             console.log(messagetemp.message);
-            this.snackBar.openFromComponent(
+            let ref:MatSnackBarRef<SnackBarComponent> = this.snackBar.openFromComponent(
                 SnackBarComponent,
                 {
                     data: messagetemp
+                }
+            )
+
+            ref.instance.dismissEvent.subscribe(
+                event => {
+                    this.snackBar.dismiss();
                 }
             )
         }
@@ -100,5 +112,12 @@ export class NotificationService {
     `
 })
 export class SnackBarComponent {
+
+    @Output ('dismissEvent') dismissEvent = new EventEmitter<any>();
+
     constructor(@Inject(MAT_SNACK_BAR_DATA) public data: any) { }
+
+    action(){
+       this.dismissEvent.emit();
+    }
 }

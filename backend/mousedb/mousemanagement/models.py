@@ -47,11 +47,12 @@ class Mouse(models.Model):
     GENDER_CHOICES = (
         ('M','Male'),
         ('F','Female'),
+        ('U', 'Unknown')
     )
     gender = models.CharField(max_length=7, choices=GENDER_CHOICES)
 
     mouseline = models.ForeignKey(Mouseline, on_delete=models.CASCADE)
-    birthdate = models.DateField(blank = False)
+    birthdate = models.DateField(blank = True)
     deathdate = models.DateField(blank = False)
     genotype = models.ForeignKey(Genotype, on_delete=models.CASCADE)
     genotype_confirmation = models.CharField(max_length=30, blank = True, null = True)
