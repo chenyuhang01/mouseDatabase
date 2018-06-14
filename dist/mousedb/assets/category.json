@@ -1,0 +1,28 @@
+{
+    "mouseline": [
+        "Lrg5-rrta-GFP",
+        "Lrg5-rttA-GFP"
+    ],
+    "genotype": [
+        "AAA",
+        "BBB",
+        "CCC"
+    ],
+    "phenotype": [
+        "AAA",
+        "BBB",
+        "CCC"
+    ],
+    "projecttitle": [
+        "AA Project",
+        "Hair particles",
+        "MouseLine Investigation",
+        "BB Project",
+        "Delaware"
+    ],
+    "sacrificer": [
+        "Shih Han",
+        "Hui San",
+        "Alex"
+    ]
+}

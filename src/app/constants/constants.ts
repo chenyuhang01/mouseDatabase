@@ -1,4 +1,4 @@
-export const SERVER:string = 'http://127.0.0.1:8000/';
+export const SERVER:string = 'http://192.168.0.2:8080/mousekernel/';
 export const BASEURL: string = SERVER + 'mousemanagement/';
 export const GETCAT: string = 'getcategory';
 export const INSERTCAT: string = 'category_insert';

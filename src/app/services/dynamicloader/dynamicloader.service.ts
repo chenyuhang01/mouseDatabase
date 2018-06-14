@@ -9,7 +9,7 @@ import { EditMouseView } from '../../components/editmouseview/editmouseview.comp
 export class DynamicLoader {
 
 
-    private rootViewContainer;
+    public rootViewContainer;
 
     constructor(public factoryResolver: ComponentFactoryResolver) { }
 

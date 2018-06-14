@@ -15,15 +15,17 @@ import os
 from .models import Genotype, Phenotype, Sacrificer, Mouse, Project_title, Mouseline
 import time
 
+
+
 # Importing category for json sending
-from category import Object
+from mousemanagement.category import Object
 
 # For converting json object
 import json
 
 import pandas as pd
 
-from csv2db import csv2db
+from mousemanagement.csv2db import csv2db
 from os import listdir
 from os.path import isfile, join
 import shutil

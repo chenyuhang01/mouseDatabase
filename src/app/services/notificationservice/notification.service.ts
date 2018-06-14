@@ -14,15 +14,15 @@ interface Message {
 @Injectable()
 export class NotificationService {
 
-    private messageLists: Message[] = [];
+    public messageLists: Message[] = [];
 
-    private timer_local;
-    private stopped: boolean = false;
+    public timer_local;
+    public stopped: boolean = false;
 
-    private suscription;
+    public suscription;
 
     constructor(
-        private snackBar: MatSnackBar
+        public snackBar: MatSnackBar
     ) {
         this.timer_local = timer(0, 2000);
         this.suscription = this.timer_local.subscribe(

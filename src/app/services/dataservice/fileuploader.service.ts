@@ -16,12 +16,12 @@ const httpOptions = {
 @Injectable()
 export class FileUploader {
 
-    private fileToBeUploaded: File[] = [];
-    private listOfObservable: any[] = [];
+    public fileToBeUploaded: File[] = [];
+    public listOfObservable: any[] = [];
 
-    private counter:number = 0;
+    public counter:number = 0;
 
-    constructor(private http: HttpClient) { }
+    constructor(public http: HttpClient) { }
 
     addFiles(file) {
         for (let fileinput of file) {

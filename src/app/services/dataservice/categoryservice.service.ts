@@ -16,7 +16,7 @@ const httpOptions = {
 export class categoryservice {
 
 
-    constructor(private httpclient: HttpClient) { }
+    constructor(public httpclient: HttpClient) { }
 
     getData(): Observable<any> {
 

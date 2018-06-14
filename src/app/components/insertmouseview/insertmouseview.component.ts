@@ -18,36 +18,36 @@ export class InsertMouseView implements OnInit {
     @Output('insertSuccessEvent') insertSuccessEvent = new EventEmitter<any>();
 
     /* Retrieved data section */
-    private physical_id_inputs: string = '';
-    private mouseline_select: string = '';
-    private gender_select: string = '';
-    private genotype_select: string = '';
-    private genotype_confirmation: string = '';
-    private phenotype_select: string = '';
-    private project_title_select: string = '';
-    private sacrificer_select: string = '';
-    private purpose_textarea: string = '';
-    private comment_textarea: string = '';
+    public physical_id_inputs: string = '';
+    public mouseline_select: string = '';
+    public gender_select: string = '';
+    public genotype_select: string = '';
+    public genotype_confirmation: string = '';
+    public phenotype_select: string = '';
+    public project_title_select: string = '';
+    public sacrificer_select: string = '';
+    public purpose_textarea: string = '';
+    public comment_textarea: string = '';
 
     /* Retrieved Date Data */
-    private birthDate: Date;
-    private deathDate: Date;
+    public birthDate: Date;
+    public deathDate: Date;
 
     /* Retrieved PFA Data */
-    private pfa_liver_checkbox: boolean = false;
-    private pfa_liver_tumor_checkbox: boolean = false;
-    private pfa_small_intenstine_checkbox: boolean = false;
-    private pfa_small_intenstine_tumor_checkbox: boolean = false;
-    private pfa_skin_checkbox: boolean = false;
-    private pfa_skin_hair_checkbox: boolean = false;
-    private pfa_other_checkbox: boolean = false;
-    private pfa_other_string: string = '';
+    public pfa_liver_checkbox: boolean = false;
+    public pfa_liver_tumor_checkbox: boolean = false;
+    public pfa_small_intenstine_checkbox: boolean = false;
+    public pfa_small_intenstine_tumor_checkbox: boolean = false;
+    public pfa_skin_checkbox: boolean = false;
+    public pfa_skin_hair_checkbox: boolean = false;
+    public pfa_other_checkbox: boolean = false;
+    public pfa_other_string: string = '';
 
     /* Retrieved FreezeDown Data */
-    private freeze_down_liver_checkbox: boolean = false;
-    private freeze_down_liver_tumor_checkbox: boolean = false;
-    private freeze_down_other_checkbox: boolean = false;
-    private freeze_down_other_string: string = '';
+    public freeze_down_liver_checkbox: boolean = false;
+    public freeze_down_liver_tumor_checkbox: boolean = false;
+    public freeze_down_other_checkbox: boolean = false;
+    public freeze_down_other_string: string = '';
 
     //Category datasource
     projectTitles: string[] = [];
@@ -57,11 +57,11 @@ export class InsertMouseView implements OnInit {
     sacrificers: string[] = [];
 
     constructor(
-        private snackBar: MatSnackBar,
-        private bottomSheet: MatBottomSheet,
-        private categoryserviceHandler: categoryservice,
-        private mouseserviceHandler: mouseservice,
-        private notificationService: NotificationService
+        public snackBar: MatSnackBar,
+        public bottomSheet: MatBottomSheet,
+        public categoryserviceHandler: categoryservice,
+        public mouseserviceHandler: mouseservice,
+        public notificationService: NotificationService
     ) { }
 
     ngOnInit() {
@@ -415,16 +415,16 @@ export class InsertMouseView implements OnInit {
 export class BottomMenu {
 
 
-    private mouseline_cat_input: string = "";
-    private genotype_cat_input: string = "";
-    private phenotype_cat_input: string = "";
-    private sacrificer_cat_input: string = "";
-    private project_title_cat_input: string = "";
+    public mouseline_cat_input: string = "";
+    public genotype_cat_input: string = "";
+    public phenotype_cat_input: string = "";
+    public sacrificer_cat_input: string = "";
+    public project_title_cat_input: string = "";
 
     constructor(
-        private notificationService: NotificationService,
-        private bottomSheetRef: MatBottomSheetRef<BottomMenu>,
-        private dataservice: categoryservice) { }
+        public notificationService: NotificationService,
+        public bottomSheetRef: MatBottomSheetRef<BottomMenu>,
+        public dataservice: categoryservice) { }
 
     //Trigger sendRequest event when buttons are clicked
     sendRequest(event): void {

@@ -22,11 +22,11 @@ export class Uploadfileview {
     @Output('uploadFinishedEvent') uploadFinishedEvent = new EventEmitter<any>();
     @Output('uploadImageFinishedEvent') uploadImageFinishedEvent = new EventEmitter<any>();
     @Output('notasksevent') notasksevent =  new EventEmitter<any>();
-    private fileLists: FileUploadInterface[] = [];
-    private counter: number = 0;
+    public fileLists: FileUploadInterface[] = [];
+    public counter: number = 0;
     constructor(
-        private fileuploader: FileUploader,
-        private notificationservice: NotificationService
+        public fileuploader: FileUploader,
+        public notificationservice: NotificationService
     ) { }
 
     dismiss(fileid) {

@@ -11,6 +11,7 @@ import os,sys
 
 from django.core.wsgi import get_wsgi_application
 
+sys.path.append("C://Users//Fu Nai Yang's Lab//Documents//GitHub//mouseDatabase//backend//mousedb")
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mousedb.settings")
 
 application = get_wsgi_application()

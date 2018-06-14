@@ -92,10 +92,10 @@ export class tableview implements OnInit {
     ];
 
     //Create datasoucre for mat table
-    private dataSource: MatTableDataSource<Mouse>;
-    private selection = new SelectionModel<Mouse>(true, []);
+    public dataSource: MatTableDataSource<Mouse>;
+    public selection = new SelectionModel<Mouse>(true, []);
     //data getting from service
-    private datalist: any;
+    public datalist: any;
 
     @ViewChild(MatPaginator) paginator: MatPaginator;
     @ViewChild(MatSort) sort: MatSort;
@@ -171,10 +171,10 @@ export class tableview implements OnInit {
     }
 
     constructor(
-        private mouseDataservice: mouseservice,
-        private snackBar: MatSnackBar,
-        private notificationService:NotificationService,
-        private fileuploader: FileUploader,
+        public mouseDataservice: mouseservice,
+        public snackBar: MatSnackBar,
+        public notificationService:NotificationService,
+        public fileuploader: FileUploader,
         public dialog: MatDialog) {
         this.Math = Math;
         this.ONEDAY = ONEDAY;
@@ -238,9 +238,9 @@ export class tableview implements OnInit {
 
     //Buttons Related Method
 
-    private insertmousechecked: boolean = false;
-    private insertmousebuttondisplay_opened: string = "Open Insert Mouse panel";
-    private insertmousebuttondisplay_closed: string = "Close Insert Mouse panel";
+    public insertmousechecked: boolean = false;
+    public insertmousebuttondisplay_opened: string = "Open Insert Mouse panel";
+    public insertmousebuttondisplay_closed: string = "Close Insert Mouse panel";
 
     public closepanel() {
         this.insertmousechecked = !this.insertmousechecked;
@@ -441,8 +441,8 @@ export class tableview implements OnInit {
         }).filter(data => data != '');
     }
 
-    private editButtonenabled: boolean = false;
-    private editConfirmbuttonEnabled: boolean = false;
+    public editButtonenabled: boolean = false;
+    public editConfirmbuttonEnabled: boolean = false;
     //Trigger when edit button is pressed
     editbuttonpressed(): void {
 
@@ -508,7 +508,7 @@ export class tableview implements OnInit {
 
     @Output('importtableImageevent') importtableImageevent = new EventEmitter<any>();
 
-    private dialogRef = null;
+    public dialogRef = null;
 
     openDialog(row): void {
         this.dialogRef = this.dialog.open(DialogView, {

@@ -19,7 +19,7 @@ const httpOptions = {
 export class mouseservice {
 
 
-    constructor(private http: HttpClient) {
+    constructor(public http: HttpClient) {
 
     }
 

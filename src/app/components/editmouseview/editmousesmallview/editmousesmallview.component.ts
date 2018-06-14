@@ -32,42 +32,42 @@ export class EditMouseViewSmall implements OnInit {
     sacrificers: string[] = [];
 
     /* Retrieved data section */
-    private physical_id_inputs: string = '';
-    private mouseline_select: string = '';
-    private gender_select: string = '';
-    private genotype_select: string = '';
-    private genotype_confirmation: string = '';
-    private phenotype_select: string = '';
-    private project_title_select: string = '';
-    private sacrificer_select: string = '';
-    private purpose_textarea: string = '';
-    private comment_textarea: string = '';
+    public physical_id_inputs: string = '';
+    public mouseline_select: string = '';
+    public gender_select: string = '';
+    public genotype_select: string = '';
+    public genotype_confirmation: string = '';
+    public phenotype_select: string = '';
+    public project_title_select: string = '';
+    public sacrificer_select: string = '';
+    public purpose_textarea: string = '';
+    public comment_textarea: string = '';
 
     /* Retrieved Date Data */
-    private birthDate: FormControl;
-    private deathDate: FormControl;
+    public birthDate: FormControl;
+    public deathDate: FormControl;
 
     /* Retrieved PFA Data */
-    private pfa_liver_checkbox: boolean = false;
-    private pfa_liver_tumor_checkbox: boolean = false;
-    private pfa_small_intenstine_checkbox: boolean = false;
-    private pfa_small_intenstine_tumor_checkbox: boolean = false;
-    private pfa_skin_checkbox: boolean = false;
-    private pfa_skin_hair_checkbox: boolean = false;
-    private pfa_other_checkbox: boolean = false;
-    private pfa_other_string: string = '';
+    public pfa_liver_checkbox: boolean = false;
+    public pfa_liver_tumor_checkbox: boolean = false;
+    public pfa_small_intenstine_checkbox: boolean = false;
+    public pfa_small_intenstine_tumor_checkbox: boolean = false;
+    public pfa_skin_checkbox: boolean = false;
+    public pfa_skin_hair_checkbox: boolean = false;
+    public pfa_other_checkbox: boolean = false;
+    public pfa_other_string: string = '';
 
     /* Retrieved FreezeDown Data */
-    private freeze_down_liver_checkbox: boolean = false;
-    private freeze_down_liver_tumor_checkbox: boolean = false;
-    private freeze_down_other_checkbox: boolean = false;
-    private freeze_down_other_string: string = '';
+    public freeze_down_liver_checkbox: boolean = false;
+    public freeze_down_liver_tumor_checkbox: boolean = false;
+    public freeze_down_other_checkbox: boolean = false;
+    public freeze_down_other_string: string = '';
 
     constructor(
-        private categoryservicehandler: categoryservice,
-        private notificationService: NotificationService,
-        private mouseservicehandler: mouseservice,
-        private fileuploader: FileUploader
+        public categoryservicehandler: categoryservice,
+        public notificationService: NotificationService,
+        public mouseservicehandler: mouseservice,
+        public fileuploader: FileUploader
     ) { }
 
     ngOnInit() {
